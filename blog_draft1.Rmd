@@ -1,0 +1,22 @@
+---
+title: "NBA Connections: PUG Blog Post"
+author: "Emma Gardecki and Eric Ingram"
+date: "May 18, 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(dplyr)
+library(ggnetwork)
+library(igraph)
+```
+
+```{r}
+path_in <- "/Users/emmagardecki/Documents/junior yr/stat231/Blog-Team-Basketball"
+draft <- read_csv(paste0(path_in, "/draft_allyears.csv"))
+
+
+```
+
