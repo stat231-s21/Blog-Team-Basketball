@@ -27,16 +27,26 @@ teams <- c("https://www.basketball-reference.com/teams/ATL/", "https://www.baske
 all_players <- data.frame()
 paths_allowed("https://www.basketball-reference.com")
 for(i in 1:length(teams)){
-  for(j in 2019:2020){
-    url <- paste(teams[i], j, ".html", sep="")
-    if(j<2015 && substring(url, 44, 46) == "CHO"){
+  for(j in 2010:2021){
+    url <- ""
+    if(j<2015 && substring(teams[i], 44, 46) == "CHO"){
       url <- paste("https://www.basketball-reference.com/teams/CHA/", j, ".html", sep = "")
     }
+    else if(j<2014 && substring(teams[i], 44, 46) == "NOP"){
+      url <- paste("https://www.basketball-reference.com/teams/NOH/", j, ".html", sep = "")
+    }
+    else if(j<2013 && substring(teams[i], 44, 46) == "BRK"){
+      url <- paste("https://www.basketball-reference.com/teams/NJN/", j, ".html", sep = "")
+    }
+    else{
+      url <- paste(teams[i], j, ".html", sep="")
+    }
+    print(url)
     tables <- url %>%
       read_html() %>%
       html_nodes("table")
     roster <- clean_names(html_table(tables[[1]])) %>%
-      select(player) %>%
+      select(player, college) %>%
       mutate(Team = substring(url, 44, 46), Year = j)
     all_players <- all_players %>%
       bind_rows(roster)
