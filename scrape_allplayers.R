@@ -10,7 +10,7 @@ library(stringr)
 # initialize blank dataframe
 all_drafts <- data.frame()
 all_players <- data.frame()
-for (i in 2006:2020){
+for (i in 2010:2020){
   url <- paste("https://www.basketball-reference.com/draft/NBA_", i, ".html", sep="")
   #Check if allowed
   #paths_allowed(url)
@@ -42,7 +42,7 @@ for (i in 2006:2020){
 #Write to CSV
 write_csv(all_drafts, file = "draft_allyears.csv")
 #Scrape Player data, photo
-for (i in 2006:2020){
+for (i in 2010:2020){
   url <- paste("https://www.basketball-reference.com/draft/NBA_", i, ".html", sep="")
   table_player <- url %>%
     read_html() %>%
@@ -76,16 +76,17 @@ for (i in 2006:2020){
     bind_rows(table_final) 
 }
 #write to csv file
-write_csv(all_players, file = "draft_allplayers1.csv")
+# write_csv(all_players, file = "draft_allplayers1.csv")
 
 for (i in 1:length(all_players)){
-  player <- all_players[i]
-  player_url <- player$URL2
+  # player <- all_players
+  player_url <- all_players$URL2
   tables <- player_url %>%
     read_html() %>%
     html_nodes("table")
   data <- clean_names(html_table(tables[[1]]))
 }
+write_csv(all_players, file = "draft_allplayers1.csv")
 
 ###what variables in the dataset mean:
 # Draft_Year: year player was drafted

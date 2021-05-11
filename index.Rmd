@@ -1,7 +1,7 @@
 ---
-title: "Your Project Title Here"
-author: "Your Names Here"
-date: "Add a date"
+title: "NBA Connections"
+author: "Emma Gardecki & Eric Ingram"
+date: "May 2021"
 output:
   rmdformats::readthedown:
     thumbnails: false

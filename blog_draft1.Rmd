@@ -13,10 +13,117 @@ library(ggnetwork)
 library(igraph)
 ```
 
-```{r}
+```{r, echo=FALSE}
+#import dataset
 path_in <- "/Users/emmagardecki/Documents/junior yr/stat231/Blog-Team-Basketball"
-draft <- read_csv(paste0(path_in, "/draft_allyears.csv"))
-
-
+draft <- read_csv(paste0(path_in, "/draft_allplayers.csv"))
+players <- read_csv(paste0(path_in, "/allPlayers2010-2021.csv"))
 ```
 
+```{r, warning = FALSE}
+#build prelim college network
+draft_college <- draft %>%
+  select(College, Player, Pick)
+
+college_graph <- graph_from_data_frame(draft_college, directed = FALSE)
+
+college_ntwrk <- ggnetwork(college_graph)
+
+ggplot(data = college_ntwrk
+       , aes(x = x, y = y, xend = xend, yend = yend)) +
+  geom_edges(arrow=arrow(type="closed", length=unit(6,"pt"))
+            , color = "lightgray") +
+  geom_nodes() +
+  # geom_nodelabel(aes(label = name)) +
+  theme_blank()
+
+diameter(college_graph)
+vcount(college_graph)
+ecount(college_graph)
+```
+
+```{r, warning = FALSE, fig.height=4.0, fig.width=8.0}
+####HOW CONNECTED NBA TEAMS ARE
+
+set.seed(2000)
+
+#build prelim nba network
+draft_nba <- players %>%
+  # filter(Year > 2019) %>%
+  select(Team, Year) 
+  # filter(Team == "BOS" )
+
+nba_graph <- graph_from_data_frame(draft_nba, directed = FALSE)
+
+nba_ntwrk <- ggnetwork(nba_graph)
+
+ggplot(data = nba_ntwrk
+       , aes(x = x, y = y, xend = xend, yend = yend)) +
+  geom_edges(arrow=arrow(type="closed", length=unit(6,"pt"))
+            , color = "lightgray") +
+  geom_nodes() +
+  geom_nodelabel(aes(label = name)) +
+  theme_blank()
+
+diameter(nba_graph)
+vcount(nba_graph)
+ecount(nba_graph)
+```
+
+
+```{r, warning = FALSE}
+#build prelim hs network
+draft_hs <- draft %>%
+  # filter(Draft_Year > 2019) %>%
+  select(HS, Player, Pick)
+
+hs_graph <- graph_from_data_frame(draft_hs, directed = FALSE)
+
+hs_ntwrk <- ggnetwork(hs_graph)
+
+ggplot(data = hs_ntwrk
+       , aes(x = x, y = y, xend = xend, yend = yend)) +
+  geom_edges(arrow=arrow(type="closed", length=unit(6,"pt"))
+            , color = "lightgray") +
+  geom_nodes() +
+  # geom_nodelabel(aes(label = name)) +
+  theme_blank()
+
+
+diameter(hs_graph)
+vcount(hs_graph)
+ecount(hs_graph)
+```
+
+
+
+
+
+
+
+```{r, warning = FALSE, fig.height=4.0, fig.width=8.0}
+####NBA PLAYERS BY YR
+
+set.seed(2001)
+
+#build prelim nba network
+draft_nba1 <- players %>%
+  select(player, Team, Year) %>%
+  filter(Year == "2010" )
+
+nba_graph1 <- graph_from_data_frame(draft_nba1, directed = FALSE)
+
+nba_ntwrk1 <- ggnetwork(nba_graph1)
+
+ggplot(data = nba_ntwrk1
+       , aes(x = x, y = y, xend = xend, yend = yend)) +
+  geom_edges(arrow=arrow(type="closed", length=unit(6,"pt"))
+            , color = "lightgray") +
+  geom_nodes() +
+  geom_nodelabel(aes(label = name)) +
+  theme_blank()
+
+diameter(nba_graph1)
+vcount(nba_graph1)
+ecount(nba_graph1)
+```

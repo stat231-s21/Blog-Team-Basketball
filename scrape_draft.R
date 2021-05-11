@@ -8,6 +8,43 @@ library(purrr)
 library(stringr)
 library(sjmisc)
 
+get_hs <- function(url){
+  tables <- url %>%
+    read_html() %>%
+    html_nodes("p")
+  flag = FALSE
+  for(i in 1:length(tables)){
+    player_hs = vector()
+    if(str_contains(html_text(tables[[i]]), "High School")){
+      player_hs <- html_text(tables[[i]])
+      flag = TRUE
+      break
+    }
+  }
+  if(flag){
+    y <- unlist(str_split(player_hs, "\n"))
+    hs = vector()
+    for (i in 1:length(y)){
+      if(nchar(y[i])>4){
+        if(!str_contains(y[i], "High School")){
+          x <- trimws(y[i])
+          x <- trimws(x, which = "right", whitespace = ",")
+          hs <- c(hs, x)
+        }
+      }
+    }
+  }else{
+    hs = vector()
+  }
+  to_add = ""
+  for(i in 1:length(hs)){
+    to_add = paste0(to_add, hs[i], sep = "|")
+  }
+  return(to_add)
+}
+
+
+
 all_players <- data.frame()
 for (i in 2006:2020){
   url <- paste("https://www.basketball-reference.com/draft/NBA_", i, ".html", sep="")
@@ -65,40 +102,7 @@ for (i in 2006:2020){
                          College != "", HS != "NA||")
  }
 write_csv(all_players, file = "draft_allplayers.csv")
-get_hs <- function(url){
-  tables <- url %>%
-    read_html() %>%
-    html_nodes("p")
-  flag = FALSE
-  for(i in 1:length(tables)){
-    player_hs = vector()
-    if(str_contains(html_text(tables[[i]]), "High School")){
-      player_hs <- html_text(tables[[i]])
-      flag = TRUE
-      break
-    }
-  }
-  if(flag){
-    y <- unlist(str_split(player_hs, "\n"))
-    hs = vector()
-    for (i in 1:length(y)){
-      if(nchar(y[i])>4){
-        if(!str_contains(y[i], "High School")){
-          x <- trimws(y[i])
-          x <- trimws(x, which = "right", whitespace = ",")
-          hs <- c(hs, x)
-        }
-      }
-    }
-  }else{
-    hs = vector()
-  }
-  to_add = ""
-  for(i in 1:length(hs)){
-    to_add = paste0(to_add, hs[i], sep = "|")
-  }
-  return(to_add)
-}
+
 
 
 
