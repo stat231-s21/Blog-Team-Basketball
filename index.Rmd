@@ -1,7 +1,7 @@
 ---
 title: "NBA Connections"
 author: "Emma Gardecki & Eric Ingram"
-date: "May 2021"
+date: "Updated: May 2021"
 output:
   rmdformats::readthedown:
     thumbnails: false
@@ -13,29 +13,45 @@ knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 library(tidyverse)
 ```
 
-# Header 1
+# Introduction
+## Motivation
+So much of a positive career is determined by the circumstances surrounding it. Maybe you got the job because you were in the right place at the right time, or you missed the interview because of a flat tire and didn't get the job. For players in the National Basketball Association, these circumstances are often experienced as what schools they attended and teams were they traded to. With this project we set out to discover if the circumstances around who players wore across their chests impacted overall career success. Did players that knew more players than others have more successful careers? Is connection early on in a basketball player's journey - say high school or college - more indicative of a successful career? 
 
-## Header 2
+Another question we set out to address is how do we measure success? We have decided to stick to the most quantitative measures of success, career statistics. Specifically, we are returning to the value over replacement player (VORP) statistic, but our visualizations allow for the user to choose the statistic they want to use to measure success by, from field goal percentage (FG%) to total number of rebounds (TRB). 
 
-### Header 3
+## Research Questions
+- DOES CONNECTION EQUAL CAREER SUCCESS ? (measured in VORP)
+- How connected are current NBA players?
+- Is an early connection to NBA stars an indicator of career success?
+- How do we measure success?
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For example, you can include **Bold** and _Italic_ and `Code` text.  For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Background
+## Background on Topic
 
-You should test out updating your GitHub Pages website:
 
-- clone your group's blog project repo in RStudio
-- update "Your Project Title Here" to a new title in the YAML header
-- knit `index.Rmd` 
-- commit and push BOTH the `index.Rmd` and the `index.html` files
-- go to https://stat231-s21.github.io/Blog-Team-Basketball/ to see the published test document (this is publicly available!)
+## Data Sources
+The datasets we utilized for this investigation were scraped from basketball-reference.com. 
 
-## Including code and plots
+# Findings
+## Networks & Analyses
 
-You can embed code as normal, for example:
 
-```{r cars}
-summary(cars)
-```
+# Conclusion
+## Limitations
+- no data on AAU teams
+- removed players without college & hs
+- 
+
+## Conclusion
+
+
+## Future Research
+
+
+# References
+- # http://curleylab.psych.columbia.edu/netviz/netviz1.html#/45
+
+
 
 Let's clean up the format of that output:
 

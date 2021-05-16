@@ -80,9 +80,9 @@ for(i in 1:length(teams)){
     
     all_players <- all_players %>%
       bind_rows(roster)
-    all_players <- filter(all_players, 
-                          !is.na(all_players$college), !is.na(all_players$HS),
-                          college != "", HS != "NA||")
+    # all_players <- filter(all_players,
+    #                       !is.na(all_players$college), !is.na(all_players$HS),
+    #                       college != "", HS != "NA||")
   }
 }
 
@@ -163,4 +163,5 @@ get_hs <- function(url){
   }
   return(to_add)
 }
-  
+  '
+  .'

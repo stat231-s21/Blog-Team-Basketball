@@ -12,7 +12,7 @@ library(ggrepel)
 library(rvest)
 library(janitor)
 library(shinyWidgets)
-# library(ggvis)
+library(ggvis)
 
 
 ###############

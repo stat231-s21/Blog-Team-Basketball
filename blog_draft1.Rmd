@@ -11,6 +11,8 @@ library(tidyverse)
 library(dplyr)
 library(ggnetwork)
 library(igraph)
+library(ggiraph)
+library(ggplot2)
 ```
 
 ```{r, echo=FALSE}
@@ -18,12 +20,13 @@ library(igraph)
 path_in <- "/Users/emmagardecki/Documents/junior yr/stat231/Blog-Team-Basketball"
 draft <- read_csv(paste0(path_in, "/draft_allplayers.csv"))
 players <- read_csv(paste0(path_in, "/allPlayers2010-2021.csv"))
+TEAMS0 <- c("ATL", "BOS", "NJN", "BKK", "CHA", "CHI", "CLE", "DAL", "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHX", "POR", "SAC", "SAS", "TOR", "UTA", "WAS", "CHO", "NOH")
 ```
 
 ```{r, warning = FALSE}
 #build prelim college network
 draft_college <- draft %>%
-  select(College, Player, Pick)
+  select(College, Player)
 
 college_graph <- graph_from_data_frame(draft_college, directed = FALSE)
 
@@ -31,8 +34,7 @@ college_ntwrk <- ggnetwork(college_graph)
 
 ggplot(data = college_ntwrk
        , aes(x = x, y = y, xend = xend, yend = yend)) +
-  geom_edges(arrow=arrow(type="closed", length=unit(6,"pt"))
-            , color = "lightgray") +
+  geom_edges(color = "grey50") +
   geom_nodes() +
   # geom_nodelabel(aes(label = name)) +
   theme_blank()
@@ -49,8 +51,8 @@ set.seed(2000)
 
 #build prelim nba network
 draft_nba <- players %>%
-  # filter(Year > 2019) %>%
-  select(Team, Year) 
+  filter(Year == 2019) %>%
+  select(player, Team, Year)
   # filter(Team == "BOS" )
 
 nba_graph <- graph_from_data_frame(draft_nba, directed = FALSE)
@@ -59,8 +61,7 @@ nba_ntwrk <- ggnetwork(nba_graph)
 
 ggplot(data = nba_ntwrk
        , aes(x = x, y = y, xend = xend, yend = yend)) +
-  geom_edges(arrow=arrow(type="closed", length=unit(6,"pt"))
-            , color = "lightgray") +
+  geom_edges( color = "green") +
   geom_nodes() +
   geom_nodelabel(aes(label = name)) +
   theme_blank()
@@ -83,8 +84,7 @@ hs_ntwrk <- ggnetwork(hs_graph)
 
 ggplot(data = hs_ntwrk
        , aes(x = x, y = y, xend = xend, yend = yend)) +
-  geom_edges(arrow=arrow(type="closed", length=unit(6,"pt"))
-            , color = "lightgray") +
+  geom_edges(color = "green") +
   geom_nodes() +
   # geom_nodelabel(aes(label = name)) +
   theme_blank()
@@ -127,3 +127,180 @@ diameter(nba_graph1)
 vcount(nba_graph1)
 ecount(nba_graph1)
 ```
+
+
+
+
+
+
+
+```{r, warning = FALSE}
+set.seed(001)
+draft_nba <- players %>%
+  select(player, Team, Year) 
+
+nba_graph <- graph_from_data_frame(draft_nba, directed = FALSE)
+
+nba_ntwrk <- ggnetwork( nba_graph )
+nba_ntwrk$tooltip <- paste0("Player = ", nba_ntwrk$name)
+  
+gg_point_1 <- ggplot(data = nba_ntwrk
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "grey50") +
+  geom_nodes(color = "orange", size = 4) +
+  theme_blank() +
+  # geom_nodetext(aes(label = name)) +
+  geom_point_interactive(size=2)
+
+# htmlwidget call
+ggiraph(code = {print(gg_point_1)})
+```
+
+
+```{r, warning = FALSE}
+set.seed(002)
+hs <- players %>%
+  select(player, HS, Year) 
+
+hsg <- graph_from_data_frame(hs, directed = FALSE)
+
+hsnet <- ggnetwork( hsg )
+hsnet$tooltip <- paste0("Player = ", hsnet$name)
+  
+gg_point_2 <- ggplot(data = hsnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "red", size = 4) +
+  theme_blank() +
+  # geom_nodetext(aes(label = name)) +
+  geom_point_interactive(size=2)
+
+# htmlwidget call
+ggiraph(code = {print(gg_point_2)})
+```
+
+```{r, warning = FALSE}
+set.seed(0034)
+c <- players %>%
+  select(player, college, Year) 
+
+collg <- graph_from_data_frame(c, directed = FALSE)
+
+collnet <- ggnetwork( collg )
+collnet$tooltip <- paste0("Player = ", collnet$name)
+  
+gg_point_3 <- ggplot(data = collnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  # geom_nodetext(aes(label = name)) +
+  geom_point_interactive(size=2)
+
+# htmlwidget call
+ggiraph(code = {print(gg_point_3)})
+```
+
+```{r, warning = FALSE}
+set.seed(0034)
+nba10 <- players %>%
+  select(player, Team, Year) %>%
+  filter( Year == "2010")
+
+nbag10 <- graph_from_data_frame(nba10, directed = TRUE)
+
+nbanet10 <- ggnetwork( nbag10 )
+nbanet10$tooltip <- paste0("Player = ", nbanet10$name)
+  
+gg10 <- ggplot(data = nbanet10
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  geom_nodetext(aes(label = name %in% TEAMS0), check_overlap = TRUE) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "2010 NBA Season Trades"
+  )
+
+# htmlwidget call
+# ggiraph(code = {print(gg_point_4)})
+
+girafe(ggobj = gg10, 
+  options = list(
+    opts_sizing(width = .7),
+    opts_hover_inv(css = "opacity:0.1;"),
+    opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+```
+
+```{r, warning = FALSE}
+set.seed(0035)
+nba11 <- players %>%
+  select(player, Team, Year) %>%
+  filter( Year == "2011")
+
+nbag11 <- graph_from_data_frame(nba11, directed = TRUE)
+
+nbanet11 <- ggnetwork( nbag11 )
+nbanet11$tooltip <- paste0("Player = ", nbanet11$name)
+  
+gg11 <- ggplot(data = nbanet11
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  # geom_nodetext(aes(label = name)) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "2011 NBA Season Trades"
+  )
+
+# htmlwidget call
+# ggiraph(code = {print(gg_point_4)})
+
+girafe(ggobj = gg11, 
+  options = list(
+    opts_sizing(width = .7),
+    opts_hover_inv(css = "opacity:0.1;"),
+    opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+```
+
+
+```{r, warning = FALSE}
+set.seed(0036)
+nba12 <- players %>%
+  select(player, Team, Year) %>%
+  filter( Year == "2012")
+
+nbag12 <- graph_from_data_frame(nba12, directed = TRUE)
+
+nbanet12 <- ggnetwork( nbag12 )
+nbanet12$tooltip <- paste0("Player = ", nbanet12$name)
+  
+gg12 <- ggplot(data = nbanet12
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  # geom_nodetext(aes(label = name)) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "2012 NBA Season Trades"
+  )
+
+# htmlwidget call
+# ggiraph(code = {print(gg_point_4)})
+
+girafe(ggobj = gg12, 
+  options = list(
+    opts_sizing(width = .7),
+    opts_hover_inv(css = "opacity:0.1;"),
+    opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+```
+
