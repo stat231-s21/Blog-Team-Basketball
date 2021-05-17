@@ -6,12 +6,27 @@ output:
   rmdformats::readthedown:
     thumbnails: false
     highlight: NULL
+runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 library(tidyverse)
+library(dplyr)
+library(ggnetwork)
+library(igraph)
+library(ggiraph)
+library(ggplot2)
+library(plotly)
+library(shiny)
+library(shinythemes)
+#import dataset
+path_in <- "/Users/emmagardecki/Documents/junior yr/stat231/Blog-Team-Basketball"
+draft <- read_csv(paste0(path_in, "/draft_allplayers.csv"))
+players <- read_csv(paste0(path_in, "/allPlayers2010-2021.csv"))
+TEAMS0 <- c("ATL", "BOS", "NJN", "BKK", "CHA", "CHI", "CLE", "DAL", "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHX", "POR", "SAC", "SAS", "TOR", "UTA", "WAS", "CHO", "NOH")
 ```
+
 
 # Introduction
 ## Motivation
@@ -33,7 +48,158 @@ Another question we set out to address is how do we measure success? We have dec
 The datasets we utilized for this investigation were scraped from basketball-reference.com. 
 
 # Findings
-## Networks & Analyses
+## Success
+We begin our search for these answers by attempting to quantify player success through various (mostly offensive) game statistics. As mentioned above, the standard that we, as your authors and data scientists, chose to measure success by is VORP due to the fact it is a calculated statistic that attempts to weigh many simple stats. This algorithm, which is included in full in the Reference section, attempts to coerce basketball success into one simple number by weighing the perceived importance of various statistics (such as points per game (PPG) and total rebounds per game (TRB)) in addition to the pure statistics of each player's career. BPM, or Box Plus/Minus, is another statistic we decided to include as it is another option for a calculated box score based metric (). It is anothere weighted estimate of a player's contribution to their team. Where BPM just looks at how much a player helps or hurts their team when they are on the court, VORP takes that and weighs by the number of minutes the player is on the court for, with the idea that better players are playing more minutes. We urge you to take a strong look at the VORP and BPM tabs especially if you are less familiar with basketball. You are also welcome to look into the purer career statistics we have included, nobably field goal percentage, PPG, and TRB. 
+
+```{r, echo = FALSE}
+shinyApp(
+  ui = navbarPage(
+  theme = shinytheme("yeti"),
+  title = "NBA Success",
+  
+  tabPanel(
+    title = "VORP",
+    fluidPage(
+      fluidRow(
+        mainPanel( width = 12,
+                   plotlyOutput(outputId = "vorp", height = "350px", width = "100%"))
+      )
+    )
+  ),
+  
+  tabPanel(
+    title = "BPM",
+    fluidPage(
+      fluidRow(
+        mainPanel( width = 12,
+                   plotlyOutput(outputId = "bpm", height = "350px", width = "100%")
+          
+        )
+      )
+    )
+  ),
+  
+  tabPanel(
+    title = "FGpct",
+    fluidPage(
+      fluidRow(
+        mainPanel(width = 12,
+                  plotlyOutput(outputId = "fgp", height = "350px", width = "100%")
+          
+        )
+      )
+    )
+  ),
+  
+  tabPanel(
+    title = "PTS",
+    fluidPage(
+      fluidRow(
+        mainPanel(width = 12,
+                  plotlyOutput(outputId = "pts", height = "350px", width = "100%")
+          
+        )
+      )
+    )
+  ),
+  
+  tabPanel(
+    title = "TRB",
+    fluidPage(
+      fluidRow(
+        mainPanel(width = 12,
+                  plotlyOutput(outputId = "trb", height = "350px", width = "100%")
+          
+        )
+      )
+    )
+  ),
+  
+
+  hr(),
+  p(em("Developed by Emma Gardecki and Eric Ingram")),
+  p(em("Updated May 17, 2021"))
+),
+
+server = function(input, output) {
+  #vorp
+  output$vorp <- renderPlotly({
+    plot_ly( draft, x = ~Years, y = ~VORP, type = "scatter", mode = "markers", name = ~Player) %>%
+      add_trace(draft, color = ~as.factor(Draft_Year)) %>%
+      layout(title = "Career Success - Value Over Replacement Player", showlegend = FALSE)
+  })
+  
+  #bpm
+  output$bpm <- renderPlotly({
+    plot_ly( draft, x = ~Years, y = ~BPM, type = "scatter", mode = "markers", name = ~Player) %>%
+      add_trace(draft, color = ~as.factor(Draft_Year)) %>%
+      layout(title = "Career Success - Box Plus/Minus", showlegend = FALSE)
+  })
+  
+  #fgp
+  output$fgp <- renderPlotly({
+    plot_ly( draft, x = ~Years, y = ~FGpct, type = "scatter", mode = "markers", name = ~Player) %>%
+      add_trace(draft, color = ~as.factor(Draft_Year)) %>%
+      layout(title = "Career Success - Field Goal %", showlegend = FALSE)
+  })
+  
+  #pts
+  output$pts <- renderPlotly({
+    plot_ly( draft, x = ~Years, y = ~PTS, type = "scatter", mode = "markers", name = ~Player) %>%
+      add_trace(draft, color = ~as.factor(Draft_Year)) %>%
+      layout(title = "Career Success - Points per Game", showlegend = FALSE)
+  })
+  
+  #trb
+  output$trb <- renderPlotly({
+    plot_ly( draft, x = ~Years, y = ~TRB, type = "scatter", mode = "markers", name = ~Player) %>%
+      add_trace(draft, color = ~as.factor(Draft_Year)) %>%
+      layout(title = "Career Success - Rebounds per Game", showlegend = FALSE)
+  })
+  
+}
+)
+```
+
+
+## Networks
+```{r, warning = FALSE}
+p0 <- c("Rajon Rondo", "Kyle Lowry", "JJ Redick", "Paul Millsap", "LaMarcus Aldridge", "Rudy Gay")
+set.seed(0037)
+nbaRR <- players %>%
+  select(player, Team, Year) %>%
+  filter( player %in% p0)
+
+RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+
+RRnet <- ggnetwork( RR )
+RRnet$tooltip <- paste0("Team = ", RRnet$name)
+  
+RRgg <- ggplot(data = RRnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "Connectivity"
+  )
+
+# htmlwidget call
+# ggiraph(code = {print(gg_point_4)})
+
+girafe(ggobj = RRgg, 
+  options = list(
+    opts_sizing(width = .7),
+    opts_hover_inv(css = "opacity:0.1;"),
+    opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+```
+
+
+
 
 
 # Conclusion
@@ -49,9 +215,11 @@ The datasets we utilized for this investigation were scraped from basketball-ref
 
 
 # References
-- # http://curleylab.psych.columbia.edu/netviz/netviz1.html#/45
-
-
+- http://curleylab.psych.columbia.edu/netviz/netviz1.html#/45
+- https://www.basketball-reference.com/about/bpm2.html
+- https://www.reddit.com/r/nba/comments/7rq7t4/how_is_the_advanced_stat_vorpvalue_over/
+- https://www.reddit.com/r/nba/comments/3bkfxj/graph_average_number_of_trades_per_team_per_year/
+- 
 
 Let's clean up the format of that output:
 
@@ -66,17 +234,6 @@ summary(cars) %>%
   column_spec(1:2, width = "1.5in") 
 ```
 
-In a study from the 1920s, fifty cars were used to see how the speed of the car and the distance taken to stop were related.  Speeds ranged between `r min(cars$speed)` and `r max(cars$speed)` mph.  Distances taken to stop ranged between `r min(cars$dist)` and `r max(cars$dist)` feet, with the middle 50% falling between `r as.numeric(quantile(cars$dist)[2])` and `r as.numeric(quantile(cars$dist)[4])` feet.  
-
-You can also embed plots as normal, for example:
-
-```{r figure1, echo=FALSE}
-ggplot(data = cars, aes(x = speed, y = dist)) + 
-  geom_point() + 
-  labs(x = "Speed of car (mph)"
-       , y = "Distance taken to stop (ft)"
-       , title = "cars data (1920s)")
-```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 

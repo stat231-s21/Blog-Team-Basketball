@@ -13,6 +13,7 @@ library(ggnetwork)
 library(igraph)
 library(ggiraph)
 library(ggplot2)
+library(plotly)
 ```
 
 ```{r, echo=FALSE}
@@ -303,4 +304,117 @@ girafe(ggobj = gg12,
     opts_toolbar(position = "bottomright") )
   )
 ```
+
+```{r, warning = FALSE}
+p0 <- c("Rajon Rondo", "Kyle Lowry", "JJ Redick", "Paul Millsap", "LaMarcus Aldridge", "Rudy Gay")
+set.seed(0037)
+nbaRR <- players %>%
+  select(player, Team, Year) %>%
+  filter( player %in% p0)
+
+RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+
+RRnet <- ggnetwork( RR )
+RRnet$tooltip <- paste0("Team = ", RRnet$name)
+  
+RRgg <- ggplot(data = RRnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  # geom_nodetext(aes(label = draft$name)) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "Rajon Rondo Connectivity"
+  )
+
+# htmlwidget call
+# ggiraph(code = {print(gg_point_4)})
+
+girafe(ggobj = RRgg, 
+  options = list(
+    opts_sizing(width = .7),
+    opts_hover_inv(css = "opacity:0.1;"),
+    opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+```
+
+
+
+
+
+
+##SUCCESS
+
+```{r, eval=FALSE}
+library(plotly)
+get_data <- reactive({
+    event.data <- event_data("plotly_selected", source = "subset")
+    data <- draft %>% mutate(show_id = FALSE)
+    if (!is.null(event.data)) {
+      data$show_id[event.data$pointNumber + 1] <- TRUE
+    }
+    data
+  })
+
+renderPlotly({
+    data <- get_data()
+    p <- ggplot(data, aes(x = Years, y = input$yaxchoices, size = Pick, key = Player)) +
+      geom_point(aes(color = "royalblue2"), position = "jitter") + 
+      geom_text(data=subset(data, show_id),aes( Years, PTS, label= Player)
+                , position = position_jitter(width = 20,height = 20), show.legend = FALSE) +
+      labs(x = "Length of career", y = yax_choice_names[yax_choice_values == input$yaxchoices]
+           , title = paste0("Career ", yax_choice_names[yax_choice_values == input$yaxchoices])
+           , subtitle = paste0(input$plotyearvar, " Draft Class")
+           , size = (size_choice_names[size_choice_values == input$sizechoices])) +
+      guides(color = FALSE) +
+      theme( axis.title = element_text(face = "bold"))
+    ggplotly(p, source = "subset") %>% layout(dragmode = "select")
+  })
+
+p
+```
+
+
+```{r, warning=FALSE}
+##FGpct
+plot_ly( draft, x = ~Years, y = ~FGpct, type = "scatter", name = ~Player) %>%
+  add_trace(draft, color = ~as.factor(Draft_Year)) %>%
+  layout(title = "Career Success - Field Goal %", showlegend = FALSE)
+```
+
+```{r}
+##VORP
+plot_ly( draft, x = ~Years, y = ~VORP, type = "scatter", name = ~Player) %>%
+  add_trace(draft, color = ~as.factor(Draft_Year)) %>%
+  layout(title = "Career Success - Value Over Replacement Player", showlegend = FALSE)
+```
+
+```{r}
+##TRB
+plot_ly( draft, x = ~Years, y = ~TRB, type = "scatter", name = ~Player) %>%
+  add_trace(draft, color = ~as.factor(Draft_Year)) %>%
+  layout(title = "Career Success - Rebounds per Game", showlegend = FALSE)
+```
+
+```{r}
+##PTS
+plot_ly( draft, x = ~Years, y = ~PTS, type = "scatter", name = ~Player) %>%
+  add_trace(draft, color = ~as.factor(Draft_Year)) %>%
+  layout(title = "Career Success - Points per Game", showlegend = FALSE)
+```
+
+```{r}
+##BPM
+plot_ly( draft, x = ~Years, y = ~BPM, type = "scatter", name = ~Player) %>%
+  add_trace(draft, color = ~as.factor(Draft_Year)) %>%
+  layout(title = "Career Success - Box Plus/Minus", showlegend = FALSE)
+```
+
+
+
+
+
+
 
