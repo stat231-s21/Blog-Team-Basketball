@@ -21,9 +21,12 @@ library(plotly)
 library(shiny)
 library(shinythemes)
 #import dataset
-path_in <- "/Users/emmagardecki/Documents/junior yr/stat231/Blog-Team-Basketball"
-draft <- read_csv(paste0(path_in, "/draft_allplayers.csv"))
-players <- read_csv(paste0(path_in, "/allPlayers2010-2021.csv"))
+# path_in <- "/Users/emmagardecki/Documents/junior yr/stat231/Blog-Team-Basketball"
+path_in_eric <- ""
+# draft <- read_csv(paste0(path_in, "/draft_allplayers.csv"))
+# players <- read_csv(paste0(path_in, "/allPlayers2010-2021.csv"))
+draft <- read_csv(paste0(path_in_eric, "draft_allplayers.csv"))
+players <- read_csv(paste0(path_in_eric, "allPlayers2010-2021.csv"))
 #all teams
 TEAMS0 <- c("ATL", "BOS", "NJN", "BKK", "CHA", "CHI", "CLE", "DAL", "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHX", "POR", "SAC", "SAS", "TOR", "UTA", "WAS", "CHO", "NOH")
 
