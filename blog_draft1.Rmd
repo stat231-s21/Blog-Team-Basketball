@@ -339,12 +339,41 @@ girafe(ggobj = RRgg,
   )
 ```
 
+```{r, warning = FALSE}
+set.seed(0049)
+coll <- players %>%
+  select(player, college, Year) 
+
+c0 <- graph_from_data_frame(coll, directed = TRUE)
+
+collnet <- ggnetwork( c0 )
+collnet$tooltip <- paste0("Player = ", collnet$name)
+  
+college <- ggplot(data = collnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "royalblue2") +
+  geom_nodes(color = "firebrick2", size = 4) +
+  theme_blank() +
+  # geom_nodetext(aes(label = name)) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "college network"
+  )
+
+girafe(ggobj = college, 
+  options = list(
+    opts_sizing(width = .7),
+    opts_hover_inv(css = "opacity:0.1;"),
+    opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+```
 
 
 
 
 
-##SUCCESS
+##SUCCESS####################################################
 
 ```{r, eval=FALSE}
 library(plotly)

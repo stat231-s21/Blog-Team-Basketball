@@ -48,6 +48,9 @@ pP <- c("Kevin Durant", "James Harden", "Joel Embiid", "Zion Williamson", "Damia
 
 #TRB >~ 10
 pR <- c("Andre Drummond", "Karl-Anthony Towns", "Joel Embiid", "DeAndre Jordan", "Anthony Davis", "Deandre Ayton", "Hassan Whiteside", "Nikola Vučević", "DeMarcus Cousins", "Kevin Love")
+
+#AST >~ 6
+pA <- c("Ja Morant", "Lonzo Ball", "Trae Young", "Ben Simmons", "Elfrid Payton", "Ty Lawson", "Damian Lillard", "John Wall", "Jrue Holiday", "Stephen Curry", "Russell Westbrook", "Kyle Lowry", "Rajon Rondo")
 ```
 
 
@@ -60,10 +63,10 @@ So much of a positive career is determined by the circumstances surrounding it. 
 Another question we set out to address is how do we measure success? We have decided to stick to the most quantitative measures of success, career statistics. Specifically, we are returning to the value over replacement player (VORP) statistic, but our visualizations allow for the user to choose the statistic they want to use to measure success by, from field goal percentage (FG%) to total number of rebounds (TRB). 
 
 ## Research Questions
-* DOES CONNECTION EQUAL CAREER SUCCESS ? (measured in VORP)
+* Does connection equal career success? (measured in VORP)
 * How connected are current NBA players?
 * Is an early connection to NBA stars an indicator of career success?
- How do we measure success?
+* How do we measure success?
 
 # Background
 ## Background on Topic
@@ -140,10 +143,22 @@ shinyApp(
     )
   ),
   
+  tabPanel(
+    title = "AST",
+    fluidPage(
+      fluidRow(
+        mainPanel(width = 12,
+                  plotlyOutput(outputId = "ast", height = "350px", width = "100%")
+          
+        )
+      )
+    )
+  ),
+  
 
   hr(),
   p(em("Developed by Emma Gardecki and Eric Ingram")),
-  p(em("Updated May 17, 2021"))
+  p(em("Updated May 2021"))
 ),
 
 server = function(input, output) {
@@ -182,6 +197,13 @@ server = function(input, output) {
       layout(title = "Career Success - Rebounds per Game", showlegend = FALSE)
   })
   
+  #ast
+  output$ast <- renderPlotly({
+    plot_ly( draft, x = ~Years, y = ~AST, type = "scatter", mode = "markers", name = ~Player) %>%
+      add_trace(draft, color = ~as.factor(Draft_Year)) %>%
+      layout(title = "Career Success - Assists per Game", showlegend = FALSE)
+  })
+  
 }
 )
 ```
@@ -189,8 +211,9 @@ server = function(input, output) {
 
 ## Networks
 ```{r, warning = FALSE}
-p0 <- c("Rajon Rondo", "Kyle Lowry", "JJ Redick", "Paul Millsap", "LaMarcus Aldridge", "Rudy Gay")
 set.seed(0037)
+
+#interesting group
 nbaRR <- players %>%
   select(player, Team, Year) %>%
   filter( player %in% p0)
@@ -211,8 +234,35 @@ RRgg <- ggplot(data = RRnet
     title = "Connectivity"
   )
 
-# htmlwidget call
-# ggiraph(code = {print(gg_point_4)})
+girafe(ggobj = RRgg, 
+  options = list(
+    opts_sizing(width = .7),
+    # opts_hover_inv(css = "opacity:0.1;"),
+    # opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+
+#########################################################
+##best VORP stats
+nbaRR <- players %>%
+  select(player, Team, Year) %>%
+  filter( player %in% pV)
+
+RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+
+RRnet <- ggnetwork( RR )
+RRnet$tooltip <- paste0("Team = ", RRnet$name)
+  
+RRgg <- ggplot(data = RRnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "Connectivity"
+  )
 
 girafe(ggobj = RRgg, 
   options = list(
@@ -223,12 +273,12 @@ girafe(ggobj = RRgg,
   )
 ```
 
-
-```{r}
-set.seed(0037)
+```{r, include = FALSE}
+###############################################
+#best BPM stats
 nbaRR <- players %>%
   select(player, Team, Year) %>%
-  filter( player %in% p0)
+  filter( player %in% pB)
 
 RR <- graph_from_data_frame(nbaRR, directed = TRUE)
 
@@ -246,8 +296,35 @@ RRgg <- ggplot(data = RRnet
     title = "Connectivity"
   )
 
-# htmlwidget call
-# ggiraph(code = {print(gg_point_4)})
+girafe(ggobj = RRgg, 
+  options = list(
+    opts_sizing(width = .7),
+    # opts_hover_inv(css = "opacity:0.1;"),
+    # opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+
+#####################################################
+#best FG% stats
+nbaRR <- players %>%
+  select(player, Team, Year) %>%
+  filter( player %in% pFG)
+
+RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+
+RRnet <- ggnetwork( RR )
+RRnet$tooltip <- paste0("Team = ", RRnet$name)
+  
+RRgg <- ggplot(data = RRnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "Connectivity"
+  )
 
 girafe(ggobj = RRgg, 
   options = list(
@@ -256,6 +333,129 @@ girafe(ggobj = RRgg,
     # opts_hover(css = "fill:red;"),
     opts_toolbar(position = "bottomright") )
   )
+
+############################################
+#best PTS stats
+nbaRR <- players %>%
+  select(player, Team, Year) %>%
+  filter( player %in% pP)
+
+RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+
+RRnet <- ggnetwork( RR )
+RRnet$tooltip <- paste0("Team = ", RRnet$name)
+  
+RRgg <- ggplot(data = RRnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "Connectivity"
+  )
+
+girafe(ggobj = RRgg, 
+  options = list(
+    opts_sizing(width = .7),
+    # opts_hover_inv(css = "opacity:0.1;"),
+    # opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+
+###########################################
+#best TRB stats
+nbaRR <- players %>%
+  select(player, Team, Year) %>%
+  filter( player %in% pR)
+
+RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+
+RRnet <- ggnetwork( RR )
+RRnet$tooltip <- paste0("Team = ", RRnet$name)
+  
+RRgg <- ggplot(data = RRnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "Connectivity"
+  )
+
+girafe(ggobj = RRgg, 
+  options = list(
+    opts_sizing(width = .7),
+    # opts_hover_inv(css = "opacity:0.1;"),
+    # opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+
+################################################
+#best AST stats
+nbaRR <- players %>%
+  select(player, Team, Year) %>%
+  filter( player %in% pA)
+
+RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+
+RRnet <- ggnetwork( RR )
+RRnet$tooltip <- paste0("Team = ", RRnet$name)
+
+RRgg <- ggplot(data = RRnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_point_interactive(size=2) +
+  labs(
+    title = "Connectivity"
+  )
+
+girafe(ggobj = RRgg,
+  options = list(
+    opts_sizing(width = .7),
+    # opts_hover_inv(css = "opacity:0.1;"),
+    # opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+
+```
+
+```{r}
+set.seed(0049)
+coll <- players %>%
+  select(player, college, Year) 
+
+c0 <- graph_from_data_frame(coll, directed = TRUE)
+
+collnet <- ggnetwork( c0 )
+collnet$tooltip <- paste0("Player = ", collnet$name)
+  
+college <- ggplot(data = collnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "royalblue2") +
+  geom_nodes(color = "firebrick2", size = 4) +
+  theme_blank() +
+  # geom_nodetext(aes(label = name)) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "college network"
+  )
+
+girafe(ggobj = college, 
+  options = list(
+    opts_sizing(width = 1.0),
+    opts_hover_inv(css = "opacity:0.1;"),
+    opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+
+# diameter(c0)
 ```
 
 
