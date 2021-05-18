@@ -77,7 +77,7 @@ As for Colleges and High Schools, typically only the "star" players of high scho
 
 
 ## Data Sources
-The dataset we utilized for this investigation was scraped from basketball-reference.com. We scraped each team's roster from 2006-2021, which high school and college each player attended, and some relevant career statistics for each player. In total, 6616 instances of a player were scraped. 
+The dataset we utilized for this investigation was scraped from basketball-reference.com. We scraped each team's roster from 2006-2021, which high school and college each player attended, and some relevant career statistics for each player. In total, 8657 instances of a player were scraped. 
 
 # Findings
 ## Success
