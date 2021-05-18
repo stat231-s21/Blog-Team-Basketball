@@ -221,12 +221,7 @@ Players with a VORP at or above 40 are considered to be great players (), and ar
 We have also broken down the best players from each of the pure stat categories. This again allows for us to look into players that excel in a certain area of the game, such as collecting rebounds, and observe below how their networks look as well. 
 
 ## Networks
-Network science is a field that is 
-
-<<<<<<< HEAD
-=======
-### WRITE WHAT THIS IS HERE
->>>>>>> 3475667c433644fd1697c98934eade8bbbe606c5
+Network science looks at connection. Specifically in these networks we are looking into the question - do more connected players have more successful NBA careers? Below we have attempted to build networks that allow you to visualize this phenomena. 
 
 ```{r, warning = FALSE}
                                              ## VORP network ##
@@ -238,29 +233,33 @@ nbaV <- players %>%
 V <- graph_from_data_frame(nbaV, directed = TRUE)
 
 Vnet <- ggnetwork( V )
-Vnet$tooltip <- paste0("Team = ", Vnet$name)
+Vnet$tooltip <- Vnet$name
   
 Vgg <- ggplot(data = Vnet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
   geom_edges(color = "royalblue2") +
   geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = -.05, nudge_y = .04, check_overlap = TRUE) +
+  geom_nodetext(aes(label = name), nudge_x = .05, nudge_y = .05, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
-    title = "Connectivity"
+    title = "Player Connectivity - Highest VORP",
+    subtitle = "> 40, career All-NBA players"
   )
 
 girafe(ggobj = Vgg, 
   options = list(
-    opts_sizing(width = .7),
+    opts_sizing(width = 1.0),
     # opts_hover_inv(css = "opacity:0.1;"),
     # opts_hover(css = "fill:red;"),
     opts_toolbar(position = "bottomright") )
   )
 ```
+* The diameter of this network is `r get_diameter(V)`. 
+* There are a fair number of connections here, as there was a lot of movement with Kevin Durant, Russell Westbrook, and James Harden. These three players show that 
+* Damian Lillard and Steph Curry are great examples of players that are successful on a single team throughout their career (thusfar). 
+* However, the argument could be made that this network shows that great players tend to gravitate towards each other, support for a common phenomena happening in the NBA currently. 
 
-WRITE WHAT THIS IS HERE
 
 ```{r, echo = FALSE, warning = FALSE}
                                      ## all other networks - nonvis ##
@@ -280,10 +279,11 @@ Bgg <- ggplot(data = Bnet
   geom_edges(color = "royalblue2") +
   geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
+  geom_nodetext(aes(label = name), nudge_x = 0.0, nudge_y = .07, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
-    title = "Connectivity"
+    title = "Player Connectivity - Highest Box Plus/Minus",
+    subtitle = "> 5, a All-Star player"
   )
 
 girafe(ggobj = Bgg, 
@@ -294,26 +294,19 @@ girafe(ggobj = Bgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
+* The diameter of this network is `r diameter(B)`. 
+*
 
-<<<<<<< HEAD
 ```{r, echo = FALSE, warning = FALSE}
 #best FG% stats
 nbaFG <- players %>%
-=======
-### WRITE WHAT THIS IS HERE
-
-```{r, include = FALSE}
-###############################################
-#best BPM stats
-nbaRR <- players %>%
->>>>>>> 3475667c433644fd1697c98934eade8bbbe606c5
   select(player, Team, Year) %>%
   filter( player %in% pFG)
 
 FG <- graph_from_data_frame(nbaFG, directed = TRUE)
 
 FGnet <- ggnetwork( FG )
-FGnet$tooltip <- paste0("Team = ", FGnet$name)
+FGnet$tooltip <- FGnet$name
   
 FGgg <- ggplot(data = FGnet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
@@ -323,7 +316,8 @@ FGgg <- ggplot(data = FGnet
   geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
-    title = "Connectivity"
+    title = "Player Connectivity - Best Field Goal %",
+    subtitle = "> 60% career field goal percentage"
   )
 
 girafe(ggobj = FGgg, 
@@ -334,6 +328,8 @@ girafe(ggobj = FGgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
+* The diameter of this network is `r diameter(FG)`. 
+*
 
 ```{r, echo = FALSE, warning = FALSE}
 #best PTS stats
@@ -344,7 +340,7 @@ nbaP <- players %>%
 P <- graph_from_data_frame(nbaP, directed = TRUE)
 
 Pnet <- ggnetwork( P )
-Pnet$tooltip <- paste0("Team = ", Pnet$name)
+Pnet$tooltip <- Pnet$name
   
 Pgg <- ggplot(data = Pnet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
@@ -354,7 +350,8 @@ Pgg <- ggplot(data = Pnet
   geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
-    title = "Connectivity"
+    title = "Player Connectivity - Highest Points per Game",
+    subtitle = "> 25 points per game in career"
   )
 
 girafe(ggobj = Pgg, 
@@ -365,6 +362,8 @@ girafe(ggobj = Pgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
+* The diameter of this network is `r diameter(P)`. 
+*
 
 ```{r, echo = FALSE, warning = FALSE}
 #best TRB stats
@@ -375,17 +374,18 @@ nbaR <- players %>%
 R <- graph_from_data_frame(nbaR, directed = TRUE)
 
 Rnet <- ggnetwork( R )
-Rnet$tooltip <- paste0("Team = ", Rnet$name)
+Rnet$tooltip <- Rnet$name
   
 Rgg <- ggplot(data = Rnet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
   geom_edges(color = "royalblue2") +
   geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
+  geom_nodetext(aes(label = name), nudge_x = -0.03, nudge_y = .06, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
-    title = "Connectivity"
+    title = "Player Connectivity - Highest Rebounds per Game",
+    subtitle = "> 10 career rebounds per game"
   )
 
 girafe(ggobj = Rgg, 
@@ -396,6 +396,8 @@ girafe(ggobj = Rgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
+* The diameter of this network is `r diameter(R)`. 
+*
 
 ```{r, echo = FALSE, warning = FALSE}
 #best AST stats
@@ -406,17 +408,18 @@ nbaA <- players %>%
 A <- graph_from_data_frame(nbaA, directed = TRUE)
 
 Anet <- ggnetwork( A )
-Anet$tooltip <- paste0("Team = ", Anet$name)
+Anet$tooltip <- Anet$name
 
 Agg <- ggplot(data = Anet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
   geom_edges(color = "royalblue2") +
   geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
+  geom_nodetext(aes(label = name), nudge_x = .04, nudge_y = .05, check_overlap = TRUE) +
   geom_point_interactive(size=2) +
   labs(
-    title = "Connectivity"
+    title = "Player Connectivity - Assists per Game",
+    subtitle = "> 6 career assists per game"
   )
 
 girafe(ggobj = Agg,
@@ -426,7 +429,10 @@ girafe(ggobj = Agg,
     # opts_hover(css = "fill:red;"),
     opts_toolbar(position = "bottomright") )
   )
+
 ```
+* The diameter of this network is `r diameter(A)`. 
+*
 
 ```{r, echo = FALSE, warning = FALSE}
 #interesting group
@@ -444,10 +450,10 @@ gg0 <- ggplot(data = net0
   geom_edges(color = "royalblue2") +
   geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
+  geom_nodetext(aes(label = name), nudge_x = .05, nudge_y = .04, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
-    title = "Connectivity"
+    title = "Player Connectivity - Case Study"
   )
 
 girafe(ggobj = gg0, 
@@ -458,8 +464,10 @@ girafe(ggobj = gg0,
     opts_toolbar(position = "bottomright") )
   )
 
+# get_diameter(cs0)
 ```
-
+* The diameter of this network is `r diameter(cs0)`. 
+*
 
 
 Below is a network of different colleges that players attended. As one can see, there are many colleges with a few players, signaling that they've only had stand
@@ -495,7 +503,7 @@ girafe(ggobj = college,
     opts_toolbar(position = "bottomright") )
   )
 
-# diameter(c0)
+# get_diameter(c0)
 ```
 
 
@@ -513,6 +521,9 @@ girafe(ggobj = college,
 * One-team players
   + Some players have played the majority (or the entirety) of their careers with a single team. This means they have less connections, but they could still be extremely successful. A network analysis could still give us useful information about these players if we look at the network of teammates they had over time but this analysis is beyond the scope of this blog.
 
+* No players prior to the 2006 draft
+  + The dataset that we used here features players from the 2006 draft forward, this excludes some of the current great players such as Lebron James (drafted 2003) and Carmelo Anthony (drafted 2003). 
+
 ## Conclusion
 
 Players that knew each other in HS and college ....
@@ -527,9 +538,6 @@ Players that were more connected tended to....
 
 * One can also make directed networks out of trades and see which teams tend to "bleed" talent or teams that "find" talent
 
-* One can also filter and combine College and High School networks to gain new insights. Which Colleges and High Schools had the most NBA talent? Do certain High Schools' NBA talent tend to feed into a certain College? 
-
-* As the High School and College data also contains location, one can combine networks and spatial analysis to see connections across a map. For example, one can examine whether certain states produce more NBA talent at a High School or a College level. 
 
 
 # References
