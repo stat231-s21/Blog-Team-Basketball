@@ -35,17 +35,17 @@ So much of a positive career is determined by the circumstances surrounding it. 
 Another question we set out to address is how do we measure success? We have decided to stick to the most quantitative measures of success, career statistics. Specifically, we are returning to the value over replacement player (VORP) statistic, but our visualizations allow for the user to choose the statistic they want to use to measure success by, from field goal percentage (FG%) to total number of rebounds (TRB). 
 
 ## Research Questions
-- DOES CONNECTION EQUAL CAREER SUCCESS ? (measured in VORP)
-- How connected are current NBA players?
-- Is an early connection to NBA stars an indicator of career success?
-- How do we measure success?
+* DOES CONNECTION EQUAL CAREER SUCCESS ? (measured in VORP)
+* How connected are current NBA players?
+* Is an early connection to NBA stars an indicator of career success?
+ How do we measure success?
 
 # Background
 ## Background on Topic
 
 
 ## Data Sources
-The datasets we utilized for this investigation were scraped from basketball-reference.com. 
+The dataset we utilized for this investigation was scraped from basketball-reference.com. We scraped each team's roster from 2010-2021, which high school and college each player attended, and some relevant statistics for each player. 
 
 # Findings
 ## Success
@@ -204,9 +204,14 @@ girafe(ggobj = RRgg,
 
 # Conclusion
 ## Limitations
-- no data on AAU teams
-- removed players without college & hs
-- 
+* No data on AAU teams
+  + Many players played on AAU or other similar High School level teams outside of their actual high school. It is certain that we missed some connections there, but this data is not readily available.
+
+* No data on International Teams
+  + Many players played internationally before coming to the NBA. We have no readily available data for those teams so connections were again missed. International players, specifically, may have also not attended High School and College in the U.S. and are therefore excluded from those respective networks.  
+
+* One-team players
+  + Some players have played the majority (or the entirety) of their careers with a single team. This means they have less connections, but they could still be extremely successful. A network analysis could still give us useful information about these players if we look at the network of teammates they had over time but this analysis is beyond the scope of this blog.
 
 ## Conclusion
 
@@ -215,11 +220,10 @@ girafe(ggobj = RRgg,
 
 
 # References
-- http://curleylab.psych.columbia.edu/netviz/netviz1.html#/45
-- https://www.basketball-reference.com/about/bpm2.html
-- https://www.reddit.com/r/nba/comments/7rq7t4/how_is_the_advanced_stat_vorpvalue_over/
-- https://www.reddit.com/r/nba/comments/3bkfxj/graph_average_number_of_trades_per_team_per_year/
-- 
+* http://curleylab.psych.columbia.edu/netviz/netviz1.html#/45
+* https://www.basketball-reference.com/about/bpm2.html
+* https://www.reddit.com/r/nba/comments/7rq7t4/how_is_the_advanced_stat_vorpvalue_over/
+* https://www.reddit.com/r/nba/comments/3bkfxj/graph_average_number_of_trades_per_team_per_year/
 
 Let's clean up the format of that output:
 
