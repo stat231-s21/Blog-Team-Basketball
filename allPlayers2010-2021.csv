@@ -1,4 +1,69 @@
 player,college,Team,Year
+Esteban Batista,,ATL,2006
+Josh Childress,Stanford,ATL,2006
+Tony Delk,Kentucky,ATL,2006
+John Edwards,Kent State University,ATL,2006
+Anthony Grundy,NC State,ATL,2006
+Al Harrington,,ATL,2006
+Royal Ivey,Texas,ATL,2006
+Joe Johnson,Arkansas,ATL,2006
+Tyronn Lue,Nebraska,ATL,2006
+Zaza Pachulia,,ATL,2006
+Donta Smith,Southeastern Illinois College,ATL,2006
+Josh Smith,,ATL,2006
+Salim Stoudamire,Arizona,ATL,2006
+John Thomas,Minnesota,ATL,2006
+Marvin Williams,UNC,ATL,2006
+Esteban Batista,,ATL,2007
+Cedric Bozeman,UCLA,ATL,2007
+Josh Childress,Stanford,ATL,2007
+Speedy Claxton,Hofstra,ATL,2007
+Matt Freije,Vanderbilt,ATL,2007
+Royal Ivey,Texas,ATL,2007
+Anthony Johnson,College of Charleston,ATL,2007
+Joe Johnson,Arkansas,ATL,2007
+Solomon Jones,South Florida,ATL,2007
+Tyronn Lue,Nebraska,ATL,2007
+Stanislav Medvedenko,,ATL,2007
+Zaza Pachulia,,ATL,2007
+Jeremy Richardson,Delta State University,ATL,2007
+Josh Smith,,ATL,2007
+Salim Stoudamire,Arizona,ATL,2007
+Dijon Thompson,UCLA,ATL,2007
+Marvin Williams,UNC,ATL,2007
+Shelden Williams,Duke,ATL,2007
+Lorenzen Wright,Memphis,ATL,2007
+Mike Bibby,Arizona,ATL,2008
+Josh Childress,Stanford,ATL,2008
+Al Horford,Florida,ATL,2008
+Anthony Johnson,College of Charleston,ATL,2008
+Joe Johnson,Arkansas,ATL,2008
+Solomon Jones,South Florida,ATL,2008
+Acie Law,Texas A&M,ATL,2008
+Tyronn Lue,Nebraska,ATL,2008
+Zaza Pachulia,,ATL,2008
+Jeremy Richardson,Delta State University,ATL,2008
+Josh Smith,,ATL,2008
+Salim Stoudamire,Arizona,ATL,2008
+Mario West,Georgia Tech,ATL,2008
+Marvin Williams,UNC,ATL,2008
+Shelden Williams,Duke,ATL,2008
+Lorenzen Wright,Memphis,ATL,2008
+Mike Bibby,Arizona,ATL,2009
+Speedy Claxton,Hofstra,ATL,2009
+Maurice Evans,"Wichita State, Texas",ATL,2009
+Thomas Gardner,Missouri,ATL,2009
+Al Horford,Florida,ATL,2009
+Othello Hunter,Ohio State,ATL,2009
+Joe Johnson,Arkansas,ATL,2009
+Solomon Jones,South Florida,ATL,2009
+Acie Law,Texas A&M,ATL,2009
+Randolph Morris,Kentucky,ATL,2009
+Ronald Murray,"Meridian Community College, Shaw",ATL,2009
+Zaza Pachulia,,ATL,2009
+Josh Smith,,ATL,2009
+Mario West,Georgia Tech,ATL,2009
+Marvin Williams,UNC,ATL,2009
 Mike Bibby,Arizona,ATL,2010
 Jason Collins,Stanford,ATL,2010
 Jamal Crawford,Michigan,ATL,2010
@@ -217,6 +282,71 @@ Cam Reddish,Duke,ATL,2021
 Lou Williams,,ATL,2021
 De'Andre Hunter,Virginia,ATL,2021
 Kris Dunn,Providence,ATL,2021
+Tony Allen,"Butler County Community College, Oklahoma State",BOS,2006
+Marcus Banks,UNLV,BOS,2006
+Mark Blount,Pitt,BOS,2006
+Ricky Davis,Iowa,BOS,2006
+Dan Dickau,"Washington, Gonzaga",BOS,2006
+Ryan Gomes,Providence,BOS,2006
+Gerald Green,,BOS,2006
+Orien Greene,"Florida, Louisiana",BOS,2006
+Al Jefferson,,BOS,2006
+Dwayne Jones,Saint Joseph's,BOS,2006
+Raef LaFrentz,Kansas,BOS,2006
+Michael Olowokandi,University of the Pacific,BOS,2006
+Kendrick Perkins,,BOS,2006
+Paul Pierce,Kansas,BOS,2006
+Justin Reed,Ole Miss,BOS,2006
+Brian Scalabrine,USC,BOS,2006
+Wally Szczerbiak,Miami University,BOS,2006
+Delonte West,Saint Joseph's,BOS,2006
+Tony Allen,"Butler County Community College, Oklahoma State",BOS,2007
+Ryan Gomes,Providence,BOS,2007
+Gerald Green,,BOS,2007
+Al Jefferson,,BOS,2007
+Michael Olowokandi,University of the Pacific,BOS,2007
+Kendrick Perkins,,BOS,2007
+Paul Pierce,Kansas,BOS,2007
+Kevinn Pinkney,Nevada,BOS,2007
+Leon Powe,California,BOS,2007
+Theo Ratliff,Wyoming,BOS,2007
+Allan Ray,Villanova,BOS,2007
+Rajon Rondo,Kentucky,BOS,2007
+Brian Scalabrine,USC,BOS,2007
+Wally Szczerbiak,Miami University,BOS,2007
+Sebastian Telfair,,BOS,2007
+Delonte West,Saint Joseph's,BOS,2007
+Ray Allen,UConn,BOS,2008
+Tony Allen,"Butler County Community College, Oklahoma State",BOS,2008
+P.J. Brown,Louisiana Tech,BOS,2008
+Sam Cassell,Florida State,BOS,2008
+Glen Davis,LSU,BOS,2008
+Kevin Garnett,,BOS,2008
+Eddie House,Arizona State,BOS,2008
+Kendrick Perkins,,BOS,2008
+Paul Pierce,Kansas,BOS,2008
+Scot Pollard,Kansas,BOS,2008
+James Posey,Xavier,BOS,2008
+Leon Powe,California,BOS,2008
+Gabe Pruitt,USC,BOS,2008
+Rajon Rondo,Kentucky,BOS,2008
+Brian Scalabrine,USC,BOS,2008
+Ray Allen,UConn,BOS,2009
+Tony Allen,"Butler County Community College, Oklahoma State",BOS,2009
+Glen Davis,LSU,BOS,2009
+Kevin Garnett,,BOS,2009
+J.R. Giddens,"Kansas, New Mexico",BOS,2009
+Eddie House,Arizona State,BOS,2009
+Stephon Marbury,Georgia Tech,BOS,2009
+Mikki Moore,Nebraska,BOS,2009
+Patrick O'Bryant,Bradley,BOS,2009
+Kendrick Perkins,,BOS,2009
+Paul Pierce,Kansas,BOS,2009
+Leon Powe,California,BOS,2009
+Gabe Pruitt,USC,BOS,2009
+Rajon Rondo,Kentucky,BOS,2009
+Brian Scalabrine,USC,BOS,2009
+Henry Walker,Kansas State,BOS,2009
 Ray Allen,UConn,BOS,2010
 Tony Allen,"Butler County Community College, Oklahoma State",BOS,2010
 Marquis Daniels,Auburn,BOS,2010
@@ -438,6 +568,73 @@ Luke Kornet,Vanderbilt,BOS,2021
 Romeo Langford,Indiana,BOS,2021
 Evan Fournier,,BOS,2021
 Jabari Parker,Duke,BOS,2021
+Vince Carter,UNC,NJN,2006
+Jason Collins,Stanford,NJN,2006
+Marc Jackson,"VCU, Temple",NJN,2006
+Richard Jefferson,Arizona,NJN,2006
+Linton Johnson,Tulane,NJN,2006
+Jason Kidd,California,NJN,2006
+Nenad Krstić,,NJN,2006
+Jeff McInnis,UNC,NJN,2006
+Lamond Murray,California,NJN,2006
+Boštjan Nachbar,,NJN,2006
+Scott Padgett,Kentucky,NJN,2006
+Zoran Planinić,,NJN,2006
+Clifford Robinson,UConn,NJN,2006
+John Thomas,Minnesota,NJN,2006
+Jacque Vaughn,Kansas,NJN,2006
+Antoine Wright,Texas A&M,NJN,2006
+Derrick Zimmerman,Mississippi State,NJN,2006
+Hassan Adams,Arizona,NJN,2007
+Josh Boone,UConn,NJN,2007
+Vince Carter,UNC,NJN,2007
+Jason Collins,Stanford,NJN,2007
+Eddie House,Arizona State,NJN,2007
+Mile Ilić,,NJN,2007
+Richard Jefferson,Arizona,NJN,2007
+Jason Kidd,California,NJN,2007
+Nenad Krstić,,NJN,2007
+Mikki Moore,Nebraska,NJN,2007
+Boštjan Nachbar,,NJN,2007
+Bernard Robinson,Michigan,NJN,2007
+Clifford Robinson,UConn,NJN,2007
+Marcus Williams,UConn,NJN,2007
+Antoine Wright,Texas A&M,NJN,2007
+Maurice Ager,Michigan State,NJN,2008
+Malik Allen,Villanova,NJN,2008
+Darrell Armstrong,Fayetteville State University,NJN,2008
+Josh Boone,UConn,NJN,2008
+Vince Carter,UNC,NJN,2008
+Jason Collins,Stanford,NJN,2008
+DeSagana Diop,,NJN,2008
+Eddie Gill,Weber State,NJN,2008
+Devin Harris,Wisconsin,NJN,2008
+Trenton Hassell,Austin Peay State University,NJN,2008
+Richard Jefferson,Arizona,NJN,2008
+Jason Kidd,California,NJN,2008
+Nenad Krstić,,NJN,2008
+Jamaal Magloire,Kentucky,NJN,2008
+Boštjan Nachbar,,NJN,2008
+Stromile Swift,LSU,NJN,2008
+Billy Thomas,Kansas,NJN,2008
+Marcus Williams,UConn,NJN,2008
+Sean Williams,Boston College,NJN,2008
+Antoine Wright,Texas A&M,NJN,2008
+Maurice Ager,Michigan State,NJN,2009
+Ryan Anderson,California,NJN,2009
+Josh Boone,UConn,NJN,2009
+Vince Carter,UNC,NJN,2009
+Keyon Dooling,Missouri,NJN,2009
+Chris Douglas-Roberts,Memphis,NJN,2009
+Devin Harris,Wisconsin,NJN,2009
+Trenton Hassell,Austin Peay State University,NJN,2009
+Jarvis Hayes,"Western Carolina University, Georgia",NJN,2009
+Yi Jianlian,,NJN,2009
+Brook Lopez,Stanford,NJN,2009
+Eduardo Nájera,Oklahoma,NJN,2009
+Bobby Simmons,DePaul,NJN,2009
+Stromile Swift,LSU,NJN,2009
+Sean Williams,Boston College,NJN,2009
 Rafer Alston,Fresno State,NJN,2010
 Tony Battie,Texas Tech,NJN,2010
 Josh Boone,UConn,NJN,2010
@@ -676,6 +873,79 @@ Mike James,Lamar,BRK,2021
 Andre Roberson,Colorado,BRK,2021
 Spencer Dinwiddie,Colorado,BRK,2021
 Iman Shumpert,Georgia Tech,BRK,2021
+Alan Anderson,Michigan State,CHA,2006
+Lonny Baxter,Maryland,CHA,2006
+Keith Bogans,Kentucky,CHA,2006
+Primož Brezec,,CHA,2006
+Kevin Burleson,Minnesota,CHA,2006
+Matt Carroll,Notre Dame,CHA,2006
+Melvin Ely,Fresno State,CHA,2006
+Raymond Felton,UNC,CHA,2006
+Jumaine Jones,Georgia,CHA,2006
+Brevin Knight,Stanford,CHA,2006
+Sean May,UNC,CHA,2006
+Emeka Okafor,UConn,CHA,2006
+Bernard Robinson,Michigan,CHA,2006
+Kareem Rush,Missouri,CHA,2006
+Jake Voskuhl,UConn,CHA,2006
+Gerald Wallace,Alabama,CHA,2006
+Alan Anderson,Michigan State,CHA,2007
+Derek Anderson,"Ohio State, Kentucky",CHA,2007
+Primož Brezec,,CHA,2007
+Matt Carroll,Notre Dame,CHA,2007
+Melvin Ely,Fresno State,CHA,2007
+Raymond Felton,UNC,CHA,2007
+Othella Harrington,Georgetown,CHA,2007
+Walter Herrmann,,CHA,2007
+Ryan Hollins,UCLA,CHA,2007
+Brevin Knight,Stanford,CHA,2007
+Sean May,UNC,CHA,2007
+Jeff McInnis,UNC,CHA,2007
+Adam Morrison,Gonzaga,CHA,2007
+Emeka Okafor,UConn,CHA,2007
+Bernard Robinson,Michigan,CHA,2007
+Jake Voskuhl,UConn,CHA,2007
+Gerald Wallace,Alabama,CHA,2007
+Eric Williams,Providence,CHA,2007
+Derek Anderson,"Ohio State, Kentucky",CHA,2008
+Earl Boykins,Eastern Michigan,CHA,2008
+Primož Brezec,,CHA,2008
+Matt Carroll,Notre Dame,CHA,2008
+Jermareo Davidson,Alabama,CHA,2008
+Jared Dudley,Boston College,CHA,2008
+Raymond Felton,UNC,CHA,2008
+Othella Harrington,Georgetown,CHA,2008
+Walter Herrmann,,CHA,2008
+Ryan Hollins,UCLA,CHA,2008
+Jeff McInnis,UNC,CHA,2008
+Nazr Mohammed,Kentucky,CHA,2008
+Emeka Okafor,UConn,CHA,2008
+Jason Richardson,Michigan State,CHA,2008
+Gerald Wallace,Alabama,CHA,2008
+Alexis Ajinça,,CHA,2009
+D.J. Augustin,Texas,CHA,2009
+Raja Bell,"Boston University, Florida International University",CHA,2009
+Andre Brown,DePaul,CHA,2009
+Shannon Brown,Michigan State,CHA,2009
+Matt Carroll,Notre Dame,CHA,2009
+Boris Diaw,,CHA,2009
+DeSagana Diop,,CHA,2009
+Jared Dudley,Boston College,CHA,2009
+Raymond Felton,UNC,CHA,2009
+Ryan Hollins,UCLA,CHA,2009
+Juwan Howard,Michigan,CHA,2009
+Dontell Jefferson,Arkansas,CHA,2009
+Linton Johnson,Tulane,CHA,2009
+Dwayne Jones,Saint Joseph's,CHA,2009
+Cartier Martin,Kansas State,CHA,2009
+Sean May,UNC,CHA,2009
+Nazr Mohammed,Kentucky,CHA,2009
+Adam Morrison,Gonzaga,CHA,2009
+Emeka Okafor,UConn,CHA,2009
+Vladimir Radmanović,,CHA,2009
+Jason Richardson,Michigan State,CHA,2009
+Sean Singletary,Virginia,CHA,2009
+Gerald Wallace,Alabama,CHA,2009
 Alexis Ajinça,,CHA,2010
 D.J. Augustin,Texas,CHA,2010
 Raja Bell,"Boston University, Florida International University",CHA,2010
@@ -887,6 +1157,77 @@ Vernon Carey Jr.,Duke,CHO,2021
 Nick Richards,Kentucky,CHO,2021
 Grant Riller  (TW),College of Charleston,CHO,2021
 Nate Darling  (TW),"UAB, University of Delaware",CHO,2021
+Malik Allen,Villanova,CHI,2006
+Eddie Basden,UNC Charlotte,CHI,2006
+Tyson Chandler,,CHI,2006
+Luol Deng,Duke,CHI,2006
+Chris Duhon,Duke,CHI,2006
+Ben Gordon,UConn,CHI,2006
+Stephen Graham,"Central Florida, Oklahoma State",CHI,2006
+Othella Harrington,Georgetown,CHI,2006
+Kirk Hinrich,Kansas,CHI,2006
+Randy Holcomb,"Fresno State, San Diego State",CHI,2006
+Randy Livingston,LSU,CHI,2006
+Andrés Nocioni,,CHI,2006
+Jannero Pargo,Arkansas,CHI,2006
+Eric Piatkowski,Nebraska,CHI,2006
+Luke Schenscher,Georgia Tech,CHI,2006
+Darius Songaila,Wake Forest,CHI,2006
+Mike Sweetney,Georgetown,CHI,2006
+James Thomas,Texas,CHI,2006
+Tim Thomas,Villanova,CHI,2006
+Malik Allen,Villanova,CHI,2007
+Andre Barrett,Seton Hall,CHI,2007
+P.J. Brown,Louisiana Tech,CHI,2007
+Luol Deng,Duke,CHI,2007
+Chris Duhon,Duke,CHI,2007
+Ben Gordon,UConn,CHI,2007
+Adrian Griffin,Seton Hall,CHI,2007
+Kirk Hinrich,Kansas,CHI,2007
+Viktor Khryapa,,CHI,2007
+Andrés Nocioni,,CHI,2007
+Thabo Sefolosha,,CHI,2007
+Mike Sweetney,Georgetown,CHI,2007
+Tyrus Thomas,LSU,CHI,2007
+Ben Wallace,Virginia Union University,CHI,2007
+Shannon Brown,Michigan State,CHI,2008
+Luol Deng,Duke,CHI,2008
+Chris Duhon,Duke,CHI,2008
+Thomas Gardner,Missouri,CHI,2008
+Drew Gooden,Kansas,CHI,2008
+Ben Gordon,UConn,CHI,2008
+Aaron Gray,Pitt,CHI,2008
+Adrian Griffin,Seton Hall,CHI,2008
+Kirk Hinrich,Kansas,CHI,2008
+Larry Hughes,Saint Louis,CHI,2008
+Viktor Khryapa,,CHI,2008
+Demetris Nichols,Syracuse,CHI,2008
+Joakim Noah,Florida,CHI,2008
+Andrés Nocioni,,CHI,2008
+Thabo Sefolosha,,CHI,2008
+Cedric Simmons,NC State,CHI,2008
+Joe Smith,Maryland,CHI,2008
+Tyrus Thomas,LSU,CHI,2008
+Ben Wallace,Virginia Union University,CHI,2008
+Luol Deng,Duke,CHI,2009
+Drew Gooden,Kansas,CHI,2009
+Ben Gordon,UConn,CHI,2009
+Aaron Gray,Pitt,CHI,2009
+Kirk Hinrich,Kansas,CHI,2009
+Larry Hughes,Saint Louis,CHI,2009
+Lindsey Hunter,"Alcorn State, Jackson State University",CHI,2009
+Linton Johnson,Tulane,CHI,2009
+Brad Miller,Purdue,CHI,2009
+Demetris Nichols,Syracuse,CHI,2009
+Joakim Noah,Florida,CHI,2009
+Andrés Nocioni,,CHI,2009
+Anthony Roberson,Florida,CHI,2009
+Derrick Rose,Memphis,CHI,2009
+John Salmons,Miami (FL),CHI,2009
+Thabo Sefolosha,,CHI,2009
+Cedric Simmons,NC State,CHI,2009
+Tim Thomas,Villanova,CHI,2009
+Tyrus Thomas,LSU,CHI,2009
 Joe Alexander,West Virginia,CHI,2010
 Devin Brown,Texas-San Antonio,CHI,2010
 Luol Deng,Duke,CHI,2010
@@ -1094,6 +1435,77 @@ Adam Mokoka  (TW),,CHI,2021
 Troy Brown Jr.,Oregon,CHI,2021
 Devon Dotson  (TW),Kansas,CHI,2021
 Al-Farouq Aminu,Wake Forest,CHI,2021
+Martynas Andriuškevičius,,CLE,2006
+Drew Gooden,Kansas,CLE,2006
+Stephen Graham,"Central Florida, Oklahoma State",CLE,2006
+Zendon Hamilton,St. John's,CLE,2006
+Alan Henderson,Indiana,CLE,2006
+Larry Hughes,Saint Louis,CLE,2006
+Zydrunas Ilgauskas,,CLE,2006
+Luke Jackson,Oregon,CLE,2006
+LeBron James,,CLE,2006
+Damon Jones,Houston,CLE,2006
+Donyell Marshall,UConn,CLE,2006
+Ronald Murray,"Meridian Community College, Shaw",CLE,2006
+Ira Newble,Miami University,CLE,2006
+Sasha Pavlović,,CLE,2006
+Eric Snow,Michigan State,CLE,2006
+Anderson Varejão,,CLE,2006
+Mike Wilks,Rice University,CLE,2006
+Shannon Brown,Michigan State,CLE,2007
+Daniel Gibson,Texas,CLE,2007
+Drew Gooden,Kansas,CLE,2007
+Larry Hughes,Saint Louis,CLE,2007
+Zydrunas Ilgauskas,,CLE,2007
+LeBron James,,CLE,2007
+Damon Jones,Houston,CLE,2007
+Dwayne Jones,Saint Joseph's,CLE,2007
+Donyell Marshall,UConn,CLE,2007
+Ira Newble,Miami University,CLE,2007
+Sasha Pavlović,,CLE,2007
+Scot Pollard,Kansas,CLE,2007
+Eric Snow,Michigan State,CLE,2007
+Anderson Varejão,,CLE,2007
+David Wesley,Baylor,CLE,2007
+Lance Allred,"Utah, Weber State",CLE,2008
+Devin Brown,Texas-San Antonio,CLE,2008
+Shannon Brown,Michigan State,CLE,2008
+Kaniel Dickens,"Tyler Junior College, Idaho",CLE,2008
+Daniel Gibson,Texas,CLE,2008
+Drew Gooden,Kansas,CLE,2008
+Larry Hughes,Saint Louis,CLE,2008
+Zydrunas Ilgauskas,,CLE,2008
+LeBron James,,CLE,2008
+Damon Jones,Houston,CLE,2008
+Dwayne Jones,Saint Joseph's,CLE,2008
+Donyell Marshall,UConn,CLE,2008
+Ira Newble,Miami University,CLE,2008
+Demetris Nichols,Syracuse,CLE,2008
+Sasha Pavlović,,CLE,2008
+Cedric Simmons,NC State,CLE,2008
+Joe Smith,Maryland,CLE,2008
+Eric Snow,Michigan State,CLE,2008
+Wally Szczerbiak,Miami University,CLE,2008
+Billy Thomas,Kansas,CLE,2008
+Anderson Varejão,,CLE,2008
+Ben Wallace,Virginia Union University,CLE,2008
+Delonte West,Saint Joseph's,CLE,2008
+Daniel Gibson,Texas,CLE,2009
+J.J. Hickson,NC State,CLE,2009
+Zydrunas Ilgauskas,,CLE,2009
+Darnell Jackson,Kansas,CLE,2009
+LeBron James,,CLE,2009
+Trey Johnson,"Alcorn State, Jackson State University",CLE,2009
+Tarence Kinsey,South Carolina,CLE,2009
+Sasha Pavlović,,CLE,2009
+Joe Smith,Maryland,CLE,2009
+Wally Szczerbiak,Miami University,CLE,2009
+Anderson Varejão,,CLE,2009
+Ben Wallace,Virginia Union University,CLE,2009
+Delonte West,Saint Joseph's,CLE,2009
+Jawad Williams,UNC,CLE,2009
+Mo Williams,Alabama,CLE,2009
+Lorenzen Wright,Memphis,CLE,2009
 Daniel Gibson,Texas,CLE,2010
 Danny Green,UNC,CLE,2010
 J.J. Hickson,NC State,CLE,2010
@@ -1339,6 +1751,74 @@ Mfiondu Kabengele,Florida State,CLE,2021
 Matthew Dellavedova,Saint Mary's,CLE,2021
 Jeremiah Martin  (TW),Memphis,CLE,2021
 Quinn Cook,Duke,CLE,2021
+Darrell Armstrong,Fayetteville State University,DAL,2006
+Doug Christie,Pepperdine,DAL,2006
+Erick Dampier,Mississippi State,DAL,2006
+Marquis Daniels,Auburn,DAL,2006
+DeSagana Diop,,DAL,2006
+Adrian Griffin,Seton Hall,DAL,2006
+Devin Harris,Wisconsin,DAL,2006
+Josh Howard,Wake Forest,DAL,2006
+Didier Ilunga-Mbenga,,DAL,2006
+Rawle Marshall,"Ball State University, Oakland",DAL,2006
+Dirk Nowitzki,,DAL,2006
+Pavel Podkolzin,,DAL,2006
+Josh Powell,NC State,DAL,2006
+Jerry Stackhouse,UNC,DAL,2006
+Jason Terry,Arizona,DAL,2006
+Keith Van Horn,Utah,DAL,2006
+Maurice Ager,Michigan State,DAL,2007
+J.J. Barea,Northeastern University,DAL,2007
+Greg Buckner,Clemson,DAL,2007
+Austin Croshere,Providence,DAL,2007
+Erick Dampier,Mississippi State,DAL,2007
+DeSagana Diop,,DAL,2007
+Devean George,Augsburg College,DAL,2007
+Devin Harris,Wisconsin,DAL,2007
+Josh Howard,Wake Forest,DAL,2007
+Didier Ilunga-Mbenga,,DAL,2007
+Anthony Johnson,College of Charleston,DAL,2007
+Pops Mensah-Bonsu,George Washington,DAL,2007
+Dirk Nowitzki,,DAL,2007
+Jerry Stackhouse,UNC,DAL,2007
+Jason Terry,Arizona,DAL,2007
+Kevin Willis,Michigan State,DAL,2007
+Maurice Ager,Michigan State,DAL,2008
+Malik Allen,Villanova,DAL,2008
+J.J. Barea,Northeastern University,DAL,2008
+Brandon Bass,LSU,DAL,2008
+Erick Dampier,Mississippi State,DAL,2008
+DeSagana Diop,,DAL,2008
+Nick Fazekas,Nevada,DAL,2008
+Devean George,Augsburg College,DAL,2008
+Devin Harris,Wisconsin,DAL,2008
+Trenton Hassell,Austin Peay State University,DAL,2008
+Josh Howard,Wake Forest,DAL,2008
+Juwan Howard,Michigan,DAL,2008
+Eddie Jones,Temple,DAL,2008
+Jason Kidd,California,DAL,2008
+Tyronn Lue,Nebraska,DAL,2008
+Jamaal Magloire,Kentucky,DAL,2008
+Dirk Nowitzki,,DAL,2008
+Jerry Stackhouse,UNC,DAL,2008
+Jason Terry,Arizona,DAL,2008
+Antoine Wright,Texas A&M,DAL,2008
+J.J. Barea,Northeastern University,DAL,2009
+Brandon Bass,LSU,DAL,2009
+Matt Carroll,Notre Dame,DAL,2009
+Erick Dampier,Mississippi State,DAL,2009
+DeSagana Diop,,DAL,2009
+Devean George,Augsburg College,DAL,2009
+Gerald Green,,DAL,2009
+Ryan Hollins,UCLA,DAL,2009
+Josh Howard,Wake Forest,DAL,2009
+Jason Kidd,California,DAL,2009
+Dirk Nowitzki,,DAL,2009
+James Singleton,Murray State,DAL,2009
+Jerry Stackhouse,UNC,DAL,2009
+Jason Terry,Arizona,DAL,2009
+Shawne Williams,Memphis,DAL,2009
+Antoine Wright,Texas A&M,DAL,2009
 J.J. Barea,Northeastern University,DAL,2010
 Rodrigue Beaubois,,DAL,2010
 Caron Butler,UConn,DAL,2010
@@ -1568,6 +2048,77 @@ Nate Hinton  (TW),Houston,DAL,2021
 Tyler Bey  (TW),Colorado,DAL,2021
 J.J. Redick,Duke,DAL,2021
 Tyrell Terry,Stanford,DAL,2021
+Carmelo Anthony,Syracuse,DEN,2006
+Earl Boykins,Eastern Michigan,DEN,2006
+Greg Buckner,Clemson,DEN,2006
+Marcus Camby,UMass,DEN,2006
+Howard Eisley,Boston College,DEN,2006
+Francisco Elson,California,DEN,2006
+Reggie Evans,Iowa,DEN,2006
+Nenê Hilário,,DEN,2006
+Julius Hodge,NC State,DEN,2006
+DerMarr Johnson,Cincinnati,DEN,2006
+Linas Kleiza,Missouri,DEN,2006
+Voshon Lenard,Minnesota,DEN,2006
+Kenyon Martin,Cincinnati,DEN,2006
+Andre Miller,Utah,DEN,2006
+Eduardo Nájera,Oklahoma,DEN,2006
+Ruben Patterson,Cincinnati,DEN,2006
+Bryon Russell,Cal State Long Beach,DEN,2006
+Charles Smith,New Mexico,DEN,2006
+Earl Watson,UCLA,DEN,2006
+Carmelo Anthony,Syracuse,DEN,2007
+Steve Blake,Maryland,DEN,2007
+Earl Boykins,Eastern Michigan,DEN,2007
+Marcus Camby,UMass,DEN,2007
+Anthony Carter,Hawaii,DEN,2007
+Yakhouba Diawara,Pepperdine,DEN,2007
+Reggie Evans,Iowa,DEN,2007
+Nenê Hilário,,DEN,2007
+Julius Hodge,NC State,DEN,2007
+Allen Iverson,Georgetown,DEN,2007
+DerMarr Johnson,Cincinnati,DEN,2007
+Linas Kleiza,Missouri,DEN,2007
+Kenyon Martin,Cincinnati,DEN,2007
+Andre Miller,Utah,DEN,2007
+Eduardo Nájera,Oklahoma,DEN,2007
+Jamal Sampson,California,DEN,2007
+J.R. Smith,,DEN,2007
+Joe Smith,Maryland,DEN,2007
+Carmelo Anthony,Syracuse,DEN,2008
+Chucky Atkins,South Florida,DEN,2008
+Marcus Camby,UMass,DEN,2008
+Anthony Carter,Hawaii,DEN,2008
+Yakhouba Diawara,Pepperdine,DEN,2008
+Taurean Green,Florida,DEN,2008
+Nenê Hilário,,DEN,2008
+Steven Hunter,DePaul,DEN,2008
+Allen Iverson,Georgetown,DEN,2008
+Bobby Jones,Washington,DEN,2008
+Linas Kleiza,Missouri,DEN,2008
+Kenyon Martin,Cincinnati,DEN,2008
+Jelani McCoy,UCLA,DEN,2008
+Eduardo Nájera,Oklahoma,DEN,2008
+J.R. Smith,,DEN,2008
+Von Wafer,Florida State,DEN,2008
+Mike Wilks,Rice University,DEN,2008
+Chris Andersen,Blinn College,DEN,2009
+Carmelo Anthony,Syracuse,DEN,2009
+Chucky Atkins,South Florida,DEN,2009
+Renaldo Balkman,South Carolina,DEN,2009
+Chauncey Billups,Colorado,DEN,2009
+Anthony Carter,Hawaii,DEN,2009
+Jason Hart,Syracuse,DEN,2009
+Nenê Hilário,,DEN,2009
+Juwan Howard,Michigan,DEN,2009
+Allen Iverson,Georgetown,DEN,2009
+Dahntay Jones,"Rutgers University, Duke",DEN,2009
+Linas Kleiza,Missouri,DEN,2009
+Kenyon Martin,Cincinnati,DEN,2009
+Johan Petro,,DEN,2009
+Cheikh Samb,,DEN,2009
+J.R. Smith,,DEN,2009
+Sonny Weems,Arkansas,DEN,2009
 Arron Afflalo,UCLA,DEN,2010
 Malik Allen,Villanova,DEN,2010
 Chris Andersen,Blinn College,DEN,2010
@@ -1780,6 +2331,72 @@ Aaron Gordon,Arizona,DEN,2021
 Shaquille Harrison  (TW),Tulsa,DEN,2021
 Austin Rivers,Duke,DEN,2021
 JaVale McGee,Nevada,DEN,2021
+Alex Acker,Pepperdine,DET,2006
+Carlos Arroyo,Florida International University,DET,2006
+Chauncey Billups,Colorado,DET,2006
+Kelvin Cato,"University of South Alabama, Iowa State",DET,2006
+Dale Davis,Clemson,DET,2006
+Carlos Delfino,,DET,2006
+Tony Delk,Kentucky,DET,2006
+Maurice Evans,"Wichita State, Texas",DET,2006
+Richard Hamilton,UConn,DET,2006
+Lindsey Hunter,"Alcorn State, Jackson State University",DET,2006
+Amir Johnson,,DET,2006
+Jason Maxiell,Cincinnati,DET,2006
+Antonio McDyess,Alabama,DET,2006
+Darko Miličić,,DET,2006
+Tayshaun Prince,Kentucky,DET,2006
+Ben Wallace,Virginia Union University,DET,2006
+Rasheed Wallace,UNC,DET,2006
+Chauncey Billups,Colorado,DET,2007
+Will Blalock,Iowa State,DET,2007
+Dale Davis,Clemson,DET,2007
+Carlos Delfino,,DET,2007
+Ronald Dupree,LSU,DET,2007
+Richard Hamilton,UConn,DET,2007
+Lindsey Hunter,"Alcorn State, Jackson State University",DET,2007
+Amir Johnson,,DET,2007
+Jason Maxiell,Cincinnati,DET,2007
+Antonio McDyess,Alabama,DET,2007
+Nazr Mohammed,Kentucky,DET,2007
+Ronald Murray,"Meridian Community College, Shaw",DET,2007
+Tayshaun Prince,Kentucky,DET,2007
+Rasheed Wallace,UNC,DET,2007
+Chris Webber,Michigan,DET,2007
+Arron Afflalo,UCLA,DET,2008
+Chauncey Billups,Colorado,DET,2008
+Primož Brezec,,DET,2008
+Juan Dixon,Maryland,DET,2008
+Ronald Dupree,LSU,DET,2008
+Richard Hamilton,UConn,DET,2008
+Jarvis Hayes,"Western Carolina University, Georgia",DET,2008
+Walter Herrmann,,DET,2008
+Lindsey Hunter,"Alcorn State, Jackson State University",DET,2008
+Amir Johnson,,DET,2008
+Jason Maxiell,Cincinnati,DET,2008
+Antonio McDyess,Alabama,DET,2008
+Nazr Mohammed,Kentucky,DET,2008
+Ronald Murray,"Meridian Community College, Shaw",DET,2008
+Tayshaun Prince,Kentucky,DET,2008
+Theo Ratliff,Wyoming,DET,2008
+Cheikh Samb,,DET,2008
+Rodney Stuckey,Eastern Washington,DET,2008
+Rasheed Wallace,UNC,DET,2008
+Alex Acker,Pepperdine,DET,2009
+Arron Afflalo,UCLA,DET,2009
+Chauncey Billups,Colorado,DET,2009
+Kwame Brown,,DET,2009
+Will Bynum,"Arizona, Georgia Tech",DET,2009
+Richard Hamilton,UConn,DET,2009
+Walter Herrmann,,DET,2009
+Allen Iverson,Georgetown,DET,2009
+Amir Johnson,,DET,2009
+Jason Maxiell,Cincinnati,DET,2009
+Antonio McDyess,Alabama,DET,2009
+Tayshaun Prince,Kentucky,DET,2009
+Walter Sharpe,"Mississippi State, UAB",DET,2009
+Rodney Stuckey,Eastern Washington,DET,2009
+Rasheed Wallace,UNC,DET,2009
 Chucky Atkins,South Florida,DET,2010
 Kwame Brown,,DET,2010
 Will Bynum,"Arizona, Georgia Tech",DET,2010
@@ -1985,6 +2602,76 @@ Dennis Smith Jr.,NC State,DET,2021
 Deividas Sirvydis,,DET,2021
 Cory Joseph,Texas,DET,2021
 Rodney McGruder,Kansas State,DET,2021
+Andris Biedriņš,,GSW,2006
+Will Bynum,"Arizona, Georgia Tech",GSW,2006
+Žarko Čabarkapa,,GSW,2006
+Calbert Cheaney,Indiana,GSW,2006
+Baron Davis,UCLA,GSW,2006
+Ike Diogu,Arizona State,GSW,2006
+Mike Dunleavy,Duke,GSW,2006
+Monta Ellis,,GSW,2006
+Derek Fisher,Little Rock,GSW,2006
+Adonal Foyle,Colgate,GSW,2006
+Aaron Miles,Kansas,GSW,2006
+Troy Murphy,Notre Dame,GSW,2006
+Mickaël Piétrus,,GSW,2006
+Jason Richardson,Michigan State,GSW,2006
+Chris Taft,Pitt,GSW,2006
+Kelenna Azubuike,Kentucky,GSW,2007
+Matt Barnes,UCLA,GSW,2007
+Andris Biedriņš,,GSW,2007
+Baron Davis,UCLA,GSW,2007
+Ike Diogu,Arizona State,GSW,2007
+Mike Dunleavy,Duke,GSW,2007
+Monta Ellis,,GSW,2007
+Adonal Foyle,Colgate,GSW,2007
+Al Harrington,,GSW,2007
+Stephen Jackson,Butler County Community College,GSW,2007
+Šarūnas Jasikevičius,Maryland,GSW,2007
+Renaldo Major,"South Plains College, Fresno State",GSW,2007
+Keith McLeod,Bowling Green,GSW,2007
+Troy Murphy,Notre Dame,GSW,2007
+Patrick O'Bryant,Bradley,GSW,2007
+Mickaël Piétrus,,GSW,2007
+Josh Powell,NC State,GSW,2007
+Jason Richardson,Michigan State,GSW,2007
+Anthony Roberson,Florida,GSW,2007
+Dajuan Wagner,Memphis,GSW,2007
+Kelenna Azubuike,Kentucky,GSW,2008
+Matt Barnes,UCLA,GSW,2008
+Marco Belinelli,,GSW,2008
+Andris Biedriņš,,GSW,2008
+Austin Croshere,Providence,GSW,2008
+Baron Davis,UCLA,GSW,2008
+Monta Ellis,,GSW,2008
+Al Harrington,,GSW,2008
+Troy Hudson,"Missouri, Southern Illinois",GSW,2008
+Didier Ilunga-Mbenga,,GSW,2008
+Stephen Jackson,Butler County Community College,GSW,2008
+Stéphane Lasme,UMass,GSW,2008
+Patrick O'Bryant,Bradley,GSW,2008
+Kosta Perović,,GSW,2008
+Mickaël Piétrus,,GSW,2008
+C.J. Watson,Tennessee,GSW,2008
+Chris Webber,Michigan,GSW,2008
+Brandan Wright,UNC,GSW,2008
+Kelenna Azubuike,Kentucky,GSW,2009
+Marco Belinelli,,GSW,2009
+Andris Biedriņš,,GSW,2009
+Jamal Crawford,Michigan,GSW,2009
+Jermareo Davidson,Alabama,GSW,2009
+Monta Ellis,,GSW,2009
+Al Harrington,,GSW,2009
+Stephen Jackson,Butler County Community College,GSW,2009
+Rob Kurz,Notre Dame,GSW,2009
+Corey Maggette,Duke,GSW,2009
+Anthony Morrow,Georgia Tech,GSW,2009
+DeMarcus Nelson,Duke,GSW,2009
+Anthony Randolph,LSU,GSW,2009
+Ronny Turiaf,Gonzaga,GSW,2009
+C.J. Watson,Tennessee,GSW,2009
+Marcus Williams,UConn,GSW,2009
+Brandan Wright,UNC,GSW,2009
 Kelenna Azubuike,Kentucky,GSW,2010
 Raja Bell,"Boston University, Florida International University",GSW,2010
 Andris Biedriņš,,GSW,2010
@@ -2198,6 +2885,80 @@ Nico Mannion  (TW),Arizona,GSW,2021
 Alen Smailagić,,GSW,2021
 Jordan Bell  (TW),Oregon,GSW,2021
 Klay Thompson,Washington State,GSW,2021
+Rafer Alston,Fresno State,HOU,2006
+Derek Anderson,"Ohio State, Kentucky",HOU,2006
+Jon Barry,"University of the Pacific, Georgia Tech",HOU,2006
+Lonny Baxter,Maryland,HOU,2006
+Keith Bogans,Kentucky,HOU,2006
+Ryan Bowen,Iowa,HOU,2006
+Rick Brunson,Temple,HOU,2006
+Josh Davis,Wyoming,HOU,2006
+Richie Frahm,Gonzaga,HOU,2006
+Stephen Graham,"Central Florida, Oklahoma State",HOU,2006
+Chuck Hayes,Kentucky,HOU,2006
+Luther Head,Illinois,HOU,2006
+Juwan Howard,Michigan,HOU,2006
+Maciej Lampe,,HOU,2006
+John Lucas III,"Baylor, Oklahoma State",HOU,2006
+Tracy McGrady,,HOU,2006
+Yao Ming,,HOU,2006
+Dikembe Mutombo,Georgetown,HOU,2006
+Moochie Norris,"Auburn, University of West Florida",HOU,2006
+Stromile Swift,LSU,HOU,2006
+David Wesley,Baylor,HOU,2006
+Rafer Alston,Fresno State,HOU,2007
+Shane Battier,Duke,HOU,2007
+Chuck Hayes,Kentucky,HOU,2007
+Luther Head,Illinois,HOU,2007
+Juwan Howard,Michigan,HOU,2007
+John Lucas III,"Baylor, Oklahoma State",HOU,2007
+Tracy McGrady,,HOU,2007
+Yao Ming,,HOU,2007
+Dikembe Mutombo,Georgetown,HOU,2007
+Steve Novak,Marquette,HOU,2007
+Scott Padgett,Kentucky,HOU,2007
+Kirk Snyder,Nevada,HOU,2007
+Vassilis Spanoulis,,HOU,2007
+Jake Tsakalidis,,HOU,2007
+Bonzi Wells,Ball State University,HOU,2007
+Rafer Alston,Fresno State,HOU,2008
+Shane Battier,Duke,HOU,2008
+Aaron Brooks,Oregon,HOU,2008
+Steve Francis,Maryland,HOU,2008
+Gerald Green,,HOU,2008
+Mike Harris,Rice University,HOU,2008
+Chuck Hayes,Kentucky,HOU,2008
+Luther Head,Illinois,HOU,2008
+Bobby Jackson,Minnesota,HOU,2008
+Mike James,Duquesne,HOU,2008
+Bobby Jones,Washington,HOU,2008
+Carl Landry,Purdue,HOU,2008
+Tracy McGrady,,HOU,2008
+Yao Ming,,HOU,2008
+Dikembe Mutombo,Georgetown,HOU,2008
+Steve Novak,Marquette,HOU,2008
+Luis Scola,,HOU,2008
+Kirk Snyder,Nevada,HOU,2008
+Bonzi Wells,Ball State University,HOU,2008
+Justin Williams,Wyoming,HOU,2008
+Loren Woods,"Wake Forest, Arizona",HOU,2008
+Rafer Alston,Fresno State,HOU,2009
+Brent Barry,Oregon State,HOU,2009
+Shane Battier,Duke,HOU,2009
+Aaron Brooks,Oregon,HOU,2009
+Brian Cook,Illinois,HOU,2009
+Joey Dorsey,Memphis,HOU,2009
+Chuck Hayes,Kentucky,HOU,2009
+Luther Head,Illinois,HOU,2009
+Carl Landry,Purdue,HOU,2009
+Kyle Lowry,Villanova,HOU,2009
+Tracy McGrady,,HOU,2009
+Yao Ming,,HOU,2009
+Dikembe Mutombo,Georgetown,HOU,2009
+Luis Scola,,HOU,2009
+Von Wafer,Florida State,HOU,2009
+James White,"Florida, Cincinnati",HOU,2009
+Metta World Peace,St. John's,HOU,2009
 David Andersen,,HOU,2010
 Trevor Ariza,UCLA,HOU,2010
 Hilton Armstrong,UConn,HOU,2010
@@ -2437,6 +3198,71 @@ D.J. Augustin,Texas,HOU,2021
 Avery Bradley,Texas,HOU,2021
 Khyri Thomas,Creighton,HOU,2021
 Dante Exum,,HOU,2021
+Jonathan Bender,,IND,2006
+Austin Croshere,Providence,IND,2006
+Jeff Foster,Texas State University,IND,2006
+Eddie Gill,Weber State,IND,2006
+Danny Granger,"Bradley, New Mexico",IND,2006
+David Harrison,Colorado,IND,2006
+Stephen Jackson,Butler County Community College,IND,2006
+Šarūnas Jasikevičius,Maryland,IND,2006
+Anthony Johnson,College of Charleston,IND,2006
+Fred Jones,Oregon,IND,2006
+Jermaine O'Neal,,IND,2006
+Scot Pollard,Kansas,IND,2006
+Peja Stojaković,,IND,2006
+Jamaal Tinsley,Iowa State,IND,2006
+Samaki Walker,Louisville,IND,2006
+Metta World Peace,St. John's,IND,2006
+Darrell Armstrong,Fayetteville State University,IND,2007
+Maceo Baston,Michigan,IND,2007
+Marquis Daniels,Auburn,IND,2007
+Ike Diogu,Arizona State,IND,2007
+Mike Dunleavy,Duke,IND,2007
+Jeff Foster,Texas State University,IND,2007
+Danny Granger,"Bradley, New Mexico",IND,2007
+Orien Greene,"Florida, Louisiana",IND,2007
+Al Harrington,,IND,2007
+David Harrison,Colorado,IND,2007
+Stephen Jackson,Butler County Community College,IND,2007
+Šarūnas Jasikevičius,Maryland,IND,2007
+Rawle Marshall,"Ball State University, Oakland",IND,2007
+Keith McLeod,Bowling Green,IND,2007
+Troy Murphy,Notre Dame,IND,2007
+Jermaine O'Neal,,IND,2007
+Josh Powell,NC State,IND,2007
+Jamaal Tinsley,Iowa State,IND,2007
+Shawne Williams,Memphis,IND,2007
+Marquis Daniels,Auburn,IND,2008
+Travis Diener,Marquette,IND,2008
+Ike Diogu,Arizona State,IND,2008
+Mike Dunleavy,Duke,IND,2008
+Jeff Foster,Texas State University,IND,2008
+Stephen Graham,"Central Florida, Oklahoma State",IND,2008
+Danny Granger,"Bradley, New Mexico",IND,2008
+David Harrison,Colorado,IND,2008
+Troy Murphy,Notre Dame,IND,2008
+Ronald Murray,"Meridian Community College, Shaw",IND,2008
+Jermaine O'Neal,,IND,2008
+Andre Owens,"Indiana, Houston",IND,2008
+Kareem Rush,Missouri,IND,2008
+Courtney Sims,Michigan,IND,2008
+Jamaal Tinsley,Iowa State,IND,2008
+Shawne Williams,Memphis,IND,2008
+Maceo Baston,Michigan,IND,2009
+Marquis Daniels,Auburn,IND,2009
+Travis Diener,Marquette,IND,2009
+Mike Dunleavy,Duke,IND,2009
+T.J. Ford,Texas,IND,2009
+Jeff Foster,Texas State University,IND,2009
+Stephen Graham,"Central Florida, Oklahoma State",IND,2009
+Danny Granger,"Bradley, New Mexico",IND,2009
+Roy Hibbert,Georgetown,IND,2009
+Jarrett Jack,Georgia Tech,IND,2009
+Josh McRoberts,Duke,IND,2009
+Troy Murphy,Notre Dame,IND,2009
+Rasho Nesterović,,IND,2009
+Brandon Rush,Kansas,IND,2009
 Travis Diener,Marquette,IND,2010
 Mike Dunleavy,Duke,IND,2010
 T.J. Ford,Texas,IND,2010
@@ -2633,6 +3459,82 @@ Cassius Stanley  (TW),Duke,IND,2021
 Oshae Brissett,Syracuse,IND,2021
 Amida Brimah  (TW),UConn,IND,2021
 T.J. Warren,NC State,IND,2021
+Vin Baker,University of Hartford,LAC,2006
+Elton Brand,Duke,LAC,2006
+Sam Cassell,Florida State,LAC,2006
+Howard Eisley,Boston College,LAC,2006
+Daniel Ewing,Duke,LAC,2006
+Anthony Goldwire,Houston,LAC,2006
+Chris Kaman,Central Michigan University,LAC,2006
+Yaroslav Korolev,,LAC,2006
+Shaun Livingston,,LAC,2006
+Corey Maggette,Duke,LAC,2006
+Walter McCarty,Kentucky,LAC,2006
+Cuttino Mobley,Rhode Island,LAC,2006
+Boniface N'Dong,,LAC,2006
+Vladimir Radmanović,,LAC,2006
+Željko Rebrača,,LAC,2006
+Quinton Ross,SMU,LAC,2006
+James Singleton,Murray State,LAC,2006
+Chris Wilcox,Maryland,LAC,2006
+Elton Brand,Duke,LAC,2007
+Sam Cassell,Florida State,LAC,2007
+Doug Christie,Pepperdine,LAC,2007
+Will Conroy,Washington,LAC,2007
+Paul Davis,Michigan State,LAC,2007
+Daniel Ewing,Duke,LAC,2007
+Jason Hart,Syracuse,LAC,2007
+Luke Jackson,Oregon,LAC,2007
+Chris Kaman,Central Michigan University,LAC,2007
+Yaroslav Korolev,,LAC,2007
+Shaun Livingston,,LAC,2007
+Corey Maggette,Duke,LAC,2007
+Cuttino Mobley,Rhode Island,LAC,2007
+Quinton Ross,SMU,LAC,2007
+James Singleton,Murray State,LAC,2007
+Tim Thomas,Villanova,LAC,2007
+Von Wafer,Florida State,LAC,2007
+Aaron Williams,Xavier,LAC,2007
+Alvin Williams,Villanova,LAC,2007
+Andre Barrett,Seton Hall,LAC,2008
+Elton Brand,Duke,LAC,2008
+Sam Cassell,Florida State,LAC,2008
+Paul Davis,Michigan State,LAC,2008
+Guillermo Díaz,Miami (FL),LAC,2008
+Dan Dickau,"Washington, Gonzaga",LAC,2008
+Nick Fazekas,Nevada,LAC,2008
+Richie Frahm,Gonzaga,LAC,2008
+Chris Kaman,Central Michigan University,LAC,2008
+Brevin Knight,Stanford,LAC,2008
+Corey Maggette,Duke,LAC,2008
+Cuttino Mobley,Rhode Island,LAC,2008
+Smush Parker,Fordham,LAC,2008
+Ruben Patterson,Cincinnati,LAC,2008
+Josh Powell,NC State,LAC,2008
+Quinton Ross,SMU,LAC,2008
+Tim Thomas,Villanova,LAC,2008
+Al Thornton,Florida State,LAC,2008
+Aaron Williams,Xavier,LAC,2008
+Marcus Williams,Arizona,LAC,2008
+Alex Acker,Pepperdine,LAC,2009
+Marcus Camby,UMass,LAC,2009
+Mardy Collins,Temple,LAC,2009
+Baron Davis,UCLA,LAC,2009
+Paul Davis,Michigan State,LAC,2009
+Ricky Davis,Iowa,LAC,2009
+Eric Gordon,Indiana,LAC,2009
+Jason Hart,Syracuse,LAC,2009
+Fred Jones,Oregon,LAC,2009
+DeAndre Jordan,Texas A&M,LAC,2009
+Chris Kaman,Central Michigan University,LAC,2009
+Cuttino Mobley,Rhode Island,LAC,2009
+Steve Novak,Marquette,LAC,2009
+Zach Randolph,Michigan State,LAC,2009
+Cheikh Samb,,LAC,2009
+Brian Skinner,Baylor,LAC,2009
+Mike Taylor,Iowa State,LAC,2009
+Tim Thomas,Villanova,LAC,2009
+Al Thornton,Florida State,LAC,2009
 Steve Blake,Maryland,LAC,2010
 Bobby Brown,Cal State Fullerton,LAC,2010
 Rasual Butler,La Salle,LAC,2010
@@ -2855,6 +3757,72 @@ Rajon Rondo,Kentucky,LAC,2021
 DeMarcus Cousins,Kentucky,LAC,2021
 Yogi Ferrell,Indiana,LAC,2021
 Jay Scrubb  (TW),John A. Logan College,LAC,2021
+Kwame Brown,,LAL,2006
+Kobe Bryant,,LAL,2006
+Andrew Bynum,,LAL,2006
+Brian Cook,Illinois,LAL,2006
+Devean George,Augsburg College,LAL,2006
+Devin Green,Hampton,LAL,2006
+Jim Jackson,Ohio State,LAL,2006
+Aaron McKie,Temple,LAL,2006
+Stanislav Medvedenko,,LAL,2006
+Chris Mihm,Texas,LAL,2006
+Lamar Odom,Rhode Island,LAL,2006
+Smush Parker,Fordham,LAL,2006
+Laron Profit,Maryland,LAL,2006
+Ronny Turiaf,Gonzaga,LAL,2006
+Sasha Vujačić,,LAL,2006
+Von Wafer,Florida State,LAL,2006
+Luke Walton,Arizona,LAL,2006
+Kwame Brown,,LAL,2007
+Kobe Bryant,,LAL,2007
+Andrew Bynum,,LAL,2007
+Brian Cook,Illinois,LAL,2007
+Maurice Evans,"Wichita State, Texas",LAL,2007
+Jordan Farmar,UCLA,LAL,2007
+Aaron McKie,Temple,LAL,2007
+Lamar Odom,Rhode Island,LAL,2007
+Smush Parker,Fordham,LAL,2007
+Vladimir Radmanović,,LAL,2007
+Ronny Turiaf,Gonzaga,LAL,2007
+Sasha Vujačić,,LAL,2007
+Luke Walton,Arizona,LAL,2007
+Shammond Williams,UNC,LAL,2007
+Trevor Ariza,UCLA,LAL,2008
+Kwame Brown,,LAL,2008
+Kobe Bryant,,LAL,2008
+Andrew Bynum,,LAL,2008
+Brian Cook,Illinois,LAL,2008
+Javaris Crittenton,Georgia Tech,LAL,2008
+Maurice Evans,"Wichita State, Texas",LAL,2008
+Jordan Farmar,UCLA,LAL,2008
+Derek Fisher,Little Rock,LAL,2008
+Pau Gasol,,LAL,2008
+Didier Ilunga-Mbenga,,LAL,2008
+Coby Karl,Boise State,LAL,2008
+Chris Mihm,Texas,LAL,2008
+Ira Newble,Miami University,LAL,2008
+Lamar Odom,Rhode Island,LAL,2008
+Vladimir Radmanović,,LAL,2008
+Ronny Turiaf,Gonzaga,LAL,2008
+Sasha Vujačić,,LAL,2008
+Luke Walton,Arizona,LAL,2008
+Trevor Ariza,UCLA,LAL,2009
+Shannon Brown,Michigan State,LAL,2009
+Kobe Bryant,,LAL,2009
+Andrew Bynum,,LAL,2009
+Jordan Farmar,UCLA,LAL,2009
+Derek Fisher,Little Rock,LAL,2009
+Pau Gasol,,LAL,2009
+Didier Ilunga-Mbenga,,LAL,2009
+Chris Mihm,Texas,LAL,2009
+Adam Morrison,Gonzaga,LAL,2009
+Lamar Odom,Rhode Island,LAL,2009
+Josh Powell,NC State,LAL,2009
+Vladimir Radmanović,,LAL,2009
+Sasha Vujačić,,LAL,2009
+Luke Walton,Arizona,LAL,2009
+Sun Yue,,LAL,2009
 Shannon Brown,Michigan State,LAL,2010
 Kobe Bryant,,LAL,2010
 Andrew Bynum,,LAL,2010
@@ -3070,6 +4038,74 @@ Ben McLemore,Kansas,LAL,2021
 Devontae Cacok  (TW),UNC Wilmington,LAL,2021
 Kostas Antetokounmpo  (TW),Dayton,LAL,2021
 Jared Dudley,Boston College,LAL,2021
+Chucky Atkins,South Florida,MEM,2006
+Shane Battier,Duke,MEM,2006
+Antonio Burks,Memphis,MEM,2006
+Brian Cardinal,Purdue,MEM,2006
+Pau Gasol,,MEM,2006
+Bobby Jackson,Minnesota,MEM,2006
+Dahntay Jones,"Rutgers University, Duke",MEM,2006
+Eddie Jones,Temple,MEM,2006
+Mike Miller,Florida,MEM,2006
+Anthony Roberson,Florida,MEM,2006
+Lawrence Roberts,"Baylor, Mississippi State",MEM,2006
+Damon Stoudamire,Arizona,MEM,2006
+John Thomas,Minnesota,MEM,2006
+Jake Tsakalidis,,MEM,2006
+Hakim Warrick,Syracuse,MEM,2006
+Lorenzen Wright,Memphis,MEM,2006
+Chucky Atkins,South Florida,MEM,2007
+Brian Cardinal,Purdue,MEM,2007
+Will Conroy,Washington,MEM,2007
+Pau Gasol,,MEM,2007
+Rudy Gay,UConn,MEM,2007
+Junior Harrington,Wingate University,MEM,2007
+Alexander Johnson,Florida State,MEM,2007
+Dahntay Jones,"Rutgers University, Duke",MEM,2007
+Eddie Jones,Temple,MEM,2007
+Tarence Kinsey,South Carolina,MEM,2007
+Kyle Lowry,Villanova,MEM,2007
+Mike Miller,Florida,MEM,2007
+Scott Padgett,Kentucky,MEM,2007
+Lawrence Roberts,"Baylor, Mississippi State",MEM,2007
+Damon Stoudamire,Arizona,MEM,2007
+Stromile Swift,LSU,MEM,2007
+Jake Tsakalidis,,MEM,2007
+Hakim Warrick,Syracuse,MEM,2007
+Andre Brown,DePaul,MEM,2008
+Kwame Brown,,MEM,2008
+Brian Cardinal,Purdue,MEM,2008
+Jason Collins,Stanford,MEM,2008
+Mike Conley,Ohio State,MEM,2008
+Javaris Crittenton,Georgia Tech,MEM,2008
+Pau Gasol,,MEM,2008
+Rudy Gay,UConn,MEM,2008
+Casey Jacobsen,Stanford,MEM,2008
+Bobby Jones,Washington,MEM,2008
+Tarence Kinsey,South Carolina,MEM,2008
+Kyle Lowry,Villanova,MEM,2008
+Darko Miličić,,MEM,2008
+Mike Miller,Florida,MEM,2008
+Juan Carlos Navarro,,MEM,2008
+Jeremy Richardson,Delta State University,MEM,2008
+Damon Stoudamire,Arizona,MEM,2008
+Stromile Swift,LSU,MEM,2008
+Hakim Warrick,Syracuse,MEM,2008
+Darrell Arthur,Kansas,MEM,2009
+Greg Buckner,Clemson,MEM,2009
+Mike Conley,Ohio State,MEM,2009
+Javaris Crittenton,Georgia Tech,MEM,2009
+Adonal Foyle,Colgate,MEM,2009
+Marc Gasol,,MEM,2009
+Rudy Gay,UConn,MEM,2009
+Hamed Haddadi,,MEM,2009
+Marko Jarić,,MEM,2009
+Kyle Lowry,Villanova,MEM,2009
+O.J. Mayo,USC,MEM,2009
+Darius Miles,,MEM,2009
+Darko Miličić,,MEM,2009
+Quinton Ross,SMU,MEM,2009
+Hakim Warrick,Syracuse,MEM,2009
 Darrell Arthur,Kansas,MEM,2010
 Ronnie Brewer,Arkansas,MEM,2010
 DeMarre Carroll,"Vanderbilt, Missouri",MEM,2010
@@ -3314,6 +4350,79 @@ Killian Tillie  (TW),Gonzaga,MEM,2021
 Sean McDermott  (TW),Butler,MEM,2021
 Jaren Jackson Jr.,Michigan State,MEM,2021
 Jontay Porter,Missouri,MEM,2021
+Derek Anderson,"Ohio State, Kentucky",MIA,2006
+Shandon Anderson,Georgia,MIA,2006
+Earl Barron,Memphis,MIA,2006
+Michael Doleac,Utah,MIA,2006
+Gerald Fitch,Kentucky,MIA,2006
+Udonis Haslem,Florida,MIA,2006
+Jason Kapono,UCLA,MIA,2006
+Alonzo Mourning,Georgetown,MIA,2006
+Shaquille O'Neal,LSU,MIA,2006
+Gary Payton,Oregon State,MIA,2006
+James Posey,Xavier,MIA,2006
+Wayne Simien,Kansas,MIA,2006
+Dwyane Wade,Marquette,MIA,2006
+Antoine Walker,Kentucky,MIA,2006
+Matt Walsh,Florida,MIA,2006
+Jason Williams,"Marshall, Florida",MIA,2006
+Dorell Wright,,MIA,2006
+Earl Barron,Memphis,MIA,2007
+Michael Doleac,Utah,MIA,2007
+Udonis Haslem,Florida,MIA,2007
+Robert Hite,Miami (FL),MIA,2007
+Eddie Jones,Temple,MIA,2007
+Jason Kapono,UCLA,MIA,2007
+Alonzo Mourning,Georgetown,MIA,2007
+Shaquille O'Neal,LSU,MIA,2007
+Gary Payton,Oregon State,MIA,2007
+James Posey,Xavier,MIA,2007
+Chris Quinn,Notre Dame,MIA,2007
+Wayne Simien,Kansas,MIA,2007
+Dwyane Wade,Marquette,MIA,2007
+Antoine Walker,Kentucky,MIA,2007
+Jason Williams,"Marshall, Florida",MIA,2007
+Dorell Wright,,MIA,2007
+Blake Ahearn,Missouri State University,MIA,2008
+Joel Anthony,UNLV,MIA,2008
+Marcus Banks,UNLV,MIA,2008
+Earl Barron,Memphis,MIA,2008
+Mark Blount,Pitt,MIA,2008
+Daequan Cook,Ohio State,MIA,2008
+Ricky Davis,Iowa,MIA,2008
+Anfernee Hardaway,Memphis,MIA,2008
+Udonis Haslem,Florida,MIA,2008
+Luke Jackson,Oregon,MIA,2008
+Alexander Johnson,Florida State,MIA,2008
+Bobby Jones,Washington,MIA,2008
+Stéphane Lasme,UMass,MIA,2008
+Shawn Marion,UNLV,MIA,2008
+Alonzo Mourning,Georgetown,MIA,2008
+Shaquille O'Neal,LSU,MIA,2008
+Smush Parker,Fordham,MIA,2008
+Kasib Powell,Texas Tech,MIA,2008
+Chris Quinn,Notre Dame,MIA,2008
+Dwyane Wade,Marquette,MIA,2008
+Jason Williams,"Marshall, Florida",MIA,2008
+Dorell Wright,,MIA,2008
+Joel Anthony,UNLV,MIA,2009
+Marcus Banks,UNLV,MIA,2009
+Michael Beasley,Kansas State,MIA,2009
+Mark Blount,Pitt,MIA,2009
+Mario Chalmers,Kansas,MIA,2009
+Daequan Cook,Ohio State,MIA,2009
+Yakhouba Diawara,Pepperdine,MIA,2009
+Udonis Haslem,Florida,MIA,2009
+Luther Head,Illinois,MIA,2009
+James Jones,Miami (FL),MIA,2009
+Shaun Livingston,,MIA,2009
+Jamaal Magloire,Kentucky,MIA,2009
+Shawn Marion,UNLV,MIA,2009
+Jamario Moon,Meridian Community College,MIA,2009
+Jermaine O'Neal,,MIA,2009
+Chris Quinn,Notre Dame,MIA,2009
+Dwyane Wade,Marquette,MIA,2009
+Dorell Wright,,MIA,2009
 Rafer Alston,Fresno State,MIA,2010
 Joel Anthony,UNLV,MIA,2010
 Carlos Arroyo,Florida International University,MIA,2010
@@ -3528,6 +4637,69 @@ Dewayne Dedmon,USC,MIA,2021
 Nemanja Bjelica,,MIA,2021
 Victor Oladipo,Indiana,MIA,2021
 Udonis Haslem,Florida,MIA,2021
+Charlie Bell,Michigan State,MIL,2006
+Andrew Bogut,Utah,MIL,2006
+Josh Davis,Wyoming,MIL,2006
+T.J. Ford,Texas,MIL,2006
+Dan Gadzuric,UCLA,MIL,2006
+Reece Gaines,Louisville,MIL,2006
+Jermaine Jackson,Detroit Mercy,MIL,2006
+Ervin Johnson,New Orleans,MIL,2006
+Toni Kukoč,,MIL,2006
+Jamaal Magloire,Kentucky,MIL,2006
+Michael Redd,Ohio State,MIL,2006
+Bobby Simmons,DePaul,MIL,2006
+Joe Smith,Maryland,MIL,2006
+Jiří Welsch,,MIL,2006
+Mo Williams,Alabama,MIL,2006
+Charlie Bell,Michigan State,MIL,2007
+Steve Blake,Maryland,MIL,2007
+Andrew Bogut,Utah,MIL,2007
+Earl Boykins,Eastern Michigan,MIL,2007
+Dan Gadzuric,UCLA,MIL,2007
+Lynn Greer,Temple,MIL,2007
+Julius Hodge,NC State,MIL,2007
+Ersan İlyasova,,MIL,2007
+Damir Markota,,MIL,2007
+Chris McCray,Maryland,MIL,2007
+David Noel,UNC,MIL,2007
+Ruben Patterson,Cincinnati,MIL,2007
+Michael Redd,Ohio State,MIL,2007
+Jared Reiner,Iowa,MIL,2007
+Brian Skinner,Baylor,MIL,2007
+Charlie Villanueva,UConn,MIL,2007
+Mo Williams,Alabama,MIL,2007
+Charlie Bell,Michigan State,MIL,2008
+Andrew Bogut,Utah,MIL,2008
+Dan Gadzuric,UCLA,MIL,2008
+Royal Ivey,Texas,MIL,2008
+Yi Jianlian,,MIL,2008
+Desmond Mason,Oklahoma State,MIL,2008
+Michael Redd,Ohio State,MIL,2008
+Michael Ruffin,Tulsa,MIL,2008
+Ramon Sessions,Nevada,MIL,2008
+Bobby Simmons,DePaul,MIL,2008
+Awvee Storey,"Illinois, Arizona State",MIL,2008
+Charlie Villanueva,UConn,MIL,2008
+Jake Voskuhl,UConn,MIL,2008
+Mo Williams,Alabama,MIL,2008
+Joe Alexander,West Virginia,MIL,2009
+Malik Allen,Villanova,MIL,2009
+Charlie Bell,Michigan State,MIL,2009
+Keith Bogans,Kentucky,MIL,2009
+Andrew Bogut,Utah,MIL,2009
+Austin Croshere,Providence,MIL,2009
+Francisco Elson,California,MIL,2009
+Dan Gadzuric,UCLA,MIL,2009
+Eddie Gill,Weber State,MIL,2009
+Richard Jefferson,Arizona,MIL,2009
+Damon Jones,Houston,MIL,2009
+Tyronn Lue,Nebraska,MIL,2009
+Luc Mbah a Moute,UCLA,MIL,2009
+Michael Redd,Ohio State,MIL,2009
+Luke Ridnour,Oregon,MIL,2009
+Ramon Sessions,Nevada,MIL,2009
+Charlie Villanueva,UConn,MIL,2009
 Charlie Bell,Michigan State,MIL,2010
 Andrew Bogut,Utah,MIL,2010
 Primož Brezec,,MIL,2010
@@ -3756,6 +4928,71 @@ Mamadi Diakite,Virginia,MIL,2021
 Axel Toupane  (TW),,MIL,2021
 Elijah Bryant,"Elon University, BYU",MIL,2021
 Justin Jackson  (TW),UNC,MIL,2021
+Marcus Banks,UNLV,MIN,2006
+Mark Blount,Pitt,MIN,2006
+Anthony Carter,Hawaii,MIN,2006
+Ricky Davis,Iowa,MIN,2006
+Ronald Dupree,LSU,MIN,2006
+Richie Frahm,Gonzaga,MIN,2006
+Kevin Garnett,,MIN,2006
+Eddie Griffin,Seton Hall,MIN,2006
+Trenton Hassell,Austin Peay State University,MIN,2006
+Troy Hudson,"Missouri, Southern Illinois",MIN,2006
+Marko Jarić,,MIN,2006
+Mark Madsen,Stanford,MIN,2006
+Rashad McCants,UNC,MIN,2006
+Michael Olowokandi,University of the Pacific,MIN,2006
+Justin Reed,Ole Miss,MIN,2006
+Wally Szczerbiak,Miami University,MIN,2006
+Nikoloz Tskitishvili,,MIN,2006
+Bracey Wright,Indiana,MIN,2006
+Mark Blount,Pitt,MIN,2007
+Ricky Davis,Iowa,MIN,2007
+Randy Foye,Villanova,MIN,2007
+Kevin Garnett,,MIN,2007
+Eddie Griffin,Seton Hall,MIN,2007
+Trenton Hassell,Austin Peay State University,MIN,2007
+Troy Hudson,"Missouri, Southern Illinois",MIN,2007
+Mike James,Duquesne,MIN,2007
+Marko Jarić,,MIN,2007
+Mark Madsen,Stanford,MIN,2007
+Rashad McCants,UNC,MIN,2007
+Justin Reed,Ole Miss,MIN,2007
+Craig Smith,Boston College,MIN,2007
+Bracey Wright,Indiana,MIN,2007
+Corey Brewer,Florida,MIN,2008
+Greg Buckner,Clemson,MIN,2008
+Michael Doleac,Utah,MIN,2008
+Randy Foye,Villanova,MIN,2008
+Ryan Gomes,Providence,MIN,2008
+Gerald Green,,MIN,2008
+Marko Jarić,,MIN,2008
+Al Jefferson,,MIN,2008
+Mark Madsen,Stanford,MIN,2008
+Rashad McCants,UNC,MIN,2008
+Theo Ratliff,Wyoming,MIN,2008
+Chris Richard,Florida,MIN,2008
+Craig Smith,Boston College,MIN,2008
+Kirk Snyder,Nevada,MIN,2008
+Sebastian Telfair,,MIN,2008
+Antoine Walker,Kentucky,MIN,2008
+Calvin Booth,Penn State,MIN,2009
+Corey Brewer,Florida,MIN,2009
+Bobby Brown,Cal State Fullerton,MIN,2009
+Brian Cardinal,Purdue,MIN,2009
+Rodney Carney,Memphis,MIN,2009
+Jason Collins,Stanford,MIN,2009
+Randy Foye,Villanova,MIN,2009
+Ryan Gomes,Providence,MIN,2009
+Al Jefferson,,MIN,2009
+Kevin Love,UCLA,MIN,2009
+Mark Madsen,Stanford,MIN,2009
+Rashad McCants,UNC,MIN,2009
+Mike Miller,Florida,MIN,2009
+Kevin Ollie,UConn,MIN,2009
+Craig Smith,Boston College,MIN,2009
+Sebastian Telfair,,MIN,2009
+Shelden Williams,Duke,MIN,2009
 Corey Brewer,Florida,MIN,2010
 Brian Cardinal,Purdue,MIN,2010
 Wayne Ellington,UNC,MIN,2010
@@ -3973,6 +5210,71 @@ Jaylen Nowell,Washington,MIN,2021
 Malik Beasley,Florida State,MIN,2021
 Jarrett Culver,Texas Tech,MIN,2021
 Ed Davis,UNC,MIN,2021
+Chris Andersen,Blinn College,NOK,2006
+Brandon Bass,LSU,NOK,2006
+P.J. Brown,Louisiana Tech,NOK,2006
+Rasual Butler,La Salle,NOK,2006
+Speedy Claxton,Hofstra,NOK,2006
+Marcus Fizer,Iowa State,NOK,2006
+Marc Jackson,"VCU, Temple",NOK,2006
+Linton Johnson,Tulane,NOK,2006
+Maciej Lampe,,NOK,2006
+Arvydas Macijauskas,,NOK,2006
+Desmond Mason,Oklahoma State,NOK,2006
+Boštjan Nachbar,,NOK,2006
+Moochie Norris,"Auburn, University of West Florida",NOK,2006
+Chris Paul,Wake Forest,NOK,2006
+J.R. Smith,,NOK,2006
+Kirk Snyder,Nevada,NOK,2006
+Jackson Vroman,Iowa State,NOK,2006
+David West,Xavier,NOK,2006
+Aaron Williams,Xavier,NOK,2006
+Hilton Armstrong,UConn,NOK,2007
+Brandon Bass,LSU,NOK,2007
+Devin Brown,Texas-San Antonio,NOK,2007
+Rasual Butler,La Salle,NOK,2007
+Tyson Chandler,,NOK,2007
+Bobby Jackson,Minnesota,NOK,2007
+Marc Jackson,"VCU, Temple",NOK,2007
+Linton Johnson,Tulane,NOK,2007
+Desmond Mason,Oklahoma State,NOK,2007
+Jannero Pargo,Arkansas,NOK,2007
+Chris Paul,Wake Forest,NOK,2007
+Cedric Simmons,NC State,NOK,2007
+Peja Stojaković,,NOK,2007
+Marcus Vinicius,,NOK,2007
+David West,Xavier,NOK,2007
+Chris Andersen,Blinn College,NOH,2008
+Hilton Armstrong,UConn,NOH,2008
+Ryan Bowen,Iowa,NOH,2008
+Rasual Butler,La Salle,NOH,2008
+Tyson Chandler,,NOH,2008
+Melvin Ely,Fresno State,NOH,2008
+Bobby Jackson,Minnesota,NOH,2008
+Mike James,Duquesne,NOH,2008
+Jannero Pargo,Arkansas,NOH,2008
+Chris Paul,Wake Forest,NOH,2008
+Morris Peterson,Michigan State,NOH,2008
+Peja Stojaković,,NOH,2008
+Marcus Vinicius,,NOH,2008
+Bonzi Wells,Ball State University,NOH,2008
+David West,Xavier,NOH,2008
+Julian Wright,Kansas,NOH,2008
+Hilton Armstrong,UConn,NOH,2009
+Ryan Bowen,Iowa,NOH,2009
+Devin Brown,Texas-San Antonio,NOH,2009
+Rasual Butler,La Salle,NOH,2009
+Tyson Chandler,,NOH,2009
+Antonio Daniels,Bowling Green,NOH,2009
+Melvin Ely,Fresno State,NOH,2009
+Mike James,Duquesne,NOH,2009
+Sean Marks,California,NOH,2009
+Chris Paul,Wake Forest,NOH,2009
+Morris Peterson,Michigan State,NOH,2009
+James Posey,Xavier,NOH,2009
+Peja Stojaković,,NOH,2009
+David West,Xavier,NOH,2009
+Julian Wright,Kansas,NOH,2009
 Hilton Armstrong,UConn,NOH,2010
 Bobby Brown,Cal State Fullerton,NOH,2010
 Devin Brown,Texas-San Antonio,NOH,2010
@@ -4215,6 +5517,78 @@ Wesley Iwundu,Kansas State,NOP,2021
 James Nunnally  (TW),UC Santa Barbara,NOP,2021
 Isaiah Thomas,Washington,NOP,2021
 Didi Louzada,,NOP,2021
+Trevor Ariza,UCLA,NYK,2006
+Matt Barnes,UCLA,NYK,2006
+Jackie Butler,,NYK,2006
+Jamal Crawford,Michigan,NYK,2006
+Eddy Curry,,NYK,2006
+Antonio Davis,Texas-El Paso,NYK,2006
+Steve Francis,Maryland,NYK,2006
+Channing Frye,Arizona,NYK,2006
+Anfernee Hardaway,Memphis,NYK,2006
+Jerome James,Florida A&M,NYK,2006
+David Lee,Florida,NYK,2006
+Stephon Marbury,Georgia Tech,NYK,2006
+Quentin Richardson,DePaul,NYK,2006
+Nate Robinson,Washington,NYK,2006
+Jalen Rose,Michigan,NYK,2006
+Malik Rose,Drexel,NYK,2006
+Maurice Taylor,"Michigan, LSU",NYK,2006
+Ime Udoka,"San Francisco, Portland State",NYK,2006
+Qyntel Woods,Northeast Mississippi Community College,NYK,2006
+Renaldo Balkman,South Carolina,NYK,2007
+Kelvin Cato,"University of South Alabama, Iowa State",NYK,2007
+Mardy Collins,Temple,NYK,2007
+Jamal Crawford,Michigan,NYK,2007
+Eddy Curry,,NYK,2007
+Steve Francis,Maryland,NYK,2007
+Channing Frye,Arizona,NYK,2007
+Jerome James,Florida A&M,NYK,2007
+Jared Jeffries,Indiana,NYK,2007
+David Lee,Florida,NYK,2007
+Stephon Marbury,Georgia Tech,NYK,2007
+Randolph Morris,Kentucky,NYK,2007
+Quentin Richardson,DePaul,NYK,2007
+Nate Robinson,Washington,NYK,2007
+Malik Rose,Drexel,NYK,2007
+Renaldo Balkman,South Carolina,NYK,2008
+Wilson Chandler,DePaul,NYK,2008
+Mardy Collins,Temple,NYK,2008
+Jamal Crawford,Michigan,NYK,2008
+Eddy Curry,,NYK,2008
+Jerome James,Florida A&M,NYK,2008
+Jared Jeffries,Indiana,NYK,2008
+Fred Jones,Oregon,NYK,2008
+David Lee,Florida,NYK,2008
+Stephon Marbury,Georgia Tech,NYK,2008
+Randolph Morris,Kentucky,NYK,2008
+Zach Randolph,Michigan State,NYK,2008
+Quentin Richardson,DePaul,NYK,2008
+Nate Robinson,Washington,NYK,2008
+Malik Rose,Drexel,NYK,2008
+Wilson Chandler,DePaul,NYK,2009
+Mardy Collins,Temple,NYK,2009
+Jamal Crawford,Michigan,NYK,2009
+Joe Crawford,Kentucky,NYK,2009
+Eddy Curry,,NYK,2009
+Chris Duhon,Duke,NYK,2009
+Danilo Gallinari,,NYK,2009
+Al Harrington,,NYK,2009
+Larry Hughes,Saint Louis,NYK,2009
+Jerome James,Florida A&M,NYK,2009
+Jared Jeffries,Indiana,NYK,2009
+David Lee,Florida,NYK,2009
+Demetris Nichols,Syracuse,NYK,2009
+Zach Randolph,Michigan State,NYK,2009
+Quentin Richardson,DePaul,NYK,2009
+Anthony Roberson,Florida,NYK,2009
+Nate Robinson,Washington,NYK,2009
+Malik Rose,Drexel,NYK,2009
+Cheikh Samb,,NYK,2009
+Mouhamed Sene,,NYK,2009
+Courtney Sims,Michigan,NYK,2009
+Tim Thomas,Villanova,NYK,2009
+Chris Wilcox,Maryland,NYK,2009
 Earl Barron,Memphis,NYK,2010
 Jonathan Bender,,NYK,2010
 Wilson Chandler,DePaul,NYK,2010
@@ -4440,6 +5814,82 @@ Norvel Pelle,,NYK,2021
 Jared Harper,Auburn,NYK,2021
 John Henson,UNC,NYK,2021
 Luca Vildoza,,NYK,2021
+Ray Allen,UConn,SEA,2006
+Rick Brunson,Temple,SEA,2006
+Mateen Cleaves,Michigan State,SEA,2006
+Nick Collison,Kansas,SEA,2006
+Reggie Evans,Iowa,SEA,2006
+Noel Felix,Fresno State,SEA,2006
+Danny Fortson,Cincinnati,SEA,2006
+Rashard Lewis,,SEA,2006
+Mikki Moore,Nebraska,SEA,2006
+Ronald Murray,"Meridian Community College, Shaw",SEA,2006
+Johan Petro,,SEA,2006
+Vitaly Potapenko,Wright State University,SEA,2006
+Vladimir Radmanović,,SEA,2006
+Luke Ridnour,Oregon,SEA,2006
+Robert Swift,,SEA,2006
+Earl Watson,UCLA,SEA,2006
+Chris Wilcox,Maryland,SEA,2006
+Damien Wilkins,"NC State, Georgia",SEA,2006
+Mike Wilks,Rice University,SEA,2006
+Ray Allen,UConn,SEA,2007
+Andre Brown,DePaul,SEA,2007
+Nick Collison,Kansas,SEA,2007
+Desmon Farmer,USC,SEA,2007
+Danny Fortson,Cincinnati,SEA,2007
+Mickaël Gelabale,,SEA,2007
+Andreas Glyniadakis,,SEA,2007
+Rashard Lewis,,SEA,2007
+Randy Livingston,LSU,SEA,2007
+Johan Petro,,SEA,2007
+Luke Ridnour,Oregon,SEA,2007
+Mouhamed Sene,,SEA,2007
+Earl Watson,UCLA,SEA,2007
+Chris Wilcox,Maryland,SEA,2007
+Damien Wilkins,"NC State, Georgia",SEA,2007
+Mike Wilks,Rice University,SEA,2007
+Nick Collison,Kansas,SEA,2008
+Ronald Dupree,LSU,SEA,2008
+Kevin Durant,Texas,SEA,2008
+Francisco Elson,California,SEA,2008
+Mickaël Gelabale,,SEA,2008
+Eddie Gill,Weber State,SEA,2008
+Jeff Green,Georgetown,SEA,2008
+Adrian Griffin,Seton Hall,SEA,2008
+Donyell Marshall,UConn,SEA,2008
+Ira Newble,Miami University,SEA,2008
+Johan Petro,,SEA,2008
+Luke Ridnour,Oregon,SEA,2008
+Mouhamed Sene,,SEA,2008
+Robert Swift,,SEA,2008
+Wally Szczerbiak,Miami University,SEA,2008
+Kurt Thomas,TCU,SEA,2008
+Earl Watson,UCLA,SEA,2008
+Delonte West,Saint Joseph's,SEA,2008
+Chris Wilcox,Maryland,SEA,2008
+Damien Wilkins,"NC State, Georgia",SEA,2008
+Mike Wilks,Rice University,SEA,2008
+Chucky Atkins,South Florida,OKC,2009
+Nick Collison,Kansas,OKC,2009
+Kevin Durant,Texas,OKC,2009
+Jeff Green,Georgetown,OKC,2009
+Steven Hill,Arkansas,OKC,2009
+Nenad Krstić,,OKC,2009
+Shaun Livingston,,OKC,2009
+Desmond Mason,Oklahoma State,OKC,2009
+Johan Petro,,OKC,2009
+Malik Rose,Drexel,OKC,2009
+Thabo Sefolosha,,OKC,2009
+Mouhamed Sene,,OKC,2009
+Joe Smith,Maryland,OKC,2009
+Robert Swift,,OKC,2009
+Earl Watson,UCLA,OKC,2009
+Kyle Weaver,Washington State,OKC,2009
+Russell Westbrook,UCLA,OKC,2009
+D.J. White,Indiana,OKC,2009
+Chris Wilcox,Maryland,OKC,2009
+Damien Wilkins,"NC State, Georgia",OKC,2009
 Antonio Anderson,Memphis,OKC,2010
 Ryan Bowen,Iowa,OKC,2010
 Nick Collison,Kansas,OKC,2010
@@ -4652,6 +6102,71 @@ Tony Bradley,UNC,OKC,2021
 Josh Hall,,OKC,2021
 Jaylen Hoard  (TW),Wake Forest,OKC,2021
 Gabriel Deck,,OKC,2021
+Trevor Ariza,UCLA,ORL,2006
+Carlos Arroyo,Florida International University,ORL,2006
+Stacey Augmon,UNLV,ORL,2006
+Tony Battie,Texas Tech,ORL,2006
+Kelvin Cato,"University of South Alabama, Iowa State",ORL,2006
+Travis Diener,Marquette,ORL,2006
+Keyon Dooling,Missouri,ORL,2006
+Steve Francis,Maryland,ORL,2006
+Pat Garrity,Notre Dame,ORL,2006
+Grant Hill,Duke,ORL,2006
+Dwight Howard,,ORL,2006
+Mario Kasun,,ORL,2006
+Darko Miličić,,ORL,2006
+Terence Morris,Maryland,ORL,2006
+Jameer Nelson,Saint Joseph's,ORL,2006
+Bo Outlaw,"South Plains College, Houston",ORL,2006
+DeShawn Stevenson,,ORL,2006
+Hedo Türkoğlu,,ORL,2006
+Trevor Ariza,UCLA,ORL,2007
+Carlos Arroyo,Florida International University,ORL,2007
+James Augustine,Illinois,ORL,2007
+Tony Battie,Texas Tech,ORL,2007
+Keith Bogans,Kentucky,ORL,2007
+Travis Diener,Marquette,ORL,2007
+Keyon Dooling,Missouri,ORL,2007
+Pat Garrity,Notre Dame,ORL,2007
+Grant Hill,Duke,ORL,2007
+Dwight Howard,,ORL,2007
+Darko Miličić,,ORL,2007
+Jameer Nelson,Saint Joseph's,ORL,2007
+Bo Outlaw,"South Plains College, Houston",ORL,2007
+J.J. Redick,Duke,ORL,2007
+Hedo Türkoğlu,,ORL,2007
+Trevor Ariza,UCLA,ORL,2008
+Carlos Arroyo,Florida International University,ORL,2008
+James Augustine,Illinois,ORL,2008
+Keith Bogans,Kentucky,ORL,2008
+Brian Cook,Illinois,ORL,2008
+Keyon Dooling,Missouri,ORL,2008
+Maurice Evans,"Wichita State, Texas",ORL,2008
+Adonal Foyle,Colgate,ORL,2008
+Pat Garrity,Notre Dame,ORL,2008
+Marcin Gortat,,ORL,2008
+Dwight Howard,,ORL,2008
+Rashard Lewis,,ORL,2008
+Jameer Nelson,Saint Joseph's,ORL,2008
+Bo Outlaw,"South Plains College, Houston",ORL,2008
+J.J. Redick,Duke,ORL,2008
+Hedo Türkoğlu,,ORL,2008
+Rafer Alston,Fresno State,ORL,2009
+Tony Battie,Texas Tech,ORL,2009
+Keith Bogans,Kentucky,ORL,2009
+Brian Cook,Illinois,ORL,2009
+Adonal Foyle,Colgate,ORL,2009
+Marcin Gortat,,ORL,2009
+Dwight Howard,,ORL,2009
+Anthony Johnson,College of Charleston,ORL,2009
+Courtney Lee,Western Kentucky,ORL,2009
+Rashard Lewis,,ORL,2009
+Tyronn Lue,Nebraska,ORL,2009
+Jameer Nelson,Saint Joseph's,ORL,2009
+Mickaël Piétrus,,ORL,2009
+J.J. Redick,Duke,ORL,2009
+Jeremy Richardson,Delta State University,ORL,2009
+Hedo Türkoğlu,,ORL,2009
 Ryan Anderson,California,ORL,2010
 Matt Barnes,UCLA,ORL,2010
 Brandon Bass,LSU,ORL,2010
@@ -4855,6 +6370,69 @@ Ignas Brazdeikis,Michigan,ORL,2021
 Sindarius Thornwell  (TW),South Carolina,ORL,2021
 Otto Porter,Georgetown,ORL,2021
 Jonathan Isaac,Florida State,ORL,2021
+Matt Barnes,UCLA,PHI,2006
+Michael Bradley,"Kentucky, Villanova",PHI,2006
+Samuel Dalembert,Seton Hall,PHI,2006
+Deng Gai,Fairfield,PHI,2006
+Willie Green,Detroit Mercy,PHI,2006
+Zendon Hamilton,St. John's,PHI,2006
+Steven Hunter,DePaul,PHI,2006
+Andre Iguodala,Arizona,PHI,2006
+Allen Iverson,Georgetown,PHI,2006
+Kyle Korver,Creighton,PHI,2006
+Lee Nailon,"Butler County Community College, TCU",PHI,2006
+Kevin Ollie,UConn,PHI,2006
+Shavlik Randolph,Duke,PHI,2006
+John Salmons,Miami (FL),PHI,2006
+James Thomas,Texas,PHI,2006
+Chris Webber,Michigan,PHI,2006
+Lou Williams,,PHI,2006
+Lou Amundson,UNLV,PHI,2007
+Rodney Carney,Memphis,PHI,2007
+Samuel Dalembert,Seton Hall,PHI,2007
+Willie Green,Detroit Mercy,PHI,2007
+Alan Henderson,Indiana,PHI,2007
+Steven Hunter,DePaul,PHI,2007
+Andre Iguodala,Arizona,PHI,2007
+Allen Iverson,Georgetown,PHI,2007
+Bobby Jones,Washington,PHI,2007
+Kyle Korver,Creighton,PHI,2007
+Ivan McFarlin,Oklahoma State,PHI,2007
+Andre Miller,Utah,PHI,2007
+Kevin Ollie,UConn,PHI,2007
+Shavlik Randolph,Duke,PHI,2007
+Joe Smith,Maryland,PHI,2007
+Steven Smith,La Salle,PHI,2007
+Chris Webber,Michigan,PHI,2007
+Lou Williams,,PHI,2007
+Lou Amundson,UNLV,PHI,2008
+Calvin Booth,Penn State,PHI,2008
+Rodney Carney,Memphis,PHI,2008
+Samuel Dalembert,Seton Hall,PHI,2008
+Reggie Evans,Iowa,PHI,2008
+Gordan Giriček,,PHI,2008
+Willie Green,Detroit Mercy,PHI,2008
+Andre Iguodala,Arizona,PHI,2008
+Kyle Korver,Creighton,PHI,2008
+Andre Miller,Utah,PHI,2008
+Kevin Ollie,UConn,PHI,2008
+Shavlik Randolph,Duke,PHI,2008
+Jason Smith,Colorado State,PHI,2008
+Lou Williams,,PHI,2008
+Thaddeus Young,Georgia Tech,PHI,2008
+Elton Brand,Duke,PHI,2009
+Samuel Dalembert,Seton Hall,PHI,2009
+Reggie Evans,Iowa,PHI,2009
+Willie Green,Detroit Mercy,PHI,2009
+Andre Iguodala,Arizona,PHI,2009
+Royal Ivey,Texas,PHI,2009
+Donyell Marshall,UConn,PHI,2009
+Andre Miller,Utah,PHI,2009
+Theo Ratliff,Wyoming,PHI,2009
+Kareem Rush,Missouri,PHI,2009
+Marreese Speights,Florida,PHI,2009
+Lou Williams,,PHI,2009
+Thaddeus Young,Georgia Tech,PHI,2009
 Elton Brand,Duke,PHI,2010
 Primož Brezec,,PHI,2010
 Rodney Carney,Memphis,PHI,2010
@@ -5091,6 +6669,72 @@ George Hill,IUPUI,PHI,2021
 Rayjon Tucker  (TW),"Florida Gulf Coast, Little Rock",PHI,2021
 Anthony Tolliver,Creighton,PHI,2021
 Gary Clark  (TW),Cincinnati,PHI,2021
+Leandro Barbosa,,PHO,2006
+Andre Barrett,Seton Hall,PHO,2006
+Raja Bell,"Boston University, Florida International University",PHO,2006
+Pat Burke,Auburn,PHO,2006
+Josh Davis,Wyoming,PHO,2006
+Boris Diaw,,PHO,2006
+Sharrod Ford,Clemson,PHO,2006
+Brian Grant,Xavier,PHO,2006
+Eddie House,Arizona State,PHO,2006
+Jim Jackson,Ohio State,PHO,2006
+James Jones,Miami (FL),PHO,2006
+Shawn Marion,UNLV,PHO,2006
+Steve Nash,Santa Clara,PHO,2006
+Amar'e Stoudemire,,PHO,2006
+Kurt Thomas,TCU,PHO,2006
+Tim Thomas,Villanova,PHO,2006
+Dijon Thompson,UCLA,PHO,2006
+Nikoloz Tskitishvili,,PHO,2006
+Marcus Banks,UNLV,PHO,2007
+Leandro Barbosa,,PHO,2007
+Raja Bell,"Boston University, Florida International University",PHO,2007
+Pat Burke,Auburn,PHO,2007
+Boris Diaw,,PHO,2007
+James Jones,Miami (FL),PHO,2007
+Jumaine Jones,Georgia,PHO,2007
+Shawn Marion,UNLV,PHO,2007
+Sean Marks,California,PHO,2007
+Steve Nash,Santa Clara,PHO,2007
+Eric Piatkowski,Nebraska,PHO,2007
+Jalen Rose,Michigan,PHO,2007
+Amar'e Stoudemire,,PHO,2007
+Kurt Thomas,TCU,PHO,2007
+Marcus Banks,UNLV,PHO,2008
+Leandro Barbosa,,PHO,2008
+Raja Bell,"Boston University, Florida International University",PHO,2008
+Boris Diaw,,PHO,2008
+Gordan Giriček,,PHO,2008
+Grant Hill,Duke,PHO,2008
+Linton Johnson,Tulane,PHO,2008
+Shawn Marion,UNLV,PHO,2008
+Sean Marks,California,PHO,2008
+Steve Nash,Santa Clara,PHO,2008
+Shaquille O'Neal,LSU,PHO,2008
+Eric Piatkowski,Nebraska,PHO,2008
+Brian Skinner,Baylor,PHO,2008
+Amar'e Stoudemire,,PHO,2008
+D.J. Strawberry,Maryland,PHO,2008
+Alando Tucker,Wisconsin,PHO,2008
+Lou Amundson,UNLV,PHO,2009
+Leandro Barbosa,,PHO,2009
+Matt Barnes,UCLA,PHO,2009
+Raja Bell,"Boston University, Florida International University",PHO,2009
+Dee Brown,Illinois,PHO,2009
+Boris Diaw,,PHO,2009
+Goran Dragić,,PHO,2009
+Jared Dudley,Boston College,PHO,2009
+Grant Hill,Duke,PHO,2009
+Robin Lopez,Stanford,PHO,2009
+Steve Nash,Santa Clara,PHO,2009
+Shaquille O'Neal,LSU,PHO,2009
+Jason Richardson,Michigan State,PHO,2009
+Courtney Sims,Michigan,PHO,2009
+Sean Singletary,Virginia,PHO,2009
+Amar'e Stoudemire,,PHO,2009
+Stromile Swift,LSU,PHO,2009
+Alando Tucker,Wisconsin,PHO,2009
 Lou Amundson,UNLV,PHO,2010
 Leandro Barbosa,,PHO,2010
 Earl Clark,Louisville,PHO,2010
@@ -5314,6 +6958,69 @@ E'Twaun Moore,Purdue,PHO,2021
 Jalen Smith,Maryland,PHO,2021
 Abdel Nader,"Northern Illinois, Iowa State",PHO,2021
 Ty-Shon Alexander  (TW),Creighton,PHO,2021
+Steve Blake,Maryland,POR,2006
+Juan Dixon,Maryland,POR,2006
+Jarrett Jack,Georgia Tech,POR,2006
+Viktor Khryapa,,POR,2006
+Voshon Lenard,Minnesota,POR,2006
+Darius Miles,,POR,2006
+Sergei Monia,,POR,2006
+Travis Outlaw,,POR,2006
+Ruben Patterson,Cincinnati,POR,2006
+Joel Przybilla,Minnesota,POR,2006
+Zach Randolph,Michigan State,POR,2006
+Theo Ratliff,Wyoming,POR,2006
+Ha Seung-Jin,,POR,2006
+Brian Skinner,Baylor,POR,2006
+Charles Smith,New Mexico,POR,2006
+Sebastian Telfair,,POR,2006
+Martell Webster,,POR,2006
+LaMarcus Aldridge,Texas,POR,2007
+Dan Dickau,"Washington, Gonzaga",POR,2007
+Juan Dixon,Maryland,POR,2007
+Stephen Graham,"Central Florida, Oklahoma State",POR,2007
+Jarrett Jack,Georgia Tech,POR,2007
+Fred Jones,Oregon,POR,2007
+Raef LaFrentz,Kansas,POR,2007
+Jamaal Magloire,Kentucky,POR,2007
+Travis Outlaw,,POR,2007
+Joel Przybilla,Minnesota,POR,2007
+Zach Randolph,Michigan State,POR,2007
+Jeremy Richardson,Delta State University,POR,2007
+Sergio Rodríguez,,POR,2007
+Brandon Roy,Washington,POR,2007
+Luke Schenscher,Georgia Tech,POR,2007
+Ime Udoka,"San Francisco, Portland State",POR,2007
+Martell Webster,,POR,2007
+LaMarcus Aldridge,Texas,POR,2008
+Steve Blake,Maryland,POR,2008
+Channing Frye,Arizona,POR,2008
+Taurean Green,Florida,POR,2008
+Jarrett Jack,Georgia Tech,POR,2008
+James Jones,Miami (FL),POR,2008
+Raef LaFrentz,Kansas,POR,2008
+Josh McRoberts,Duke,POR,2008
+Travis Outlaw,,POR,2008
+Joel Przybilla,Minnesota,POR,2008
+Sergio Rodríguez,,POR,2008
+Brandon Roy,Washington,POR,2008
+Von Wafer,Florida State,POR,2008
+Martell Webster,,POR,2008
+LaMarcus Aldridge,Texas,POR,2009
+Nicolas Batum,,POR,2009
+Jerryd Bayless,Arizona,POR,2009
+Steve Blake,Maryland,POR,2009
+Ike Diogu,Arizona State,POR,2009
+Rudy Fernández,,POR,2009
+Channing Frye,Arizona,POR,2009
+Greg Oden,Ohio State,POR,2009
+Travis Outlaw,,POR,2009
+Joel Przybilla,Minnesota,POR,2009
+Shavlik Randolph,Duke,POR,2009
+Sergio Rodríguez,,POR,2009
+Brandon Roy,Washington,POR,2009
+Michael Ruffin,Tulsa,POR,2009
+Martell Webster,,POR,2009
 LaMarcus Aldridge,Texas,POR,2010
 Jeff Ayres,Arizona State,POR,2010
 Nicolas Batum,,POR,2010
@@ -5518,6 +7225,77 @@ Keljin Blevins  (TW),"Southern Miss, Montana State",POR,2021
 Rondae Hollis-Jefferson,Arizona,POR,2021
 T.J. Leaf  (TW),UCLA,POR,2021
 Zach Collins,Gonzaga,POR,2021
+Shareef Abdur-Rahim,California,SAC,2006
+Mike Bibby,Arizona,SAC,2006
+Francisco García,Louisville,SAC,2006
+Jason Hart,Syracuse,SAC,2006
+Kevin Martin,Western Carolina University,SAC,2006
+Brad Miller,Purdue,SAC,2006
+Sergei Monia,,SAC,2006
+Vitaly Potapenko,Wright State University,SAC,2006
+Ronnie Price,"Nicholls State, Utah Valley",SAC,2006
+Jamal Sampson,California,SAC,2006
+Brian Skinner,Baylor,SAC,2006
+Peja Stojaković,,SAC,2006
+Kenny Thomas,New Mexico,SAC,2006
+Bonzi Wells,Ball State University,SAC,2006
+Corliss Williamson,Arkansas,SAC,2006
+Metta World Peace,St. John's,SAC,2006
+Shareef Abdur-Rahim,California,SAC,2007
+Mike Bibby,Arizona,SAC,2007
+Quincy Douby,Rutgers University,SAC,2007
+Francisco García,Louisville,SAC,2007
+Jason Hart,Syracuse,SAC,2007
+Kevin Martin,Western Carolina University,SAC,2007
+Brad Miller,Purdue,SAC,2007
+Vitaly Potapenko,Wright State University,SAC,2007
+Ronnie Price,"Nicholls State, Utah Valley",SAC,2007
+John Salmons,Miami (FL),SAC,2007
+Maurice Taylor,"Michigan, LSU",SAC,2007
+Kenny Thomas,New Mexico,SAC,2007
+Justin Williams,Wyoming,SAC,2007
+Corliss Williamson,Arkansas,SAC,2007
+Metta World Peace,St. John's,SAC,2007
+Shareef Abdur-Rahim,California,SAC,2008
+Mike Bibby,Arizona,SAC,2008
+Quincy Douby,Rutgers University,SAC,2008
+Francisco García,Louisville,SAC,2008
+Orien Greene,"Florida, Louisiana",SAC,2008
+Spencer Hawes,Washington,SAC,2008
+Anthony Johnson,College of Charleston,SAC,2008
+Dahntay Jones,"Rutgers University, Duke",SAC,2008
+Kevin Martin,Western Carolina University,SAC,2008
+Brad Miller,Purdue,SAC,2008
+Mikki Moore,Nebraska,SAC,2008
+John Salmons,Miami (FL),SAC,2008
+Kenny Thomas,New Mexico,SAC,2008
+Beno Udrih,,SAC,2008
+Darryl Watkins,Syracuse,SAC,2008
+Justin Williams,Wyoming,SAC,2008
+Shelden Williams,Duke,SAC,2008
+Metta World Peace,St. John's,SAC,2008
+Lorenzen Wright,Memphis,SAC,2008
+Calvin Booth,Penn State,SAC,2009
+Bobby Brown,Cal State Fullerton,SAC,2009
+Ike Diogu,Arizona State,SAC,2009
+Quincy Douby,Rutgers University,SAC,2009
+Francisco García,Louisville,SAC,2009
+Drew Gooden,Kansas,SAC,2009
+Donté Greene,Syracuse,SAC,2009
+Spencer Hawes,Washington,SAC,2009
+Bobby Jackson,Minnesota,SAC,2009
+Kevin Martin,Western Carolina University,SAC,2009
+Rashad McCants,UNC,SAC,2009
+Brad Miller,Purdue,SAC,2009
+Mikki Moore,Nebraska,SAC,2009
+Andrés Nocioni,,SAC,2009
+John Salmons,Miami (FL),SAC,2009
+Cedric Simmons,NC State,SAC,2009
+Will Solomon,Clemson,SAC,2009
+Kenny Thomas,New Mexico,SAC,2009
+Jason Thompson,Rider University,SAC,2009
+Beno Udrih,,SAC,2009
+Shelden Williams,Duke,SAC,2009
 Hilton Armstrong,UConn,SAC,2010
 Jon Brockman,Washington,SAC,2010
 Omri Casspi,,SAC,2010
@@ -5739,6 +7517,78 @@ Maurice Harkless,St. John's,SAC,2021
 Damian Jones,Vanderbilt,SAC,2021
 Jahmi'us Ramsey,Texas Tech,SAC,2021
 Robert Woodard,Mississippi State,SAC,2021
+Brent Barry,Oregon State,SAS,2006
+Bruce Bowen,Cal State Fullerton,SAS,2006
+Tim Duncan,Wake Forest,SAS,2006
+Michael Finley,Wisconsin,SAS,2006
+Manu Ginóbili,,SAS,2006
+Robert Horry,Alabama,SAS,2006
+Sean Marks,California,SAS,2006
+Nazr Mohammed,Kentucky,SAS,2006
+Rasho Nesterović,,SAS,2006
+Fabricio Oberto,,SAS,2006
+Tony Parker,,SAS,2006
+Melvin Sanders,"Seward County Community College, Oklahoma State",SAS,2006
+Alex Scales,Oregon,SAS,2006
+Beno Udrih,,SAS,2006
+Nick Van Exel,"Trinity Valley CC, Cincinnati",SAS,2006
+Brent Barry,Oregon State,SAS,2007
+Matt Bonner,Florida,SAS,2007
+Bruce Bowen,Cal State Fullerton,SAS,2007
+Jackie Butler,,SAS,2007
+Tim Duncan,Wake Forest,SAS,2007
+Francisco Elson,California,SAS,2007
+Melvin Ely,Fresno State,SAS,2007
+Michael Finley,Wisconsin,SAS,2007
+Manu Ginóbili,,SAS,2007
+Robert Horry,Alabama,SAS,2007
+Fabricio Oberto,,SAS,2007
+Tony Parker,,SAS,2007
+Beno Udrih,,SAS,2007
+Jacque Vaughn,Kansas,SAS,2007
+James White,"Florida, Cincinnati",SAS,2007
+Eric Williams,Providence,SAS,2007
+Brent Barry,Oregon State,SAS,2008
+Matt Bonner,Florida,SAS,2008
+Bruce Bowen,Cal State Fullerton,SAS,2008
+Tim Duncan,Wake Forest,SAS,2008
+Francisco Elson,California,SAS,2008
+Michael Finley,Wisconsin,SAS,2008
+Manu Ginóbili,,SAS,2008
+Robert Horry,Alabama,SAS,2008
+DerMarr Johnson,Cincinnati,SAS,2008
+Bobby Jones,Washington,SAS,2008
+Keith Langford,Kansas,SAS,2008
+Ian Mahinmi,,SAS,2008
+Fabricio Oberto,,SAS,2008
+Tony Parker,,SAS,2008
+Jeremy Richardson,Delta State University,SAS,2008
+Damon Stoudamire,Arizona,SAS,2008
+Kurt Thomas,TCU,SAS,2008
+Ime Udoka,"San Francisco, Portland State",SAS,2008
+Jacque Vaughn,Kansas,SAS,2008
+Darius Washington,Memphis,SAS,2008
+Marcus Williams,Arizona,SAS,2008
+Blake Ahearn,Missouri State University,SAS,2009
+Matt Bonner,Florida,SAS,2009
+Bruce Bowen,Cal State Fullerton,SAS,2009
+Austin Croshere,Providence,SAS,2009
+Tim Duncan,Wake Forest,SAS,2009
+Desmon Farmer,USC,SAS,2009
+Michael Finley,Wisconsin,SAS,2009
+Manu Ginóbili,,SAS,2009
+Drew Gooden,Kansas,SAS,2009
+Malik Hairston,Oregon,SAS,2009
+George Hill,IUPUI,SAS,2009
+Roger Mason,Virginia,SAS,2009
+Pops Mensah-Bonsu,George Washington,SAS,2009
+Fabricio Oberto,,SAS,2009
+Tony Parker,,SAS,2009
+Kurt Thomas,TCU,SAS,2009
+Anthony Tolliver,Creighton,SAS,2009
+Ime Udoka,"San Francisco, Portland State",SAS,2009
+Jacque Vaughn,Kansas,SAS,2009
+Marcus Williams,Arizona,SAS,2009
 DeJuan Blair,Pitt,SAS,2010
 Keith Bogans,Kentucky,SAS,2010
 Matt Bonner,Florida,SAS,2010
@@ -5952,6 +7802,76 @@ Quinndary Weatherspoon  (TW),Mississippi State,SAS,2021
 Gorgui Dieng,Louisville,SAS,2021
 Cameron Reynolds,Tulane,SAS,2021
 DaQuan Jeffries,"Oral Roberts, Tulsa",SAS,2021
+Rafael Araújo,BYU,TOR,2006
+Andre Barrett,Seton Hall,TOR,2006
+Matt Bonner,Florida,TOR,2006
+Chris Bosh,Georgia Tech,TOR,2006
+José Calderón,,TOR,2006
+Antonio Davis,Texas-El Paso,TOR,2006
+Joey Graham,"Central Florida, Oklahoma State",TOR,2006
+Mike James,Duquesne,TOR,2006
+Darrick Martin,UCLA,TOR,2006
+Morris Peterson,Michigan State,TOR,2006
+Jalen Rose,Michigan,TOR,2006
+Pape Sow,Cal State Fullerton,TOR,2006
+Charlie Villanueva,UConn,TOR,2006
+Aaron Williams,Xavier,TOR,2006
+Alvin Williams,Villanova,TOR,2006
+Eric Williams,Providence,TOR,2006
+Loren Woods,"Wake Forest, Arizona",TOR,2006
+Andrea Bargnani,,TOR,2007
+Chris Bosh,Georgia Tech,TOR,2007
+José Calderón,,TOR,2007
+Juan Dixon,Maryland,TOR,2007
+T.J. Ford,Texas,TOR,2007
+Jorge Garbajosa,,TOR,2007
+Joey Graham,"Central Florida, Oklahoma State",TOR,2007
+Kris Humphries,Minnesota,TOR,2007
+Luke Jackson,Oregon,TOR,2007
+Fred Jones,Oregon,TOR,2007
+Darrick Martin,UCLA,TOR,2007
+Rasho Nesterović,,TOR,2007
+Anthony Parker,Bradley,TOR,2007
+Morris Peterson,Michigan State,TOR,2007
+Uroš Slokar,,TOR,2007
+Pape Sow,Cal State Fullerton,TOR,2007
+P.J. Tucker,Texas,TOR,2007
+Andrea Bargnani,,TOR,2008
+Maceo Baston,Michigan,TOR,2008
+Chris Bosh,Georgia Tech,TOR,2008
+Primož Brezec,,TOR,2008
+José Calderón,,TOR,2008
+Carlos Delfino,,TOR,2008
+Juan Dixon,Maryland,TOR,2008
+T.J. Ford,Texas,TOR,2008
+Jorge Garbajosa,,TOR,2008
+Joey Graham,"Central Florida, Oklahoma State",TOR,2008
+Kris Humphries,Minnesota,TOR,2008
+Linton Johnson,Tulane,TOR,2008
+Jason Kapono,UCLA,TOR,2008
+Darrick Martin,UCLA,TOR,2008
+Jamario Moon,Meridian Community College,TOR,2008
+Rasho Nesterović,,TOR,2008
+Anthony Parker,Bradley,TOR,2008
+Hassan Adams,Arizona,TOR,2009
+Marcus Banks,UNLV,TOR,2009
+Andrea Bargnani,,TOR,2009
+Chris Bosh,Georgia Tech,TOR,2009
+José Calderón,,TOR,2009
+Quincy Douby,Rutgers University,TOR,2009
+Joey Graham,"Central Florida, Oklahoma State",TOR,2009
+Kris Humphries,Minnesota,TOR,2009
+Nathan Jawai,Midland College,TOR,2009
+Jason Kapono,UCLA,TOR,2009
+Shawn Marion,UNLV,TOR,2009
+Pops Mensah-Bonsu,George Washington,TOR,2009
+Jamario Moon,Meridian Community College,TOR,2009
+Patrick O'Bryant,Bradley,TOR,2009
+Jermaine O'Neal,,TOR,2009
+Anthony Parker,Bradley,TOR,2009
+Will Solomon,Clemson,TOR,2009
+Roko Ukić,,TOR,2009
+Jake Voskuhl,UConn,TOR,2009
 Marcus Banks,UNLV,TOR,2010
 Andrea Bargnani,,TOR,2010
 Marco Belinelli,,TOR,2010
@@ -6168,6 +8088,66 @@ Gary Trent Jr.,Duke,TOR,2021
 Rodney Hood,"Mississippi State, Duke",TOR,2021
 Jalen Harris  (TW),"Nevada, Louisiana Tech",TOR,2021
 Henry Ellenson,Marquette,TOR,2021
+Carlos Boozer,Duke,UTA,2006
+Devin Brown,Texas-San Antonio,UTA,2006
+Jarron Collins,Stanford,UTA,2006
+Gordan Giriček,,UTA,2006
+Matt Harpring,Georgia Tech,UTA,2006
+Kris Humphries,Minnesota,UTA,2006
+Andrei Kirilenko,,UTA,2006
+Keith McLeod,Bowling Green,UTA,2006
+C.J. Miles,,UTA,2006
+Mehmet Okur,,UTA,2006
+Greg Ostertag,Kansas,UTA,2006
+Andre Owens,"Indiana, Houston",UTA,2006
+Milt Palacio,"Midland College, Colorado State",UTA,2006
+Robert Whaley,"Barton County Community College, Cincinnati, Walsh University",UTA,2006
+Deron Williams,Illinois,UTA,2006
+Lou Amundson,UNLV,UTA,2007
+Rafael Araújo,BYU,UTA,2007
+Carlos Boozer,Duke,UTA,2007
+Ronnie Brewer,Arkansas,UTA,2007
+Dee Brown,Illinois,UTA,2007
+Jarron Collins,Stanford,UTA,2007
+Derek Fisher,Little Rock,UTA,2007
+Gordan Giriček,,UTA,2007
+Matt Harpring,Georgia Tech,UTA,2007
+Andrei Kirilenko,,UTA,2007
+C.J. Miles,,UTA,2007
+Paul Millsap,Louisiana Tech,UTA,2007
+Mehmet Okur,,UTA,2007
+Roger Powell,Illinois,UTA,2007
+Deron Williams,Illinois,UTA,2007
+Morris Almond,Rice University,UTA,2008
+Carlos Boozer,Duke,UTA,2008
+Ronnie Brewer,Arkansas,UTA,2008
+Jarron Collins,Stanford,UTA,2008
+Kyrylo Fesenko,,UTA,2008
+Gordan Giriček,,UTA,2008
+Matt Harpring,Georgia Tech,UTA,2008
+Jason Hart,Syracuse,UTA,2008
+Andrei Kirilenko,,UTA,2008
+Kyle Korver,Creighton,UTA,2008
+C.J. Miles,,UTA,2008
+Paul Millsap,Louisiana Tech,UTA,2008
+Mehmet Okur,,UTA,2008
+Ronnie Price,"Nicholls State, Utah Valley",UTA,2008
+Deron Williams,Illinois,UTA,2008
+Morris Almond,Rice University,UTA,2009
+Carlos Boozer,Duke,UTA,2009
+Ronnie Brewer,Arkansas,UTA,2009
+Jarron Collins,Stanford,UTA,2009
+Kyrylo Fesenko,,UTA,2009
+Matt Harpring,Georgia Tech,UTA,2009
+Andrei Kirilenko,,UTA,2009
+Brevin Knight,Stanford,UTA,2009
+Kyle Korver,Creighton,UTA,2009
+Kosta Koufos,Ohio State,UTA,2009
+C.J. Miles,,UTA,2009
+Paul Millsap,Louisiana Tech,UTA,2009
+Mehmet Okur,,UTA,2009
+Ronnie Price,"Nicholls State, Utah Valley",UTA,2009
+Deron Williams,Illinois,UTA,2009
 Carlos Boozer,Duke,UTA,2010
 Ronnie Brewer,Arkansas,UTA,2010
 Kyrylo Fesenko,,UTA,2010
@@ -6376,6 +8356,67 @@ Matt Thomas,Iowa State,UTA,2021
 Elijah Hughes,"Syracuse, East Carolina University",UTA,2021
 Ersan İlyasova,,UTA,2021
 Udoka Azubuike,Kansas,UTA,2021
+Gilbert Arenas,Arizona,WAS,2006
+Chucky Atkins,South Florida,WAS,2006
+Andray Blatche,,WAS,2006
+Calvin Booth,Penn State,WAS,2006
+Caron Butler,UConn,WAS,2006
+Antonio Daniels,Bowling Green,WAS,2006
+Jarvis Hayes,"Western Carolina University, Georgia",WAS,2006
+Brendan Haywood,UNC,WAS,2006
+Antawn Jamison,UNC,WAS,2006
+Jared Jeffries,Indiana,WAS,2006
+Michael Ruffin,Tulsa,WAS,2006
+Awvee Storey,"Illinois, Arizona State",WAS,2006
+Donell Taylor,"Okaloosa-Walton Community College, UAB",WAS,2006
+Billy Thomas,Kansas,WAS,2006
+Etan Thomas,Syracuse,WAS,2006
+Gilbert Arenas,Arizona,WAS,2007
+Andray Blatche,,WAS,2007
+Calvin Booth,Penn State,WAS,2007
+Caron Butler,UConn,WAS,2007
+Antonio Daniels,Bowling Green,WAS,2007
+Mike Hall,George Washington,WAS,2007
+Jarvis Hayes,"Western Carolina University, Georgia",WAS,2007
+Brendan Haywood,UNC,WAS,2007
+Antawn Jamison,UNC,WAS,2007
+James Lang,,WAS,2007
+Roger Mason,Virginia,WAS,2007
+Michael Ruffin,Tulsa,WAS,2007
+Darius Songaila,Wake Forest,WAS,2007
+DeShawn Stevenson,,WAS,2007
+Donell Taylor,"Okaloosa-Walton Community College, UAB",WAS,2007
+Etan Thomas,Syracuse,WAS,2007
+Gilbert Arenas,Arizona,WAS,2008
+Andray Blatche,,WAS,2008
+Caron Butler,UConn,WAS,2008
+Antonio Daniels,Bowling Green,WAS,2008
+Brendan Haywood,UNC,WAS,2008
+Antawn Jamison,UNC,WAS,2008
+Roger Mason,Virginia,WAS,2008
+Dominic McGuire,"California, Fresno State",WAS,2008
+Oleksiy Pecherov,,WAS,2008
+Darius Songaila,Wake Forest,WAS,2008
+DeShawn Stevenson,,WAS,2008
+Mike Wilks,Rice University,WAS,2008
+Nick Young,USC,WAS,2008
+Gilbert Arenas,Arizona,WAS,2009
+Andray Blatche,,WAS,2009
+Dee Brown,Illinois,WAS,2009
+Caron Butler,UConn,WAS,2009
+Javaris Crittenton,Georgia Tech,WAS,2009
+Antonio Daniels,Bowling Green,WAS,2009
+Juan Dixon,Maryland,WAS,2009
+Brendan Haywood,UNC,WAS,2009
+Mike James,Duquesne,WAS,2009
+Antawn Jamison,UNC,WAS,2009
+JaVale McGee,Nevada,WAS,2009
+Dominic McGuire,"California, Fresno State",WAS,2009
+Oleksiy Pecherov,,WAS,2009
+Darius Songaila,Wake Forest,WAS,2009
+DeShawn Stevenson,,WAS,2009
+Etan Thomas,Syracuse,WAS,2009
+Nick Young,USC,WAS,2009
 Gilbert Arenas,Arizona,WAS,2010
 Andray Blatche,,WAS,2010
 Earl Boykins,Eastern Michigan,WAS,2010
