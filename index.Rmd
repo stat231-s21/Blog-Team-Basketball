@@ -223,6 +223,10 @@ We have also broken down the best players from each of the pure stat categories.
 ## Networks
 Network science is a field that is 
 
+<<<<<<< HEAD
+=======
+### WRITE WHAT THIS IS HERE
+>>>>>>> 3475667c433644fd1697c98934eade8bbbe606c5
 
 ```{r, warning = FALSE}
                                              ## VORP network ##
@@ -291,9 +295,18 @@ girafe(ggobj = Bgg,
   )
 ```
 
+<<<<<<< HEAD
 ```{r, echo = FALSE, warning = FALSE}
 #best FG% stats
 nbaFG <- players %>%
+=======
+### WRITE WHAT THIS IS HERE
+
+```{r, include = FALSE}
+###############################################
+#best BPM stats
+nbaRR <- players %>%
+>>>>>>> 3475667c433644fd1697c98934eade8bbbe606c5
   select(player, Team, Year) %>%
   filter( player %in% pFG)
 
@@ -514,6 +527,9 @@ Players that were more connected tended to....
 
 * One can also make directed networks out of trades and see which teams tend to "bleed" talent or teams that "find" talent
 
+* One can also filter and combine College and High School networks to gain new insights. Which Colleges and High Schools had the most NBA talent? Do certain High Schools' NBA talent tend to feed into a certain College? 
+
+* As the High School and College data also contains location, one can combine networks and spatial analysis to see connections across a map. For example, one can examine whether certain states produce more NBA talent at a High School or a College level. 
 
 
 # References
