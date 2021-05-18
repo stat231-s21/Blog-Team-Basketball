@@ -22,12 +22,12 @@ library(plotly)
 library(shiny)
 library(shinythemes)
 #import dataset
-# path_in <- "/Users/emmagardecki/Documents/junior yr/stat231/Blog-Team-Basketball"
-path_in_eric <- ""
-# draft <- read_csv(paste0(path_in, "/draft_allplayers.csv"))
-# players <- read_csv(paste0(path_in, "/allPlayers2010-2021.csv"))
-draft <- read_csv(paste0(path_in_eric, "draft_allplayers.csv"))
-players <- read_csv(paste0(path_in_eric, "allPlayers2010-2021.csv"))
+path_in <- "/Users/emmagardecki/Documents/junior yr/stat231/Blog-Team-Basketball"
+# path_in_eric <- ""
+draft <- read_csv(paste0(path_in, "/draft_allplayers.csv"))
+players <- read_csv(paste0(path_in, "/allPlayers2010-2021.csv"))
+# draft <- read_csv(paste0(path_in_eric, "draft_allplayers.csv"))
+# players <- read_csv(paste0(path_in_eric, "allPlayers2010-2021.csv"))
 #all teams
 TEAMS0 <- c("ATL", "BOS", "NJN", "BKK", "CHA", "CHI", "CLE", "DAL", "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHX", "POR", "SAC", "SAS", "TOR", "UTA", "WAS", "CHO", "NOH")
 
@@ -225,10 +225,6 @@ Network science is a field that studies links, called edges, between distinct el
 
 Specifically in these networks we are looking into the question - do more connected players have more successful NBA careers? Below we have attempted to build networks that allow you to visualize this phenomena. 
 
-
-
-### WRITE WHAT THIS IS HERE
-
 ```{r, warning = FALSE}
                                              ## VORP network ##
 set.seed(0037)
@@ -285,7 +281,7 @@ Bgg <- ggplot(data = Bnet
   geom_edges(color = "royalblue2") +
   geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = 0.0, nudge_y = .07, check_overlap = TRUE) +
+  geom_nodetext(aes(label = name), nudge_x = 0.0, nudge_y = .05, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
     title = "Player Connectivity - Highest Box Plus/Minus",
@@ -300,8 +296,9 @@ girafe(ggobj = Bgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
-* The diameter of this network is `r diameter(B)`. 
-*
+* The diameter of this network is `r get_diameter(B)`. 
+* Another very connected network, most players have played for more than one team, and those are often the same teams. 
+* Note: The New Orleans Pelicans (NOP) were previously named the New Orleans Hornets (NOH), so Anthony Davis has played for two different teams, not three. 
 
 ```{r, echo = FALSE, warning = FALSE}
 #best FG% stats
@@ -334,8 +331,8 @@ girafe(ggobj = FGgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
-* The diameter of this network is `r diameter(FG)`. 
-*
+* The diameter of this network is `r get_diameter(FG)`. 
+* This netowrks shows a different set of players than the previous two, this network shows players with just very good field goal percentage. Therefore, they are not the 'superstars' that we were previously looking at and you can see how the connection type has changed. No longer are we looking at a few teams that are passing star players between them, but now each player playing for a few teams throughout their career. 
 
 ```{r, echo = FALSE, warning = FALSE}
 #best PTS stats
@@ -368,8 +365,9 @@ girafe(ggobj = Pgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
-* The diameter of this network is `r diameter(P)`. 
-*
+* The diameter of this network is `r get_diameter(P)`. 
+* This network features a different phenomena than those above, it features many more one team players. This could be an indication of many things, but in this limited case we believe it to be a product of these players being young. Williamson and Embiid are still under their rookie contracts, meaning the only way they could play for another team is if the Pelicans or 76ers, respectively, decided to trade their best scorers. 
+* **This introduces us to another point in this exploration - moving teams, or connection, is often determined by the team not the player.** 
 
 ```{r, echo = FALSE, warning = FALSE}
 #best TRB stats
@@ -402,8 +400,9 @@ girafe(ggobj = Rgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
-* The diameter of this network is `r diameter(R)`. 
-*
+* The diameter of this network is `r get_diameter(R)`. 
+* Our rebound network is another that features a large diameter, with the possible reasoning that teams care less about retaining players that secure a high number of rebounds than a high points. 
+* **If these players are being traded at higher numbers, it could indicate that they are less valued within the league, something that could be checked by comparing salary data.** 
 
 ```{r, echo = FALSE, warning = FALSE}
 #best AST stats
@@ -437,47 +436,9 @@ girafe(ggobj = Agg,
   )
 
 ```
-* The diameter of this network is `r diameter(A)`. 
-*
+* The diameter of this network is `r get_diameter(A)`. 
+* This is our biggest network by far at a diameter of 14. We could easily draw the same conclusion as above with some knowledge on salary data for these players. 
 
-```{r, echo = FALSE, warning = FALSE}
-#interesting group
-nba0 <- players %>%
-  select(player, Team, Year) %>%
-  filter( player %in% p0)
-
-cs0 <- graph_from_data_frame(nba0, directed = TRUE)
-
-net0 <- ggnetwork( cs0 )
-net0$tooltip <- paste0("Team = ", net0$name)
-  
-gg0 <- ggplot(data = net0
-       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
-  geom_edges(color = "royalblue2") +
-  geom_nodes(color = "firebrick2", size = 4) +
-  theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .05, nudge_y = .04, check_overlap = TRUE) +
-  geom_point_interactive(size=2) + 
-  labs(
-    title = "Player Connectivity - Case Study"
-  )
-
-girafe(ggobj = gg0, 
-  options = list(
-    opts_sizing(width = .7),
-    # opts_hover_inv(css = "opacity:0.1;"),
-    # opts_hover(css = "fill:red;"),
-    opts_toolbar(position = "bottomright") )
-  )
-
-# get_diameter(cs0)
-```
-* The diameter of this network is `r diameter(cs0)`. 
-*
-
-
-Below is a network of different colleges that players attended. As one can see, there are many colleges with a few players, signaling that they've only had stand
-EXPAND HERE
 
 ```{r echo = FALSE, warning = FALSE}
                                        ## college network - nonvis ##
@@ -511,10 +472,44 @@ girafe(ggobj = college,
 
 # get_diameter(c0)
 ```
-
+* Here is a network of different colleges that players attended. As you can see, there are many colleges with a few players, signaling that they've sent very few players to the NBA. Contrarily, there are many nodes with many edges, indicating that they have sent many players to the NBA such as the University of Michigan or Duke University. 
+* Note: We chose to include players that did not go to college, or went to college internationally, and they occupy the densest node, 'NA'. In all actuality these players most likely have no relation to each other. 
 
 ## Case Study
+```{r, echo = FALSE, warning = FALSE}
+#interesting group
+nba0 <- players %>%
+  select(player, Team, Year) %>%
+  filter( player %in% p0)
 
+cs0 <- graph_from_data_frame(nba0, directed = TRUE)
+
+net0 <- ggnetwork( cs0 )
+net0$tooltip <- paste0("Team = ", net0$name)
+  
+gg0 <- ggplot(data = net0
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "royalblue2") +
+  geom_nodes(color = "firebrick2", size = 4) +
+  theme_blank() +
+  geom_nodetext(aes(label = name), nudge_x = .05, nudge_y = .04, check_overlap = TRUE) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "Player Connectivity - Case Study"
+  )
+
+girafe(ggobj = gg0, 
+  options = list(
+    opts_sizing(width = .7),
+    # opts_hover_inv(css = "opacity:0.1;"),
+    # opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+
+# get_diameter(cs0)
+```
+* The diameter of this network is `r get_diameter(cs0)`. 
+*
 
 # Conclusion
 ## Limitations
