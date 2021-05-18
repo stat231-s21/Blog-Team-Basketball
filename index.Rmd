@@ -221,7 +221,7 @@ Players with a VORP at or above 40 are considered to be great players (), and ar
 We have also broken down the best players from each of the pure stat categories. This again allows for us to look into players that excel in a certain area of the game, such as collecting rebounds, and observe below how their networks look as well. 
 
 ## Networks
-Network science is a field that is 
+Network science is a field that studies links, called edges, between distinct elements, called nodes or vertices. By analyzing these links, one can learn information about the relationship between nodes. 
 
 <<<<<<< HEAD
 =======
