@@ -48,36 +48,36 @@ for(i in 1:length(teams)){
     roster <- clean_names(html_table(tables[[1]])) %>%
       select(player, college) %>%
       mutate(Team = substring(url, 44, 46), Year = j)
-    table_player <- url %>%
-      read_html() %>%
-      html_nodes("td a") %>%
-      html_attr("href") %>%
-      purrr::pluck() %>%
-      as.data.frame() %>%
-      clean_names() %>%
-      mutate(URL = x) %>%
-      select(URL) %>%
-      rowid_to_column("index")
-    table_player_name <- url %>%
-      read_html() %>%
-      html_nodes("td a") %>%
-      html_text() %>%
-      purrr::pluck() %>%
-      as.data.frame() %>%
-      clean_names() %>%
-      mutate(Name = x) %>%
-      select(Name) %>%
-      rowid_to_column("index") %>%
-      inner_join(table_player, by=c("index"="index"))
-    table_final <- filter(table_player_name, grepl("^/players", URL), grepl(".html", URL))
-    table_final <- table_final %>%
-      mutate(Player_URL = paste("https://www.basketball-reference.com", URL, sep = ""))%>%
-      select(Name, Player_URL)
-    vect_test = Vectorize(get_hs)
-    table_final <- table_final %>%
-      mutate(HS = vect_test(Player_URL))
-    roster <- roster %>% inner_join(table_final, by=c("player" = "Name"))
-    
+    # table_player <- url %>%
+    #   read_html() %>%
+    #   html_nodes("td a") %>%
+    #   html_attr("href") %>%
+    #   purrr::pluck() %>%
+    #   as.data.frame() %>%
+    #   clean_names() %>%
+    #   mutate(URL = x) %>%
+    #   select(URL) %>%
+    #   rowid_to_column("index")
+    # table_player_name <- url %>%
+    #   read_html() %>%
+    #   html_nodes("td a") %>%
+    #   html_text() %>%
+    #   purrr::pluck() %>%
+    #   as.data.frame() %>%
+    #   clean_names() %>%
+    #   mutate(Name = x) %>%
+    #   select(Name) %>%
+    #   rowid_to_column("index") %>%
+    #   inner_join(table_player, by=c("index"="index"))
+    # table_final <- filter(table_player_name, grepl("^/players", URL), grepl(".html", URL))
+    # table_final <- table_final %>%
+    #   mutate(Player_URL = paste("https://www.basketball-reference.com", URL, sep = ""))%>%
+    #   select(Name, Player_URL)
+    # vect_test = Vectorize(get_hs)
+    # table_final <- table_final %>%
+    #   mutate(HS = vect_test(Player_URL))
+    # roster <- roster %>% inner_join(table_final, by=c("player" = "Name"))
+
     all_players <- all_players %>%
       bind_rows(roster)
     # all_players <- filter(all_players,
@@ -163,5 +163,3 @@ get_hs <- function(url){
   }
   return(to_add)
 }
-  '
-  .'
