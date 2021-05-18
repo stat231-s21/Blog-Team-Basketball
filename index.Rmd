@@ -58,7 +58,7 @@ pA <- c("Ja Morant", "Lonzo Ball", "Trae Young", "Ben Simmons", "Elfrid Payton",
 
 # Introduction
 ## Motivation
-So much of a positive career is determined by the circumstances surrounding it. Maybe you got the job because you were in the right place at the right time, or you missed the interview because of a flat tire and didn't get the job. For players in the National Basketball Association, these circumstances are often experienced as what schools they attended and teams were they traded to. With this project we set out to discover if the circumstances around who players wore across their chests impacted overall career success. Further, it is possible that playing with other successful players helped improve a players' skills and set them up for success. Did players that knew more players than others have more successful careers? Is connection early on in a basketball player's journey - say high school or college - more indicative of a successful career? 
+So much of a positive career is determined by the circumstances surrounding it. Maybe you got the job because you were in the right place at the right time, or you missed the interview because of a flat tire and didn't get the job. For players in the National Basketball Association, these circumstances are often experienced as what schools they attended and teams were they traded to. With this project we set out to discover if the circumstances around who players wore across their chests impacted overall career success. Further, it is possible that playing with other successful players helped improve a players' skills and set them up for success. Different coaching staffs on different teams could've also made an impact on players' skills. Did players that knew more players than others have more successful careers? Is connection early on in a basketball player's journey - say high school or college - more indicative of a successful career? 
 
 Another question we set out to address is how do we measure success? We have decided to stick to the most quantitative measures of success, career statistics. Specifically, we are returning to the value over replacement player (VORP) statistic, but our visualizations allow for the user to choose the statistic they want to use to measure success by, from field goal percentage (FG%) to total number of rebounds (TRB). 
 
@@ -70,7 +70,9 @@ Another question we set out to address is how do we measure success? We have dec
 
 # Background
 ## Background on Topic
+Basketball players play in one of 30 NBA teams. Players can leave a team via a trade (where a team exchanges the player for another), being waived and re-signed by another team (typically when a player underpreforms), being drafted into a team, or being signed as a free agent at the end of a contract (or at the beginning of a career). 
 
+As for Colleges and High Schools, typically only the "star" players of high schools tend to make it to the NBA. There are, however, some exceptions as some programs are notorious for creating NBA talent. Players can transfer between schools in these two levels. 
 
 
 ## Data Sources
@@ -493,6 +495,8 @@ Players that were more connected tended to....
 * As mentioned earlier, one can create an analysis of how many successful teammates a certain player had over time which can help fix the One-team player issue.
 
 * One can also potentially attempt to find some type of centrality in the networks to see if a specific player or team has had the most connections. 
+
+* One can also make directed networks out of trades and see which teams tend to "bleed" talent or teams that "find" talent
 
 
 
