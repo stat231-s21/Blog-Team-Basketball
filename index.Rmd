@@ -9,7 +9,7 @@ output:
 runtime: shiny
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, warning=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 library(tidyverse)
 library(dplyr)
@@ -58,7 +58,7 @@ pA <- c("Ja Morant", "Lonzo Ball", "Trae Young", "Ben Simmons", "Elfrid Payton",
 
 # Introduction
 ## Motivation
-So much of a positive career is determined by the circumstances surrounding it. Maybe you got the job because you were in the right place at the right time, or you missed the interview because of a flat tire and didn't get the job. For players in the National Basketball Association, these circumstances are often experienced as what schools they attended and teams were they traded to. With this project we set out to discover if the circumstances around who players wore across their chests impacted overall career success. Did players that knew more players than others have more successful careers? Is connection early on in a basketball player's journey - say high school or college - more indicative of a successful career? 
+So much of a positive career is determined by the circumstances surrounding it. Maybe you got the job because you were in the right place at the right time, or you missed the interview because of a flat tire and didn't get the job. For players in the National Basketball Association, these circumstances are often experienced as what schools they attended and teams were they traded to. With this project we set out to discover if the circumstances around who players wore across their chests impacted overall career success. Further, it is possible that playing with other successful players helped improve a players' skills and set them up for success. Did players that knew more players than others have more successful careers? Is connection early on in a basketball player's journey - say high school or college - more indicative of a successful career? 
 
 Another question we set out to address is how do we measure success? We have decided to stick to the most quantitative measures of success, career statistics. Specifically, we are returning to the value over replacement player (VORP) statistic, but our visualizations allow for the user to choose the statistic they want to use to measure success by, from field goal percentage (FG%) to total number of rebounds (TRB). 
 
@@ -72,8 +72,9 @@ Another question we set out to address is how do we measure success? We have dec
 ## Background on Topic
 
 
+
 ## Data Sources
-The dataset we utilized for this investigation was scraped from basketball-reference.com. We scraped each team's roster from 2010-2021, which high school and college each player attended, and some relevant statistics for each player. 
+The dataset we utilized for this investigation was scraped from basketball-reference.com. We scraped each team's roster from 2010-2021, which high school and college each player attended, and some relevant statistics for each player. In total, 6616 instances of a player were scraped. 
 
 # Findings
 ## Success
@@ -210,6 +211,9 @@ server = function(input, output) {
 
 
 ## Networks
+
+WRITE WHAT THIS IS HERE
+
 ```{r, warning = FALSE}
 set.seed(0037)
 
@@ -272,6 +276,8 @@ girafe(ggobj = RRgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
+
+WRITE WHAT THIS IS HERE
 
 ```{r, include = FALSE}
 ###############################################
@@ -426,7 +432,10 @@ girafe(ggobj = RRgg,
 
 ```
 
-```{r}
+Below is a network of different colleges that players attended. As one can see, there are many colleges with a few players, signaling that they've only had stand
+EXPAND HERE
+
+```{r echo = FALSE, warning = FALSE}
 set.seed(0049)
 coll <- players %>%
   select(player, college, Year) 
@@ -444,7 +453,7 @@ college <- ggplot(data = collnet
   # geom_nodetext(aes(label = name)) +
   geom_point_interactive(size=2) + 
   labs(
-    title = "college network"
+    title = "College Network"
   )
 
 girafe(ggobj = college, 
@@ -475,8 +484,16 @@ girafe(ggobj = college,
 
 ## Conclusion
 
+Players that knew each other in HS and college ....
+
+Players that were more connected tended to....
+
 
 ## Future Research
+* As mentioned earlier, one can create an analysis of how many successful teammates a certain player had over time which can help fix the One-team player issue.
+
+* One can also potentially attempt to find some type of centrality in the networks to see if a specific player or team has had the most connections. 
+
 
 
 # References
@@ -485,48 +502,10 @@ girafe(ggobj = college,
 * https://www.reddit.com/r/nba/comments/7rq7t4/how_is_the_advanced_stat_vorpvalue_over/
 * https://www.reddit.com/r/nba/comments/3bkfxj/graph_average_number_of_trades_per_team_per_year/
 
-Let's clean up the format of that output:
+![Thank You for Listening!](https://media.giphy.com/media/osjgQPWRx3cac/giphy.gif)
 
-```{r pretty, echo=FALSE, warning=FALSE, message=FALSE}
-library(kableExtra)
-summary(cars) %>%
-  kable(col.names = c("Speed", "Distance")
-        , row.names = F) %>%
-  kable_styling(bootstrap_options = "striped"
-                , full_width = F) %>%
-  row_spec(0, bold = T, underline = T) %>%
-  column_spec(1:2, width = "1.5in") 
-```
+![Team Logo](https://raw.githubusercontent.com/stat231-s21/Blog-Team-Basketball/main/images/s2g6-sports.jpg)
 
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-
-## Including links and images
-
-You can include [Links](https://www.datadreaming.org/post/r-markdown-theme-gallery/) and images ![team logo](https://raw.githubusercontent.com/stat231-s21/Blog-Team-Basketball/main/images/s2g6-sports.jpg)
-
-You can embed a gif.
-
-![pugs](https://media.giphy.com/media/XHVmD4RyXgSjd8aUMb/giphy.gif)
-
-
-# You can even create tabs if you want! {.tabset .tabset-fade .tabset-pills}
-
-## Bulleted list
-
-You can make a bulleted list like this:
-
-- item 1
-- item 2
-- item 3
-
-
-## Numbered list
-
-You can make a numbered list like this
-
-1. First thing I want to say
-2. Second thing I want to say
-3. Third thing I want to say
 
