@@ -221,7 +221,12 @@ Players with a VORP at or above 40 are considered to be great players (), and ar
 We have also broken down the best players from each of the pure stat categories. This again allows for us to look into players that excel in a certain area of the game, such as collecting rebounds, and observe below how their networks look as well. 
 
 ## Networks
+<<<<<<< HEAD
 Network science looks at connection. Specifically in these networks we are looking into the question - do more connected players have more successful NBA careers? Below we have attempted to build networks that allow you to visualize this phenomena. 
+
+Network science is a field that studies links, called edges, between distinct elements, called nodes or vertices. By analyzing these links, one can learn information about the relationship between nodes. 
+
+### WRITE WHAT THIS IS HERE
 
 ```{r, warning = FALSE}
                                              ## VORP network ##
@@ -249,7 +254,7 @@ Vgg <- ggplot(data = Vnet
 
 girafe(ggobj = Vgg, 
   options = list(
-    opts_sizing(width = 1.0),
+    opts_sizing(width = 0.9),
     # opts_hover_inv(css = "opacity:0.1;"),
     # opts_hover(css = "fill:red;"),
     opts_toolbar(position = "bottomright") )
