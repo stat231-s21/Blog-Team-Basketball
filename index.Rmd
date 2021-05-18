@@ -10,6 +10,7 @@ runtime: shiny
 ---
 
 ```{r setup, include=FALSE, warning=FALSE}
+                                ## libraries, data, defined lists - nonvis code ##
 knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 library(tidyverse)
 library(dplyr)
@@ -76,13 +77,14 @@ As for Colleges and High Schools, typically only the "star" players of high scho
 
 
 ## Data Sources
-The dataset we utilized for this investigation was scraped from basketball-reference.com. We scraped each team's roster from 2010-2021, which high school and college each player attended, and some relevant statistics for each player. In total, 6616 instances of a player were scraped. 
+The dataset we utilized for this investigation was scraped from basketball-reference.com. We scraped each team's roster from 2010-2021, which high school and college each player attended, and some relevant career statistics for each player. In total, 6616 instances of a player were scraped. 
 
 # Findings
 ## Success
 We begin our search for these answers by attempting to quantify player success through various (mostly offensive) game statistics. As mentioned above, the standard that we, as your authors and data scientists, chose to measure success by is VORP due to the fact it is a calculated statistic that attempts to weigh many simple stats. This algorithm, which is included in full in the Reference section, attempts to coerce basketball success into one simple number by weighing the perceived importance of various statistics (such as points per game (PPG) and total rebounds per game (TRB)) in addition to the pure statistics of each player's career. BPM, or Box Plus/Minus, is another statistic we decided to include as it is another option for a calculated box score based metric (). It is anothere weighted estimate of a player's contribution to their team. Where BPM just looks at how much a player helps or hurts their team when they are on the court, VORP takes that and weighs by the number of minutes the player is on the court for, with the idea that better players are playing more minutes. We urge you to take a strong look at the VORP and BPM tabs especially if you are less familiar with basketball. You are also welcome to look into the purer career statistics we have included, nobably field goal percentage, PPG, and TRB. 
 
 ```{r, echo = FALSE}
+                                        ## embedded shiny app - nonvis ##
 shinyApp(
   ui = navbarPage(
   theme = shinytheme("yeti"),
@@ -99,7 +101,7 @@ shinyApp(
   ),
   
   tabPanel(
-    title = "BPM",
+    title = "Box Plus/Minus",
     fluidPage(
       fluidRow(
         mainPanel( width = 12,
@@ -111,7 +113,7 @@ shinyApp(
   ),
   
   tabPanel(
-    title = "FGpct",
+    title = "FG%",
     fluidPage(
       fluidRow(
         mainPanel(width = 12,
@@ -123,7 +125,7 @@ shinyApp(
   ),
   
   tabPanel(
-    title = "PTS",
+    title = "Points per Game",
     fluidPage(
       fluidRow(
         mainPanel(width = 12,
@@ -135,7 +137,7 @@ shinyApp(
   ),
   
   tabPanel(
-    title = "TRB",
+    title = "Rebounds per Game",
     fluidPage(
       fluidRow(
         mainPanel(width = 12,
@@ -147,7 +149,7 @@ shinyApp(
   ),
   
   tabPanel(
-    title = "AST",
+    title = "Assists per Game",
     fluidPage(
       fluidRow(
         mainPanel(width = 12,
@@ -210,67 +212,42 @@ server = function(input, output) {
 }
 )
 ```
+Each of these statistics we have isolated measure performance success in a slightly different way, although we will admit some are more similar than others. But no matter if you'd prefer to measure these players' success on offensive or defensive stats (which is admittedly lacking throughout the game and especially here), we have tried to include a statistic that carries some value to you above. 
 
+To personally measure success for each measure, we have isolated the players with the best numbers from each category, along with an additional group of similar, good players, who have been in the league for many years and feature similar statistics across the board as an interesting case study. This group of players will be examined later in this post. 
+
+Players with a VORP at or above 40 are considered to be great players (), and are isolated in the following section. This group includes players such as Kevin Durant, James Harden, Russell Westbrook, and Steph Curry. Similarly, a BPM of greater than 5, assumed to be a career all-star player (bsktbl ref bpm), is included and features all players listed above in addition to the likes of Karl-Anthony Towns, Joel Embiid, and Kawhi Leonard. While VORP weighs towards players who have been in the league longer, due to the fact it weighs by number of possessions where BPM does not. Therefore, in the BPM category, we see many younger players that are stars, but do not have the number of possessions yet to have a career VORP statistic that reflects that. 
+
+We have also broken down the best players from each of the pure stat categories. This again allows for us to look into players that excel in a certain area of the game, such as collecting rebounds, and observe below how their networks look as well. 
 
 ## Networks
+Network science is a field that is 
 
-WRITE WHAT THIS IS HERE
 
 ```{r, warning = FALSE}
+                                             ## VORP network ##
 set.seed(0037)
-
-#interesting group
-nbaRR <- players %>%
-  select(player, Team, Year) %>%
-  filter( player %in% p0)
-
-RR <- graph_from_data_frame(nbaRR, directed = TRUE)
-
-RRnet <- ggnetwork( RR )
-RRnet$tooltip <- paste0("Team = ", RRnet$name)
-  
-RRgg <- ggplot(data = RRnet
-       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
-  geom_edges(color = "green") +
-  geom_nodes(color = "gold", size = 4) +
-  theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
-  geom_point_interactive(size=2) + 
-  labs(
-    title = "Connectivity"
-  )
-
-girafe(ggobj = RRgg, 
-  options = list(
-    opts_sizing(width = .7),
-    # opts_hover_inv(css = "opacity:0.1;"),
-    # opts_hover(css = "fill:red;"),
-    opts_toolbar(position = "bottomright") )
-  )
-
-#########################################################
-##best VORP stats
-nbaRR <- players %>%
+nbaV <- players %>%
   select(player, Team, Year) %>%
   filter( player %in% pV)
 
-RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+V <- graph_from_data_frame(nbaV, directed = TRUE)
 
-RRnet <- ggnetwork( RR )
-RRnet$tooltip <- paste0("Team = ", RRnet$name)
+Vnet <- ggnetwork( V )
+Vnet$tooltip <- paste0("Team = ", Vnet$name)
   
-RRgg <- ggplot(data = RRnet
+Vgg <- ggplot(data = Vnet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
-  geom_edges(color = "green") +
-  geom_nodes(color = "gold", size = 4) +
+  geom_edges(color = "royalblue2") +
+  geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_nodetext(aes(label = name), nudge_x = -.05, nudge_y = .04, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
     title = "Connectivity"
   )
 
-girafe(ggobj = RRgg, 
+girafe(ggobj = Vgg, 
   options = list(
     opts_sizing(width = .7),
     # opts_hover_inv(css = "opacity:0.1;"),
@@ -281,150 +258,186 @@ girafe(ggobj = RRgg,
 
 WRITE WHAT THIS IS HERE
 
-```{r, include = FALSE}
-###############################################
+```{r, echo = FALSE, warning = FALSE}
+                                     ## all other networks - nonvis ##
+set.seed(0089)
 #best BPM stats
-nbaRR <- players %>%
+nbaB <- players %>%
   select(player, Team, Year) %>%
   filter( player %in% pB)
 
-RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+B <- graph_from_data_frame(nbaB, directed = TRUE)
 
-RRnet <- ggnetwork( RR )
-RRnet$tooltip <- paste0("Team = ", RRnet$name)
+Bnet <- ggnetwork( B )
+Bnet$tooltip <- paste0("Team = ", Bnet$name)
   
-RRgg <- ggplot(data = RRnet
+Bgg <- ggplot(data = Bnet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
-  geom_edges(color = "green") +
-  geom_nodes(color = "gold", size = 4) +
+  geom_edges(color = "royalblue2") +
+  geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
     title = "Connectivity"
   )
 
-girafe(ggobj = RRgg, 
+girafe(ggobj = Bgg, 
   options = list(
     opts_sizing(width = .7),
     # opts_hover_inv(css = "opacity:0.1;"),
     # opts_hover(css = "fill:red;"),
     opts_toolbar(position = "bottomright") )
   )
+```
 
-#####################################################
+```{r, echo = FALSE, warning = FALSE}
 #best FG% stats
-nbaRR <- players %>%
+nbaFG <- players %>%
   select(player, Team, Year) %>%
   filter( player %in% pFG)
 
-RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+FG <- graph_from_data_frame(nbaFG, directed = TRUE)
 
-RRnet <- ggnetwork( RR )
-RRnet$tooltip <- paste0("Team = ", RRnet$name)
+FGnet <- ggnetwork( FG )
+FGnet$tooltip <- paste0("Team = ", FGnet$name)
   
-RRgg <- ggplot(data = RRnet
+FGgg <- ggplot(data = FGnet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
-  geom_edges(color = "green") +
-  geom_nodes(color = "gold", size = 4) +
+  geom_edges(color = "royalblue2") +
+  geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
     title = "Connectivity"
   )
 
-girafe(ggobj = RRgg, 
+girafe(ggobj = FGgg, 
   options = list(
     opts_sizing(width = .7),
     # opts_hover_inv(css = "opacity:0.1;"),
     # opts_hover(css = "fill:red;"),
     opts_toolbar(position = "bottomright") )
   )
+```
 
-############################################
+```{r, echo = FALSE, warning = FALSE}
 #best PTS stats
-nbaRR <- players %>%
+nbaP <- players %>%
   select(player, Team, Year) %>%
   filter( player %in% pP)
 
-RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+P <- graph_from_data_frame(nbaP, directed = TRUE)
 
-RRnet <- ggnetwork( RR )
-RRnet$tooltip <- paste0("Team = ", RRnet$name)
+Pnet <- ggnetwork( P )
+Pnet$tooltip <- paste0("Team = ", Pnet$name)
   
-RRgg <- ggplot(data = RRnet
+Pgg <- ggplot(data = Pnet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
-  geom_edges(color = "green") +
-  geom_nodes(color = "gold", size = 4) +
+  geom_edges(color = "royalblue2") +
+  geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
     title = "Connectivity"
   )
 
-girafe(ggobj = RRgg, 
+girafe(ggobj = Pgg, 
   options = list(
     opts_sizing(width = .7),
     # opts_hover_inv(css = "opacity:0.1;"),
     # opts_hover(css = "fill:red;"),
     opts_toolbar(position = "bottomright") )
   )
+```
 
-###########################################
+```{r, echo = FALSE, warning = FALSE}
 #best TRB stats
-nbaRR <- players %>%
+nbaR <- players %>%
   select(player, Team, Year) %>%
   filter( player %in% pR)
 
-RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+R <- graph_from_data_frame(nbaR, directed = TRUE)
 
-RRnet <- ggnetwork( RR )
-RRnet$tooltip <- paste0("Team = ", RRnet$name)
+Rnet <- ggnetwork( R )
+Rnet$tooltip <- paste0("Team = ", Rnet$name)
   
-RRgg <- ggplot(data = RRnet
+Rgg <- ggplot(data = Rnet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
-  geom_edges(color = "green") +
-  geom_nodes(color = "gold", size = 4) +
+  geom_edges(color = "royalblue2") +
+  geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
   geom_point_interactive(size=2) + 
   labs(
     title = "Connectivity"
   )
 
-girafe(ggobj = RRgg, 
+girafe(ggobj = Rgg, 
   options = list(
     opts_sizing(width = .7),
     # opts_hover_inv(css = "opacity:0.1;"),
     # opts_hover(css = "fill:red;"),
     opts_toolbar(position = "bottomright") )
   )
+```
 
-################################################
+```{r, echo = FALSE, warning = FALSE}
 #best AST stats
-nbaRR <- players %>%
+nbaA <- players %>%
   select(player, Team, Year) %>%
   filter( player %in% pA)
 
-RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+A <- graph_from_data_frame(nbaA, directed = TRUE)
 
-RRnet <- ggnetwork( RR )
-RRnet$tooltip <- paste0("Team = ", RRnet$name)
+Anet <- ggnetwork( A )
+Anet$tooltip <- paste0("Team = ", Anet$name)
 
-RRgg <- ggplot(data = RRnet
+Agg <- ggplot(data = Anet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
-  geom_edges(color = "green") +
-  geom_nodes(color = "gold", size = 4) +
+  geom_edges(color = "royalblue2") +
+  geom_nodes(color = "firebrick2", size = 4) +
   theme_blank() +
-  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
   geom_point_interactive(size=2) +
   labs(
     title = "Connectivity"
   )
 
-girafe(ggobj = RRgg,
+girafe(ggobj = Agg,
+  options = list(
+    opts_sizing(width = .7),
+    # opts_hover_inv(css = "opacity:0.1;"),
+    # opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+```
+
+```{r, echo = FALSE, warning = FALSE}
+#interesting group
+nba0 <- players %>%
+  select(player, Team, Year) %>%
+  filter( player %in% p0)
+
+cs0 <- graph_from_data_frame(nba0, directed = TRUE)
+
+net0 <- ggnetwork( cs0 )
+net0$tooltip <- paste0("Team = ", net0$name)
+  
+gg0 <- ggplot(data = net0
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "royalblue2") +
+  geom_nodes(color = "firebrick2", size = 4) +
+  theme_blank() +
+  geom_nodetext(aes(label = name), nudge_x = .02, nudge_y = .04, check_overlap = TRUE) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "Connectivity"
+  )
+
+girafe(ggobj = gg0, 
   options = list(
     opts_sizing(width = .7),
     # opts_hover_inv(css = "opacity:0.1;"),
@@ -434,10 +447,13 @@ girafe(ggobj = RRgg,
 
 ```
 
+
+
 Below is a network of different colleges that players attended. As one can see, there are many colleges with a few players, signaling that they've only had stand
 EXPAND HERE
 
 ```{r echo = FALSE, warning = FALSE}
+                                       ## college network - nonvis ##
 set.seed(0049)
 coll <- players %>%
   select(player, college, Year) 
@@ -470,7 +486,7 @@ girafe(ggobj = college,
 ```
 
 
-
+## Case Study
 
 
 # Conclusion
