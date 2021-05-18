@@ -526,7 +526,7 @@ Most importantly, they have each been on at least two different teams, and in th
 
 * Generally, players with higher levels of success tended to be traded less. However, there is the inverse phenomena as well, where better players moved from team to team in probable free agency moves.  Further, players that are successful but not stars, are traded at a high level, indicating they are viewed more as supporting pieces to a team than someone to build around. 
 
-* Connections between star players seem to be 
+* Connections between star players are also seen but they are less easily pinned down. There are instances of NBA superteams such as the Miami Heat or the Golden State Warriors, in which these stars chose to play together, but there are also lucky happenings like the San Antonio Spurs where many draft picks became stars. Therefore, neither a conclusion that connection makes stars nor that it does not can be drawn from these networks regarding star players. 
 
 
 ## Future Research
