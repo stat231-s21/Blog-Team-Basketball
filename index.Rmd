@@ -24,8 +24,30 @@ library(shinythemes)
 path_in <- "/Users/emmagardecki/Documents/junior yr/stat231/Blog-Team-Basketball"
 draft <- read_csv(paste0(path_in, "/draft_allplayers.csv"))
 players <- read_csv(paste0(path_in, "/allPlayers2010-2021.csv"))
+#all teams
 TEAMS0 <- c("ATL", "BOS", "NJN", "BKK", "CHA", "CHI", "CLE", "DAL", "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHX", "POR", "SAC", "SAS", "TOR", "UTA", "WAS", "CHO", "NOH")
+
+#groups of players (from shiny)
+#similar players,, been in the game 15 yrs 
+p0 <- c("Rajon Rondo", "Kyle Lowry", "JJ Redick", "Paul Millsap", "LaMarcus Aldridge", "Rudy Gay")
+
+#VORP >~ 40
+pV <- c("Kevin Durant", "James Harden", "Russell Westbrook", "Stephen Curry", "Damian Lillard", "Anthony Davis", "Kyle Lowry")
+
+#BPM >~ 5
+pB <- c("Kevin Durant", "James Harden", "Russell Westbrook", "Stephen Curry", "Karl-Anthony Towns", "Kawhi Leonard", "Anthony Davis", "Grant Riller", "Robert Williams", "Kyrie Irving", "Joel Embiid")
+
+#FGpct >~ 0.6
+pFG <- c("Zion Williamson", "DeAndre Jordan", "Grant Riller", "Robert Williams", "Deytona Davis", "Jaxson Hayes", "Daniel Gafford", "Onyeka Okongwu", "Ryan Reid", "Tony Bradley", "Jarrett Allen", "Cheick Diallo", "Damien Jones", "Richaun Holmes", "Montrezi Harrell", "Brandon Wright")
+
+#PTS >~ 25 pts/game
+pP <- c("Kevin Durant", "James Harden", "Joel Embiid", "Zion Williamson", "Damian Lillard")
+
+#TRB >~ 10
+pR <- c("Andre Drummond", "Karl-Anthony Towns", "Joel Embiid", "DeAndre Jordan", "Anthony Davis", "Deandre Ayton", "Hassan Whiteside", "Nikola Vučević", "DeMarcus Cousins", "Kevin Love")
 ```
+
+
 
 
 # Introduction
@@ -192,8 +214,43 @@ RRgg <- ggplot(data = RRnet
 girafe(ggobj = RRgg, 
   options = list(
     opts_sizing(width = .7),
-    opts_hover_inv(css = "opacity:0.1;"),
-    opts_hover(css = "fill:red;"),
+    # opts_hover_inv(css = "opacity:0.1;"),
+    # opts_hover(css = "fill:red;"),
+    opts_toolbar(position = "bottomright") )
+  )
+```
+
+
+```{r}
+set.seed(0037)
+nbaRR <- players %>%
+  select(player, Team, Year) %>%
+  filter( player %in% p0)
+
+RR <- graph_from_data_frame(nbaRR, directed = TRUE)
+
+RRnet <- ggnetwork( RR )
+RRnet$tooltip <- paste0("Team = ", RRnet$name)
+  
+RRgg <- ggplot(data = RRnet
+       , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
+  geom_edges(color = "green") +
+  geom_nodes(color = "gold", size = 4) +
+  theme_blank() +
+  geom_nodetext(aes(label = name), nudge_x = .01, nudge_y = .03) +
+  geom_point_interactive(size=2) + 
+  labs(
+    title = "Connectivity"
+  )
+
+# htmlwidget call
+# ggiraph(code = {print(gg_point_4)})
+
+girafe(ggobj = RRgg, 
+  options = list(
+    opts_sizing(width = .7),
+    # opts_hover_inv(css = "opacity:0.1;"),
+    # opts_hover(css = "fill:red;"),
     opts_toolbar(position = "bottomright") )
   )
 ```

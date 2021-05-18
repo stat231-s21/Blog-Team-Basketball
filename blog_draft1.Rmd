@@ -76,7 +76,6 @@ ecount(nba_graph)
 ```{r, warning = FALSE}
 #build prelim hs network
 draft_hs <- draft %>%
-  # filter(Draft_Year > 2019) %>%
   select(HS, Player, Pick)
 
 hs_graph <- graph_from_data_frame(draft_hs, directed = FALSE)
