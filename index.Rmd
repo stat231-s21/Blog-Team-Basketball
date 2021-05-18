@@ -524,7 +524,9 @@ Most importantly, they have each been on at least two different teams, and in th
 ## Conclusion
 * We could find no connection between players that played in the same college programs, though we were only looking at it from the most distant level. 
 
-* Generally, players with higher levels of success tended to be traded less. However, there is the inverse phenomena as well, where better players moved from team to team in probable free agency moves.  Further, players that are successful but not stars, are traded at a high level, indicating they are viewed more as supporting pieces to a team than someone to build around. This 
+* Generally, players with higher levels of success tended to be traded less. However, there is the inverse phenomena as well, where better players moved from team to team in probable free agency moves.  Further, players that are successful but not stars, are traded at a high level, indicating they are viewed more as supporting pieces to a team than someone to build around. 
+
+* Connections between star players seem to be 
 
 
 ## Future Research
