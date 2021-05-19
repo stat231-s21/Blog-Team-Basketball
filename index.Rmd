@@ -10,6 +10,7 @@ runtime: shiny
 ---
 
 ```{r setup, include=FALSE, warning=FALSE}
+
                                 ## libraries, data, defined lists - nonvis code ##
 knitr::opts_chunk$set(echo = TRUE, fig.align="center")
 library(tidyverse)
@@ -22,12 +23,9 @@ library(plotly)
 library(shiny)
 library(shinythemes)
 #import dataset
-path_in <- "/Users/emmagardecki/Documents/junior yr/stat231/Blog-Team-Basketball"
-# path_in_eric <- ""
-draft <- read_csv(paste0(path_in, "/draft_allplayers.csv"))
-players <- read_csv(paste0(path_in, "/allPlayers2010-2021.csv"))
-# draft <- read_csv(paste0(path_in_eric, "draft_allplayers.csv"))
-# players <- read_csv(paste0(path_in_eric, "allPlayers2010-2021.csv"))
+
+draft <- read_csv("draft_allplayers.csv")
+players <- read_csv( "allPlayers2010-2021.csv")
 #all teams
 TEAMS0 <- c("ATL", "BOS", "NJN", "BKK", "CHA", "CHI", "CLE", "DAL", "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHX", "POR", "SAC", "SAS", "TOR", "UTA", "WAS", "CHO", "NOH")
 
@@ -56,9 +54,9 @@ pA <- c("Ja Morant", "Lonzo Ball", "Trae Young", "Ben Simmons", "Elfrid Payton",
 
 # Introduction
 ## Motivation
-So much of a positive career is determined by the circumstances surrounding it. Maybe you got the job because you were in the right place at the right time, or you missed the interview because of a flat tire and didn't get the job. For players in the National Basketball Association, these circumstances are often experienced as what schools they attended and teams were they traded to. With this project we set out to discover if the circumstances around which team players wore across their chests impacted overall career success. Further, it is possible that playing with other successful players helped improve a players' skills and set them up for success. Different coaching staffs on different teams could've also made an impact on players' skills. Did players that knew more players than others have more successful careers? Is connection early on in a basketball player's journey - say college - more indicative of a successful career? 
+So much of a positive career is determined by the circumstances surrounding it. Maybe you get the job because you are in the right place at the right time, or you miss the interview because of a flat tire and don't get the job. For players in the National Basketball Association, these circumstances are often experienced as what schools they attended and teams were they traded to. With this project, we set out to discover if where a player played, and the people they connected with there impacted overall career success. These connections include both the players teammates and coaching staff, a player learns from both in their time with a team. Moreover, is it possible that playing with other successful players helps improve a players' skills and sets them up for success? Or does the coaching staff greatly improve a player's ability? Another question we were pondering is the question of quantity of connection - do players that know more players have more successful careers?  Is connection early on in a basketball player's journey - say college - more indicative of a successful career? 
 
-Another question we set out to address is how do we measure success? We have decided to stick to the most quantitative measures of success, career statistics. Specifically, we are returning to the value over replacement player (VORP) statistic, but our visualizations allow for the user to choose the statistic they want to use to measure success by, from field goal percentage (FG%) to total number of rebounds (TRB). 
+But how *do* we measure success? There are many ways this can be done, by measuring team statistics like championships, individual statistics like points per game, or even salary. In this analysis we have decided to use quantitative measures of individual success. Specifically, we are returning to the value over replacement player (VORP) statistic, but our visualizations allow for you to choose the statistic you want to use to measure success by, from field goal percentage (FG%) to number of assists per game (AST). 
 
 ## Research Questions
 * Does connection equal career success? (measured in VORP)
@@ -68,16 +66,16 @@ Another question we set out to address is how do we measure success? We have dec
 
 # Background
 ## Background on Topic
-Basketball players play in one of 30 NBA teams. Players can leave a team via a trade (where a team exchanges the player for another), being waived and re-signed by another team (typically when a player under preforms), being drafted into a team, or being signed as a free agent at the end of a contract (or at the beginning of a career). 
+The National Basketball League is made up of 30 teams that are spread across the United States and Canada. A player typically enters the league through the annual draft, an event that brings 60 new players into the league every year. There are many ways a player can move between teams, such as a trade, where a team exchanges the player for another; being waived and re-signed by another team, typically when a player under preforms; or being signed as a free agent at the end of a contract. 
 
-As for colleges, typically only the "star" players tend to make it to the NBA. There are, however, some exceptions as some programs are notorious for creating NBA talent. Players can transfer between schools and have the ability to choose where to attend. 
+This process is very different than the college system, where players get to choose where they will play - assuming they have been offered a spot to play there. Further, if they are not enjoying their experience, there is always the opportunity for these players to transfer to another college. However, typically only the best players on college teams make it into the NBA. There are of course notoriously good college programs designed to win championships and get the majority of their players drafted, a phenomena we will touch on later in this post. 
 
 ## Data Sources
-The dataset we utilized for this investigation was scraped from basketball-reference.com. We scraped each team's roster from 2006-2021, which college each player attended, and some relevant career statistics for each player. In total, 8657 instances of a player were scraped. 
+The datasets we are utilizing for this investigation were scraped from basketball-reference.com. We scraped each team's roster from 2006-2021, which college each player attended, and some relevant career statistics for each player. In total, 8657 instances of a player were scraped. 
 
 # Findings
 ## Success
-We begin our search for these answers by attempting to quantify player success through various (mostly offensive) game statistics. As mentioned above, the standard that we, as your authors and data scientists, chose to measure success by is VORP due to the fact it is a calculated statistic that attempts to weigh many simple stats. This algorithm, which is included in full in the Reference section, attempts to coerce basketball success into one simple number by weighing the perceived importance of various statistics (such as points per game (PPG) and total rebounds per game (TRB)) in addition to the pure statistics of each player's career. BPM, or Box Plus/Minus, is another statistic we decided to include as it is another option for a calculated box score based metric. It is another weighted estimate of a player's contribution to their team. Where BPM just looks at how much a player helps or hurts their team when they are on the court, VORP takes that and weighs by the number of minutes the player is on the court for, with the idea that better players are playing more minutes. We urge you to take a strong look at the VORP and BPM tabs especially if you are less familiar with basketball. You are also welcome to look into the purer career statistics we have included, notably field goal percentage, PPG, and TRB. 
+We begin our search for these answers by attempting to quantify player success through various (mostly offensive) game statistics. As mentioned above, the standard that we, as your authors and data scientists, chose to measure success by is VORP, due to the fact it is a calculated statistic that attempts to add weight to many simple stats. This algorithm, which is explained in greater detail in the Appendix section, attempts to coerce basketball success into one simple number by weighing the perceived importance of various statistics (such as points per game (PTS) and total rebounds per game (TRB)) in addition to the pure statistics of each player's career. BPM, or Box Plus/Minus, is another statistic we decided to include as it is another option for a calculated box score based metric. This is another weighted estimate of a player's contribution to their team. However, where BPM just looks at how much a player helps or hurts their team when they are on the court, VORP takes that number and weighs it by the number of possessions the player is on the court for, with the idea that better players are playing more minutes. We urge you to take a strong look at the VORP and BPM tabs if you are less familiar with basketball. You are also welcome to look into the purer career statistics we have included, notably field goal percentage, PPG, and TRB. 
 
 ```{r, echo = FALSE}
                                         ## embedded shiny app - nonvis ##
@@ -208,18 +206,16 @@ server = function(input, output) {
 }
 )
 ```
-Each of these statistics we have isolated measure performance success in a slightly different way, although we will admit some are more similar than others. But no matter if you'd prefer to measure these players' success on offensive or defensive stats (which is admittedly lacking throughout the game and especially here), we have tried to include a statistic that carries some value to you above. 
+Each of these statistics we have isolated measure performance success in a slightly different way. But no matter if you'd prefer to measure these players' success on offensive or defensive stats (which is admittedly lacking throughout the game and especially here), we have tried to include a statistic that carries some value to you above. 
 
 To personally measure success for each measure, we have isolated the players with the best numbers from each category, along with an additional group of similar, good players, who have been in the league for many years and feature similar statistics across the board as an interesting case study. This group of players will be examined later in this post. 
 
-Players with a VORP at or above 40 are considered to be great players, and are isolated in the following section. This group includes players such as Kevin Durant, James Harden, Russell Westbrook, and Steph Curry. Similarly, a BPM of greater than 5, assumed to be a career all-star player, is included and features all players listed above in addition to the likes of Karl-Anthony Towns, Joel Embiid, and Kawhi Leonard. While VORP weighs towards players who have been in the league longer, due to the fact it weighs by number of possessions where BPM does not. Therefore, in the BPM category, we see many younger players that are stars, but do not have the number of possessions yet to have a career VORP statistic that reflects that. 
+Players with a VORP at or above 40 are considered to be great players, and are isolated in the following section. This group includes players such as Kevin Durant, James Harden, Russell Westbrook, and Steph Curry. Similarly, a BPM of greater than 5, assumed to be a career all-star player, is included below and features all players listed above in addition to the likes of Karl-Anthony Towns, Joel Embiid, and Kawhi Leonard. While VORP weighs towards players who have been in the league longer,  BPM does not. Therefore, in the BPM category, we see many younger players that are stars, but do not have the number of possessions yet to have a career VORP statistic that reflects that. 
 
-We have also broken down the best players from each of the pure stat categories. This again allows for us to look into players that excel in a certain area of the game, such as collecting rebounds, and observe below how their networks look as well. 
+We have also broken down the best players from each of the pure stat categories. This again allows for us to look into players that excel in a certain area of the game, such as collecting rebounds, and observe below how their networks and connections look as well. 
 
 ## Networks
-Network science is a field that studies links, called edges, between distinct elements, called nodes or vertices. By analyzing these links, one can learn information about the relationship between nodes. 
-
-Specifically in these networks we are looking into the question - do more connected players have more successful NBA careers? Below we have attempted to build networks that allow you to visualize this phenomena. 
+Network science is a field that studies links, called edges, between distinct elements, called nodes or vertices. By analyzing these links, we can learn information about the relationship between nodes, or in this case the relationship between players. Specifically in these networks we are looking into the question - do more connected players have more successful NBA careers? Below we have attempted to build networks that allow you to visualize this phenomena through looking at successful players. 
 
 ```{r, warning = FALSE}
                                              ## VORP network ##
@@ -253,10 +249,9 @@ girafe(ggobj = Vgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
-* The diameter of this network is `r get_diameter(V)`. 
-* There are a fair number of connections here, as there was a lot of movement with Kevin Durant, Russell Westbrook, and James Harden. These three players show that 
-* Damian Lillard and Steph Curry are great examples of players that are successful on a single team throughout their career (thus far). 
-* However, the argument could be made that this network shows that great players tend to gravitate towards each other, support for a common phenomena happening in the NBA currently. 
+* There are a fair number of connections here, as there was a lot of movement with Kevin Durant, Russell Westbrook, and James Harden. These three players show us that there is a good amount of mobility among star players.
+* Damian Lillard and Steph Curry are great examples of players that are successful on a single team throughout their career (thus far).
+* **This network shows that great players tend to gravitate towards each other, support for a common phenomena happening in the NBA currently in the creation of super teams.** 
 
 
 ```{r, echo = FALSE, warning = FALSE}
@@ -270,7 +265,7 @@ nbaB <- players %>%
 B <- graph_from_data_frame(nbaB, directed = TRUE)
 
 Bnet <- ggnetwork( B )
-Bnet$tooltip <- paste0("Team = ", Bnet$name)
+Bnet$tooltip <- Bnet$name
   
 Bgg <- ggplot(data = Bnet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
@@ -292,8 +287,7 @@ girafe(ggobj = Bgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
-* The diameter of this network is `r get_diameter(B)`. 
-* Another very connected network, most players have played for more than one team, and those are often the same teams. 
+* This is another very connected network, where most players have played for more than one team, and those are often the same teams. 
 * Note: The New Orleans Pelicans (NOP) were previously named the New Orleans Hornets (NOH), so Anthony Davis has played for two different teams, not three. 
 
 ```{r, echo = FALSE, warning = FALSE}
@@ -327,8 +321,8 @@ girafe(ggobj = FGgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
-* The diameter of this network is `r get_diameter(FG)`. 
-* This networks shows a different set of players than the previous two, this network shows players with just very good field goal percentage. Therefore, they are not the 'superstars' that we were previously looking at and you can see how the connection type has changed. No longer are we looking at a few teams that are passing star players between them, but now each player playing for a few teams throughout their career. 
+* This networks shows a different set of players than the previous two, instead showing players with soley very good field goal percentage. Therefore, they are not the superstars that we were previously looking at and you can see how the connection type has changed. 
+* No longer are we looking at a few teams that are passing star players between them, but now each player playing for a few teams throughout their career. 
 
 ```{r, echo = FALSE, warning = FALSE}
 #best PTS stats
@@ -361,9 +355,8 @@ girafe(ggobj = Pgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
-* The diameter of this network is `r get_diameter(P)`. 
-* This network features a different phenomena than those above, it features many more one team players. This could be an indication of many things, but in this limited case we believe it to be a product of these players being young. Williamson and Embiid are still under their rookie contracts, meaning the only way they could play for another team is if the Pelicans or 76ers, respectively, decided to trade their best scorers. 
-* **This introduces us to another point in this exploration - moving teams, or connection, is often determined by the team not the player.** 
+* This network features a different phenomena than those above, it features many more one team players. This could be an indication of many things, but in this limited case we believe it to be a product of these players being young. Williamson and Embiid are still under their rookie contracts, meaning the only way they could play for another team is if the Pelicans or 76ers, respectively, decided to trade their best scorers away. 
+* **This introduces us to our next phenomena- moving teams is often determined by the team not the player, and is therefore forced connection.** 
 
 ```{r, echo = FALSE, warning = FALSE}
 #best TRB stats
@@ -396,8 +389,7 @@ girafe(ggobj = Rgg,
     opts_toolbar(position = "bottomright") )
   )
 ```
-* The diameter of this network is `r get_diameter(R)`. 
-* Our rebound network is another that features a large diameter, with the possible reasoning that teams care less about retaining players that secure a high number of rebounds than a high points. 
+* The diameter of this network is `r get_diameter(R)`. Our rebound network is another that features a large diameter, with the possible reasoning that teams care less about retaining players that secure a high number of rebounds than a high points. 
 * **If these players are being traded at higher numbers, it could indicate that they are less valued within the league, something that could be checked by comparing salary data.** 
 
 ```{r, echo = FALSE, warning = FALSE}
@@ -432,8 +424,7 @@ girafe(ggobj = Agg,
   )
 
 ```
-* The diameter of this network is `r get_diameter(A)`. 
-* This is our biggest network by far at a diameter of 14. We could easily draw the same conclusion as above with some knowledge on salary data for these players. 
+* The diameter of this network is `r get_diameter(A)`. This is our biggest network by far at a diameter of 14. We could easily draw the same conclusion as above with some knowledge on salary data for these players. 
 
 
 ```{r echo = FALSE, warning = FALSE}
@@ -441,11 +432,12 @@ girafe(ggobj = Agg,
 set.seed(0049)
 coll <- players %>%
   select(player, college, Year) 
+  # filter(player %in% pV)
 
 c0 <- graph_from_data_frame(coll, directed = TRUE)
 
 collnet <- ggnetwork( c0 )
-collnet$tooltip <- paste0("Player = ", collnet$name)
+collnet$tooltip <- collnet$name
   
 college <- ggplot(data = collnet
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
@@ -468,7 +460,7 @@ girafe(ggobj = college,
 
 # get_diameter(c0)
 ```
-* Here is a network of different colleges that players attended. As you can see, there are many colleges with a few players, signaling that they've sent very few players to the NBA. Contrarily, there are many nodes with many edges, indicating that they have sent many players to the NBA such as the University of Michigan or Duke University. 
+Here is a network of different colleges that players attended. As you can see, there are many colleges with a few players, signaling that they've sent very few players to the NBA. Contrarily, there are many nodes with many edges, indicating that they have sent many players to the NBA such as the University of Michigan or Duke University. Unfortunately, this view of a college network is too broad to deduce if it supports our points regarding connection at this level in player's careers. To compare just where the stars went to college yields no overlap, proving to be a very ineffective network which is why we have decided to offer you a large scale view of college networks instead. While it does not answer our question, it does allow us to draw the conclusion that there is a lot of overlap within college, both through teammates that also make it to the NBA and through the coaching staff at the college, which is often retained for decades. **Therefore, we can conclude that there are many connections made at the college level, but they are not easily quantifiable for our purposes in this exploration.**
 * Note: We chose to include players that did not go to college, or went to college internationally, and they occupy the densest node, 'NA'. In all actuality these players most likely have no relation to each other. 
 
 ## Case Study
@@ -481,7 +473,7 @@ nba0 <- players %>%
 cs0 <- graph_from_data_frame(nba0, directed = TRUE)
 
 net0 <- ggnetwork( cs0 )
-net0$tooltip <- paste0("Team = ", net0$name)
+net0$tooltip <- net0$name
   
 gg0 <- ggplot(data = net0
        , aes(x = x, y = y, xend = xend, yend = yend, tooltip = tooltip)) +
@@ -504,8 +496,8 @@ girafe(ggobj = gg0,
 
 # get_diameter(cs0)
 ```
-We have chosen to isolate these players as they all have similar characteristics. As all shooting guards or point guards with similar statistics and careers of the same length, they are an easy group to look at in both the Shiny application and compare in our networks. All of these players have VORPs between 16 and 40, indicating that they are consistently good players but by no means stars of their teams. Their raw back this number up, they make on average 50% of the shots they attempt, average between 10 and 20 points a game, and between 2 and 8 assists and rebounds per game as well. 
-Most importantly, they have each been on at least two different teams, and in the case of Rondo 7 different teams. This is a fair indication that they are not seen as 'essential' players to their teams, unlike star players like Lillard who is Portland's darling. These players have been on an average of 3 teams in their 15 year careers, approximately a new team every 5 years. This is a good indication of the way the NBA views its mid-tier players, as assets but movable ones. 
+We have isolated these players as they all have similar characteristics: shooting guards or point guards with similar statistics and careers of the same length. This makes them an easy group to look at in both the Shiny application and compare in our networks. All of these players have VORPs between 16 and 40, indicating that they are consistently good players but by no means stars of their teams. Their raw back this number up, they make on average 50% of the shots they attempt, average between 10 and 20 points a game, and between 2 and 8 assists and rebounds per game as well. 
+Most importantly, they have each been on at least two different teams, and in the case of Rondo 7 different teams. They are not seen as 'essential' players to their teams, unlike star players like Damian Lillard who is Portland's darling. These players have been on an average of 3 teams in their 15 year careers, approximately a new team every 5 years. **This is a good indication of the way the NBA views its mid-tier players, as assets both on the court and on the tradeboard.** 
 
 # Conclusion
 ## Limitations
@@ -544,7 +536,103 @@ Most importantly, they have each been on at least two different teams, and in th
 * https://www.reddit.com/r/nba/comments/7rq7t4/how_is_the_advanced_stat_vorpvalue_over/
 * https://www.reddit.com/r/nba/comments/3bkfxj/graph_average_number_of_trades_per_team_per_year/
 
-![Thank You for Listening!](https://media.giphy.com/media/osjgQPWRx3cac/giphy.gif)
+# Appendix
+## BPM and VORP
+Here is a more in depth [Box Plus/Minus and VORP Explanation](https://www.basketball-reference.com/about/bpm2.html). While the formula is not easily written out, this site from basketball-reference offers you an excellent walk through of how to calculate these numbers. 
+
+## Our Networks - who is in them?
+```{r pretty, echo = FALSE}
+ library(kableExtra)
+draft %>%
+  filter(Player %in% pV) %>%
+  select(Player, VORP) %>% 
+  arrange(desc(VORP)) %>%
+  kable(col.names = c("Player", "VORP")
+        , row.names = F
+        , caption = "VORP around/above 40") %>%
+  kable_styling(bootstrap_options = "striped"
+                 , full_width = F) %>%
+   row_spec(0, bold = T, underline = T) %>%
+   column_spec(1:2, width = "1.5in")
+
+draft %>%
+  filter(Player %in% pB) %>%
+  select(Player, BPM) %>% 
+  arrange(desc(BPM)) %>%
+  kable(col.names = c("Player", "BPM")
+        , row.names = F
+        , caption = "BPM around/above 4.5") %>%
+  kable_styling(bootstrap_options = "striped"
+                 , full_width = F) %>%
+   row_spec(0, bold = T, underline = T) %>%
+   column_spec(1:2, width = "1.5in")
+
+draft %>%
+  filter(Player %in% pFG) %>%
+  select(Player, FGpct) %>% 
+  arrange(desc(FGpct)) %>%
+  kable(col.names = c("Player", "FG%")
+        , row.names = F
+        , caption = "FG% around/above 60%") %>%
+  kable_styling(bootstrap_options = "striped"
+                 , full_width = F) %>%
+   row_spec(0, bold = T, underline = T) %>%
+   column_spec(1:2, width = "1.5in")
+
+draft %>%
+  filter(Player %in% pP) %>%
+  select(Player, PTS) %>% 
+  arrange(desc(PTS)) %>%
+  kable(col.names = c("Player", "Points per Game")
+        , row.names = F
+        , caption = "PTS around/above 25 per game") %>%
+  kable_styling(bootstrap_options = "striped"
+                 , full_width = F) %>%
+   row_spec(0, bold = T, underline = T) %>%
+   column_spec(1:2, width = "1.5in")
+
+draft %>%
+  filter(Player %in% pR) %>%
+  select(Player, TRB) %>% 
+  arrange(desc(TRB)) %>%
+  kable(col.names = c("Player", "Rebounds per Game")
+        , row.names = F
+        , caption = "TRB around/above 10") %>%
+  kable_styling(bootstrap_options = "striped"
+                 , full_width = F) %>%
+   row_spec(0, bold = T, underline = T) %>%
+   column_spec(1:2, width = "1.5in")
+
+draft %>%
+  filter(Player %in% pA) %>%
+  select(Player, AST) %>% 
+  arrange(desc(AST)) %>%
+  kable(col.names = c("Player", "Assists per Game")
+        , row.names = F
+        , caption = "AST around/above 6") %>%
+  kable_styling(bootstrap_options = "striped"
+                 , full_width = F) %>%
+   row_spec(0, bold = T, underline = T) %>%
+   column_spec(1:2, width = "1.5in")
+
+draft %>%
+  filter(Player %in% p0) %>%
+  select(Player, VORP, BPM, FGpct, PTS, TRB, AST) %>% 
+  arrange(desc(VORP)) %>%
+  kable(col.names = c("Player", "VORP", "BPM", "FG%", "PTS", "TRB", "AST")
+        , row.names = F
+        , caption = "Case Study: Similar mid-tier players") %>%
+  kable_styling(bootstrap_options = "striped"
+                 , full_width = F) %>%
+   row_spec(0, bold = T, underline = T) %>%
+   column_spec(1:2, width = "1.5in")
+```
+
+ 
+
+
+
+![Thank you for reading!](https://media.giphy.com/media/osjgQPWRx3cac/giphy.gif)
 
 ![Team Logo](https://raw.githubusercontent.com/stat231-s21/Blog-Team-Basketball/main/images/s2g6-sports.jpg)
 

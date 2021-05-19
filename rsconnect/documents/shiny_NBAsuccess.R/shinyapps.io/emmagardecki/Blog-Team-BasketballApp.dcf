@@ -1,0 +1,13 @@
+name: Blog-Team-BasketballApp
+title: Blog-Team-BasketballApp
+username:
+account: emmagardecki
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4149916
+bundleId: 4613295
+url: https://emmagardecki.shinyapps.io/Blog-Team-BasketballApp/
+when: 1621373286.69073
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: blog_draft1.html|blog_draft1.Rmd|index.html|index.Rmd|index0.Rmd|PUG_Blog_Project.pdf|README.md|scrape_allplayers.R|scrape_draft.R|Scrape_Team.R|shiny_fullApp.R|test_shiny_network.R|images/s2g6-sports.jpg

@@ -5,9 +5,9 @@ account: emmagardecki
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 4149196
-bundleId: 4612436
+bundleId: 4616797
 url: https://emmagardecki.shinyapps.io/Blog-Team-Basketball/
-when: 1621359475.3498
+when: 1621442013.40803
 asMultiple: TRUE
 asStatic: FALSE
-ignoredFiles: blog_draft1.Rmd
+ignoredFiles: blog_draft1.Rmd|index0.Rmd
